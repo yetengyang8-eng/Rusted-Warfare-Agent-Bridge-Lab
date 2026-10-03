@@ -23,3 +23,8 @@
 - `reference/prior-astra/`：Astra 以前关于 execution / PlayerContext / same-game 的交接记录。
 
 不要假设这里已经支持 multiplayer。现有 headless 双实例只证明两个独立原版进程可并行运行；same-game host/join、双玩家视野隔离与网络命令提交仍是桥工程要解决的核心问题。
+
+## 桌面多人取证
+
+- `tools/multiplayer-probe/`：本地真人多人只读探针。记录游戏进程的 TCP/UDP 元数据、RuntimeBridge `/state` 摘要和本地日志；不发送游戏命令、不抓包内容。
+- 原始 trace 可能包含服务器 IP、端口和玩家名，只保留在本地；提交 GitHub 前先脱敏并提炼为技术结论。
