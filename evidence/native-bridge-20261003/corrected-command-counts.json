@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "collectorRevision": "http-command-submissions-v2",
+  "collectorSourceSha256": "8e593ed390240983a4274ba5db7bf3af26ee221b1a593cb39450801681ea2af3",
+  "recomputedUtc": "2026-10-03T05:10:20.004950+00:00",
+  "note": "Historical reporting correction: pre-upstream gateway command refusals count as submitted attempts; noncommand request refusals are separate. Original match reports and raw evidence were preserved.",
+  "participants": [
+    {
+      "matchId": "rwbridge-c29e68f458f54efd8e459a478197f7a3",
+      "matchIndex": 1,
+      "participantId": "A",
+      "agentId": "legacy",
+      "playerId": 0,
+      "sourceReport": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m2-final-swap/match-001/match.json",
+      "sourceReportSha256": "5fb89a80db86f85a854a17f6d2687db0a7d5603f53f4fcc21b5f0d9a15084b58",
+      "sourceGatewayEvidence": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m2-final-swap/match-001/player-A/adapter/gateway-events.jsonl",
+      "sourceGatewayEvidenceSha256": "bba8593ba135bbf5c6298f09540ad29080b0655dad249280a1d6b6109ee7cf41",
+      "originalCommandCounts": {
+        "status": "OBSERVED",
+        "attempted": 88,
+        "nativeQueued": 88,
+        "rejected": 2,
+        "byKind": {
+          "build": 4,
+          "produce": 29,
+          "attackMove": 37,
+          "move": 18
+        },
+        "executedEffects": "UNKNOWN"
+      },
+      "recomputedCommandCounts": {
+        "status": "OBSERVED",
+        "attempted": 90,
+        "nativeQueued": 88,
+        "rejected": 2,
+        "nativeRejected": 0,
+        "gatewayCommandRejected": 2,
+        "noncommandRequestRejections": 0,
+        "byKind": {
+          "build": 4,
+          "produce": 29,
+          "attackMove": 37,
+          "move": 20
+        },
+        "executedEffects": "UNKNOWN",
+        "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+      }
+    },
+    {
+      "matchId": "rwbridge-c29e68f458f54efd8e459a478197f7a3",
+      "matchIndex": 1,
+      "participantId": "B",
+      "agentId": "octopus",
+      "playerId": 1,
+      "sourceReport": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m2-final-swap/match-001/match.json",
+      "sourceReportSha256": "5fb89a80db86f85a854a17f6d2687db0a7d5603f53f4fcc21b5f0d9a15084b58",
+      "sourceGatewayEvidence": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m2-final-swap/match-001/player-B/adapter/gateway-events.jsonl",
+      "sourceGatewayEvidenceSha256": "f9ddb42c9b47c44b7e8f78d4a1ac2fd6262024dd94d26d6f98e662d58823652b",
+      "originalCommandCounts": {
+        "status": "OBSERVED",
+        "attempted": 158,
+        "nativeQueued": 158,
+        "rejected": 1,
+        "byKind": {
+          "move": 93,
+          "build": 4,
+          "produce": 29,
+          "attackMove": 32
+        },
+        "executedEffects": "UNKNOWN"
+      },
+      "recomputedCommandCounts": {
+        "status": "OBSERVED",
+        "attempted": 159,
+        "nativeQueued": 158,
+        "rejected": 1,
+        "nativeRejected": 0,
+        "gatewayCommandRejected": 1,
+        "noncommandRequestRejections": 0,
+        "byKind": {
+          "move": 94,
+          "build": 4,
+          "produce": 29,
+          "attackMove": 32
+        },
+        "executedEffects": "UNKNOWN",
+        "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+      }
+    },
+    {
+      "matchId": "rwbridge-8d7cca8769964c319b25ce4532859202",
+      "matchIndex": 2,
+      "participantId": "B",
+      "agentId": "octopus",
+      "playerId": 0,
+      "sourceReport": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m2-final-swap/match-002/match.json",
+      "sourceReportSha256": "f6c1358918ad8f00622074fbea1b792e5cb565785b8573617f4106b1f8423882",
+      "sourceGatewayEvidence": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m2-final-swap/match-002/player-B/adapter/gateway-events.jsonl",
+      "sourceGatewayEvidenceSha256": "b855b8d17f580d1751849261a40d20cd2e661c9aab4cad5d3e69dbfda3a35c80",
+      "originalCommandCounts": {
+        "status": "OBSERVED",
+        "attempted": 128,
+        "nativeQueued": 128,
+        "rejected": 0,
+        "byKind": {
+          "build": 4,
+          "move": 82,
+          "produce": 31,
+          "attackMove": 11
+        },
+        "executedEffects": "UNKNOWN"
+      },
+      "recomputedCommandCounts": {
+        "status": "OBSERVED",
+        "attempted": 128,
+        "nativeQueued": 128,
+        "rejected": 0,
+        "nativeRejected": 0,
+        "gatewayCommandRejected": 0,
+        "noncommandRequestRejections": 0,
+        "byKind": {
+          "build": 4,
+          "move": 82,
+          "produce": 31,
+          "attackMove": 11
+        },
+        "executedEffects": "UNKNOWN",
+        "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+      }
+    },
+    {
+      "matchId": "rwbridge-8d7cca8769964c319b25ce4532859202",
+      "matchIndex": 2,
+      "participantId": "A",
+      "agentId": "legacy",
+      "playerId": 1,
+      "sourceReport": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m2-final-swap/match-002/match.json",
+      "sourceReportSha256": "f6c1358918ad8f00622074fbea1b792e5cb565785b8573617f4106b1f8423882",
+      "sourceGatewayEvidence": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m2-final-swap/match-002/player-A/adapter/gateway-events.jsonl",
+      "sourceGatewayEvidenceSha256": "507bd55eb4c21eaca881589e77b6426c628e0d0b05934907b96f0cebc8304e46",
+      "originalCommandCounts": {
+        "status": "OBSERVED",
+        "attempted": 68,
+        "nativeQueued": 68,
+        "rejected": 1,
+        "byKind": {
+          "build": 4,
+          "produce": 20,
+          "attackMove": 24,
+          "move": 20
+        },
+        "executedEffects": "UNKNOWN"
+      },
+      "recomputedCommandCounts": {
+        "status": "OBSERVED",
+        "attempted": 69,
+        "nativeQueued": 68,
+        "rejected": 1,
+        "nativeRejected": 0,
+        "gatewayCommandRejected": 1,
+        "noncommandRequestRejections": 0,
+        "byKind": {
+          "build": 4,
+          "produce": 20,
+          "attackMove": 24,
+          "move": 21
+        },
+        "executedEffects": "UNKNOWN",
+        "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+      }
+    }
+  ]
+}

@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "archive": "raw-evidence.zip",
+  "archiveSha256": "77c67badb2cf2c0d68712ec9d5090e8c2fbfa661e00b5f3aede893df62f6ef0b",
+  "files": 188,
+  "matches": [
+    {
+      "run": "m0-verified",
+      "matchId": "rwbridge-3d662b9b3498458caea7c2c578547473",
+      "map": "maps/skirmish/[p2]Small_Island (2p).tmx",
+      "fog": 2,
+      "result": {
+        "termination": "native_result",
+        "winner": "A",
+        "loser": "B",
+        "nativeOutcomes": [
+          "victory",
+          "defeat"
+        ],
+        "status": "NATIVE_RESULT"
+      },
+      "sameGameEvidence": {
+        "status": "PASS",
+        "nativeServerId": "5d5b4a78-af34-4296-9750-d4aac369d8ea",
+        "playerIds": [
+          0,
+          1
+        ],
+        "scope": "native transport and player identity; command sync and fog need separate evidence"
+      },
+      "transportProof": "PASS",
+      "synchronizationEvidence": {
+        "status": "MATCH_AT_NATIVE_CHECKSUM_FRAME",
+        "desyncErrors": [
+          0,
+          0
+        ],
+        "resyncCounts": [
+          0,
+          0
+        ],
+        "checksumFrames": [
+          1505,
+          1505
+        ],
+        "nativeChecksums": [
+          8352991,
+          8352991
+        ],
+        "checksumComparison": "MATCH",
+        "scope": "native transport synchronization metadata"
+      },
+      "participants": [
+        {
+          "participantId": "A",
+          "agentId": "probe",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "c3852982-a87d-40c4-8688-1c607e193176",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": null,
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "OBSERVED_PUBLIC_API_PROBE",
+            "attempted": 3,
+            "nativeQueued": 3,
+            "byKind": {
+              "move": 3
+            },
+            "executedEffects": {
+              "scope": "probe moves only; consult the legal-observation checks",
+              "status": "PASS",
+              "checkName": "side_0_command_effect_seen_by_remote_player",
+              "reportPath": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m0-verified/match-001/transport-proof/summary.json"
+            }
+          },
+          "engineExitCode": 0
+        },
+        {
+          "participantId": "B",
+          "agentId": "probe",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "a3dccd9f-d5a2-4e97-8e85-a231fb69bf5a",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": null,
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "OBSERVED_PUBLIC_API_PROBE",
+            "attempted": 3,
+            "nativeQueued": 3,
+            "byKind": {
+              "move": 3
+            },
+            "executedEffects": {
+              "scope": "probe moves only; consult the legal-observation checks",
+              "status": "PASS",
+              "checkName": "side_1_command_effect_seen_by_remote_player",
+              "reportPath": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m0-verified/match-001/transport-proof/summary.json"
+            }
+          },
+          "engineExitCode": 0
+        }
+      ]
+    },
+    {
+      "run": "m2-final-swap",
+      "matchId": "rwbridge-c29e68f458f54efd8e459a478197f7a3",
+      "map": "maps/skirmish/[p2]Small_Island (2p).tmx",
+      "fog": 2,
+      "result": {
+        "termination": "timeout",
+        "winner": null,
+        "loser": null,
+        "nativeOutcomes": [
+          "unknown",
+          "unknown"
+        ],
+        "status": "TIMEOUT"
+      },
+      "sameGameEvidence": {
+        "status": "PASS",
+        "nativeServerId": "90877b9a-97d7-4b5d-ac60-4ceadc4e98b3",
+        "playerIds": [
+          0,
+          1
+        ],
+        "scope": "native transport and player identity; command sync and fog need separate evidence"
+      },
+      "transportProof": null,
+      "synchronizationEvidence": {
+        "status": "MATCH_AT_NATIVE_CHECKSUM_FRAME",
+        "desyncErrors": [
+          0,
+          0
+        ],
+        "resyncCounts": [
+          0,
+          0
+        ],
+        "checksumFrames": [
+          28896,
+          28896
+        ],
+        "nativeChecksums": [
+          121610080,
+          121610080
+        ],
+        "checksumComparison": "MATCH",
+        "scope": "native transport synchronization metadata"
+      },
+      "participants": [
+        {
+          "participantId": "A",
+          "agentId": "legacy",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "26e4024c-7adb-41e6-af6d-63c67dfdcb86",
+          "artifactSha256": "a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6",
+          "adapterArtifact": {
+            "agentId": "legacy",
+            "artifactDigest": "sha256:10d012670fbe7b0223fe08170d52a3837a0699b01c550b8a8da65d339668a7c2",
+            "baselineDigest": "sha256:a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6",
+            "overlayDigest": "sha256:435075bc3194fa03231df4063e9c231ffe1f0adfc74a542b3381e85d521e0f4e",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 88,
+            "nativeQueued": 88,
+            "rejected": 2,
+            "byKind": {
+              "build": 4,
+              "produce": 29,
+              "attackMove": 37,
+              "move": 18
+            },
+            "executedEffects": "UNKNOWN"
+          },
+          "engineExitCode": 0
+        },
+        {
+          "participantId": "B",
+          "agentId": "octopus",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "db10a5c6-775d-446f-8248-35ca96e24dc3",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": {
+            "agentId": "octopus",
+            "artifactDigest": "sha256:2f94cf9ad49685c87e5b5c4a7c620e503e3b42712fb6e4d14fe8fa625c289865",
+            "baselineDigest": "sha256:efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+            "overlayDigest": "sha256:450bccc5b500f14f90fdfbed15bc919a3d20484956bef8fad78fba73520aa3d6",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 158,
+            "nativeQueued": 158,
+            "rejected": 1,
+            "byKind": {
+              "move": 93,
+              "build": 4,
+              "produce": 29,
+              "attackMove": 32
+            },
+            "executedEffects": "UNKNOWN"
+          },
+          "engineExitCode": 0
+        }
+      ]
+    },
+    {
+      "run": "m2-final-swap",
+      "matchId": "rwbridge-8d7cca8769964c319b25ce4532859202",
+      "map": "maps/skirmish/[p2]Small_Island (2p).tmx",
+      "fog": 2,
+      "result": {
+        "termination": "native_result",
+        "winner": "A",
+        "loser": "B",
+        "nativeOutcomes": [
+          "defeat",
+          "victory"
+        ],
+        "status": "NATIVE_RESULT"
+      },
+      "sameGameEvidence": {
+        "status": "PASS",
+        "nativeServerId": "aa3caacb-83e4-4f11-989e-c6cb82826367",
+        "playerIds": [
+          0,
+          1
+        ],
+        "scope": "native transport and player identity; command sync and fog need separate evidence"
+      },
+      "transportProof": null,
+      "synchronizationEvidence": {
+        "status": "MATCH_AT_NATIVE_CHECKSUM_FRAME",
+        "desyncErrors": [
+          0,
+          0
+        ],
+        "resyncCounts": [
+          0,
+          0
+        ],
+        "checksumFrames": [
+          19866,
+          19866
+        ],
+        "nativeChecksums": [
+          124122378,
+          124122378
+        ],
+        "checksumComparison": "MATCH",
+        "scope": "native transport synchronization metadata"
+      },
+      "participants": [
+        {
+          "participantId": "B",
+          "agentId": "octopus",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "24ee51ae-d356-4de4-ba5b-de4ed4138d09",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": {
+            "agentId": "octopus",
+            "artifactDigest": "sha256:2f94cf9ad49685c87e5b5c4a7c620e503e3b42712fb6e4d14fe8fa625c289865",
+            "baselineDigest": "sha256:efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+            "overlayDigest": "sha256:450bccc5b500f14f90fdfbed15bc919a3d20484956bef8fad78fba73520aa3d6",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 128,
+            "nativeQueued": 128,
+            "rejected": 0,
+            "byKind": {
+              "build": 4,
+              "move": 82,
+              "produce": 31,
+              "attackMove": 11
+            },
+            "executedEffects": "UNKNOWN"
+          },
+          "engineExitCode": 0
+        },
+        {
+          "participantId": "A",
+          "agentId": "legacy",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "54f3cf19-e33c-4c50-91f1-5881dc48d570",
+          "artifactSha256": "a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6",
+          "adapterArtifact": {
+            "agentId": "legacy",
+            "artifactDigest": "sha256:10d012670fbe7b0223fe08170d52a3837a0699b01c550b8a8da65d339668a7c2",
+            "baselineDigest": "sha256:a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6",
+            "overlayDigest": "sha256:435075bc3194fa03231df4063e9c231ffe1f0adfc74a542b3381e85d521e0f4e",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 68,
+            "nativeQueued": 68,
+            "rejected": 1,
+            "byKind": {
+              "build": 4,
+              "produce": 20,
+              "attackMove": 24,
+              "move": 20
+            },
+            "executedEffects": "UNKNOWN"
+          },
+          "engineExitCode": 0
+        }
+      ]
+    },
+    {
+      "run": "m2-selfplay",
+      "matchId": "rwbridge-7ffa4b260676474f93db7453084e8a21",
+      "map": "maps/skirmish/[p2]Small_Island (2p).tmx",
+      "fog": 2,
+      "result": {
+        "termination": "timeout",
+        "winner": null,
+        "loser": null,
+        "nativeOutcomes": [
+          "unknown",
+          "unknown"
+        ],
+        "status": "TIMEOUT"
+      },
+      "sameGameEvidence": {
+        "status": "PASS",
+        "nativeServerId": "5193eca3-19c0-400c-898e-f6e40a56ffea",
+        "playerIds": [
+          0,
+          1
+        ],
+        "scope": "native transport and player identity; command sync and fog need separate evidence"
+      },
+      "transportProof": null,
+      "synchronizationEvidence": {
+        "status": "MATCH_AT_NATIVE_CHECKSUM_FRAME",
+        "desyncErrors": [
+          0,
+          0
+        ],
+        "resyncCounts": [
+          0,
+          0
+        ],
+        "checksumFrames": [
+          7224,
+          7224
+        ],
+        "nativeChecksums": [
+          45825951,
+          45825951
+        ],
+        "checksumComparison": "MATCH",
+        "scope": "native transport synchronization metadata"
+      },
+      "participants": [
+        {
+          "participantId": "A",
+          "agentId": "octopus",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "7a5ef7e2-b86e-4c3b-b24b-e57fad355ce8",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": {
+            "agentId": "octopus",
+            "artifactDigest": "sha256:2f94cf9ad49685c87e5b5c4a7c620e503e3b42712fb6e4d14fe8fa625c289865",
+            "baselineDigest": "sha256:efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+            "overlayDigest": "sha256:450bccc5b500f14f90fdfbed15bc919a3d20484956bef8fad78fba73520aa3d6",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 25,
+            "nativeQueued": 24,
+            "rejected": 1,
+            "nativeRejected": 1,
+            "gatewayCommandRejected": 0,
+            "noncommandRequestRejections": 0,
+            "byKind": {
+              "build": 4,
+              "move": 14,
+              "produce": 7
+            },
+            "executedEffects": "UNKNOWN",
+            "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+          },
+          "engineExitCode": 0
+        },
+        {
+          "participantId": "B",
+          "agentId": "octopus",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "1b6d287e-b5e3-4157-b7d6-27767bcf6a05",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": {
+            "agentId": "octopus",
+            "artifactDigest": "sha256:2f94cf9ad49685c87e5b5c4a7c620e503e3b42712fb6e4d14fe8fa625c289865",
+            "baselineDigest": "sha256:efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+            "overlayDigest": "sha256:450bccc5b500f14f90fdfbed15bc919a3d20484956bef8fad78fba73520aa3d6",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 39,
+            "nativeQueued": 39,
+            "rejected": 0,
+            "nativeRejected": 0,
+            "gatewayCommandRejected": 0,
+            "noncommandRequestRejections": 0,
+            "byKind": {
+              "move": 28,
+              "build": 3,
+              "produce": 7,
+              "attackMove": 1
+            },
+            "executedEffects": "UNKNOWN",
+            "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+          },
+          "engineExitCode": 0
+        }
+      ]
+    },
+    {
+      "run": "native-disconnect-focused-72ddc5a9c9",
+      "matchId": "rwbridge-5564ff94836d4804b1f134a5687a09cf",
+      "map": "maps/skirmish/[p2]Small_Island (2p).tmx",
+      "fog": 2,
+      "result": {
+        "termination": "disconnect",
+        "winner": null,
+        "loser": null,
+        "nativeOutcomes": [
+          "unknown",
+          "unknown"
+        ],
+        "status": "DISCONNECT"
+      },
+      "sameGameEvidence": {
+        "status": "PASS",
+        "nativeServerId": "c7f49eb9-5e5d-401f-a163-8234312ee112",
+        "playerIds": [
+          0,
+          1
+        ],
+        "scope": "native transport and player identity; command sync and fog need separate evidence"
+      },
+      "transportProof": null,
+      "synchronizationEvidence": {
+        "status": "NEEDS_EVIDENCE",
+        "desyncErrors": [
+          0,
+          0
+        ],
+        "resyncCounts": [
+          0,
+          0
+        ],
+        "checksumFrames": [
+          0,
+          -1
+        ],
+        "nativeChecksums": [
+          8048350,
+          0
+        ],
+        "checksumComparison": "NOT_COMPARABLE",
+        "scope": "native transport synchronization metadata",
+        "checksumComparisonReason": "different checksum frames; checksum values were not compared"
+      },
+      "participants": [
+        {
+          "participantId": "A",
+          "agentId": "probe",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "0d509118-cffa-4b39-8302-3f00078c9c0d",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": null,
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "OBSERVED_NATIVE_PROBE",
+            "nativeQueued": 0,
+            "executedEffects": "OWN_DISTANCE_ONLY",
+            "ownMoveDistance": 0.0
+          },
+          "engineExitCode": 0
+        },
+        {
+          "participantId": "B",
+          "agentId": "probe",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "cbb600bb-b5cf-467e-b589-72437a7efdd3",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": null,
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "OBSERVED_NATIVE_PROBE",
+            "nativeQueued": 0,
+            "executedEffects": "OWN_DISTANCE_ONLY",
+            "ownMoveDistance": 0.0
+          },
+          "engineExitCode": 143
+        }
+      ]
+    },
+    {
+      "run": "harness-agents-swap-001",
+      "matchId": "rwbridge-e1977a35dc0146309b5dd80ee0a1e118",
+      "map": "maps/skirmish/[p2]Small_Island (2p).tmx",
+      "fog": 2,
+      "result": {
+        "termination": "timeout",
+        "winner": null,
+        "loser": null,
+        "nativeOutcomes": [
+          "unknown",
+          "unknown"
+        ],
+        "status": "TIMEOUT"
+      },
+      "sameGameEvidence": {
+        "status": "PASS",
+        "nativeServerId": "49218b8e-0bc9-4869-8c1d-ce993e6b17c9",
+        "playerIds": [
+          0,
+          1
+        ],
+        "scope": "native transport and player identity; command sync and fog need separate evidence"
+      },
+      "transportProof": null,
+      "synchronizationEvidence": null,
+      "participants": [
+        {
+          "participantId": "A",
+          "agentId": "legacy",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "5ec22339-378b-490f-b2b5-587636f5773b",
+          "artifactSha256": "a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6",
+          "adapterArtifact": {
+            "agentId": "legacy",
+            "artifactDigest": "sha256:10d012670fbe7b0223fe08170d52a3837a0699b01c550b8a8da65d339668a7c2",
+            "baselineDigest": "sha256:a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6",
+            "overlayDigest": "sha256:435075bc3194fa03231df4063e9c231ffe1f0adfc74a542b3381e85d521e0f4e",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "bridgeSha256": "089253808ceb48be6c2cc2429dbcaf27ead28c5eda6419346eb66b2faefac3ac",
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 1,
+            "nativeQueued": 1,
+            "rejected": 0,
+            "byKind": {
+              "build": 1
+            },
+            "executedEffects": "UNKNOWN"
+          },
+          "engineExitCode": 0
+        },
+        {
+          "participantId": "B",
+          "agentId": "octopus",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "068fbcdc-092a-4190-9ce0-ccb2c52656d7",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": {
+            "agentId": "octopus",
+            "artifactDigest": "sha256:2f94cf9ad49685c87e5b5c4a7c620e503e3b42712fb6e4d14fe8fa625c289865",
+            "baselineDigest": "sha256:efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+            "overlayDigest": "sha256:450bccc5b500f14f90fdfbed15bc919a3d20484956bef8fad78fba73520aa3d6",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "bridgeSha256": "089253808ceb48be6c2cc2429dbcaf27ead28c5eda6419346eb66b2faefac3ac",
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 19,
+            "nativeQueued": 19,
+            "rejected": 0,
+            "byKind": {
+              "move": 6,
+              "build": 10,
+              "produce": 3
+            },
+            "executedEffects": "UNKNOWN"
+          },
+          "engineExitCode": 0
+        }
+      ]
+    },
+    {
+      "run": "harness-agents-swap-001",
+      "matchId": "rwbridge-f3afdecc7f6145569224b1027c4c2158",
+      "map": "maps/skirmish/[p2]Small_Island (2p).tmx",
+      "fog": 2,
+      "result": {
+        "termination": "timeout",
+        "winner": null,
+        "loser": null,
+        "nativeOutcomes": [
+          "unknown",
+          "unknown"
+        ],
+        "status": "TIMEOUT"
+      },
+      "sameGameEvidence": {
+        "status": "PASS",
+        "nativeServerId": "91aeacf6-1238-4d04-ac46-880dff94635b",
+        "playerIds": [
+          0,
+          1
+        ],
+        "scope": "native transport and player identity; command sync and fog need separate evidence"
+      },
+      "transportProof": null,
+      "synchronizationEvidence": null,
+      "participants": [
+        {
+          "participantId": "B",
+          "agentId": "octopus",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "edfad380-a93f-4a15-959c-f65e46b4b417",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": {
+            "agentId": "octopus",
+            "artifactDigest": "sha256:2f94cf9ad49685c87e5b5c4a7c620e503e3b42712fb6e4d14fe8fa625c289865",
+            "baselineDigest": "sha256:efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+            "overlayDigest": "sha256:450bccc5b500f14f90fdfbed15bc919a3d20484956bef8fad78fba73520aa3d6",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "bridgeSha256": "901e5a8bc0f2045e3f26e373387526b006be9ee176153769c4d7f6425668586b",
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 17,
+            "nativeQueued": 17,
+            "rejected": 0,
+            "byKind": {
+              "build": 10,
+              "move": 4,
+              "produce": 3
+            },
+            "executedEffects": "UNKNOWN"
+          },
+          "engineExitCode": 0
+        },
+        {
+          "participantId": "A",
+          "agentId": "legacy",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "f3dbf6ec-38a8-4f05-b0ac-b2e78156065c",
+          "artifactSha256": "a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6",
+          "adapterArtifact": {
+            "agentId": "legacy",
+            "artifactDigest": "sha256:10d012670fbe7b0223fe08170d52a3837a0699b01c550b8a8da65d339668a7c2",
+            "baselineDigest": "sha256:a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6",
+            "overlayDigest": "sha256:435075bc3194fa03231df4063e9c231ffe1f0adfc74a542b3381e85d521e0f4e",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "bridgeSha256": "901e5a8bc0f2045e3f26e373387526b006be9ee176153769c4d7f6425668586b",
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 60,
+            "nativeQueued": 60,
+            "rejected": 0,
+            "byKind": {
+              "build": 52,
+              "produce": 8
+            },
+            "executedEffects": "UNKNOWN"
+          },
+          "engineExitCode": 0
+        }
+      ]
+    },
+    {
+      "run": "m0-final",
+      "matchId": "rwbridge-09e877d0fbb948ab92982bc2c04323fc",
+      "map": "maps/skirmish/[p2]Small_Island (2p).tmx",
+      "fog": 2,
+      "result": null,
+      "sameGameEvidence": {
+        "status": "PASS",
+        "nativeServerId": "2c176dc4-7fa1-44bf-bb1b-48cd685ffe19",
+        "playerIds": [
+          0,
+          1
+        ],
+        "scope": "native transport and player identity; command sync and fog need separate evidence"
+      },
+      "transportProof": "PASS",
+      "synchronizationEvidence": null,
+      "participants": [
+        {
+          "participantId": "A",
+          "agentId": "probe",
+          "playerId": null,
+          "teamId": null,
+          "sessionId": "492c4792-f046-419d-8dd2-13145a92ec97",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": null,
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "UNKNOWN"
+          },
+          "engineExitCode": null
+        },
+        {
+          "participantId": "B",
+          "agentId": "probe",
+          "playerId": null,
+          "teamId": null,
+          "sessionId": "f29bab8a-6128-4977-90a2-cbe44130f3e4",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": null,
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "commandCounts": {
+            "status": "UNKNOWN"
+          },
+          "engineExitCode": null
+        }
+      ]
+    },
+    {
+      "run": "native-disconnect-focused-8b7550ee0b",
+      "matchId": "rwbridge-d6eebd08f6dc4f9ca6eb447848cc4e94",
+      "map": "maps/skirmish/[p2]Small_Island (2p).tmx",
+      "fog": 2,
+      "result": {
+        "termination": "crash",
+        "winner": null,
+        "loser": null,
+        "nativeOutcomes": [
+          "unknown",
+          "unknown"
+        ],
+        "status": "CRASH"
+      },
+      "sameGameEvidence": {
+        "status": "PASS",
+        "nativeServerId": "f026de5a-5d50-4e77-b6fa-d80f74c1a094",
+        "playerIds": [
+          0,
+          1
+        ],
+        "scope": "native transport and player identity; command sync and fog need separate evidence"
+      },
+      "transportProof": null,
+      "synchronizationEvidence": {
+        "status": "NEEDS_EVIDENCE",
+        "desyncErrors": [
+          0,
+          0
+        ],
+        "resyncCounts": [
+          0,
+          0
+        ],
+        "checksumFrames": [
+          0,
+          -1
+        ],
+        "nativeChecksums": [
+          8048350,
+          0
+        ],
+        "checksumComparison": "NOT_COMPARABLE",
+        "scope": "native transport synchronization metadata",
+        "checksumComparisonReason": "different checksum frames; checksum values were not compared"
+      },
+      "participants": [
+        {
+          "participantId": "A",
+          "agentId": "probe",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "82cf2f7d-c9d5-4688-ae82-ac25be1bffa5",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": null,
+          "bridgeSha256": "901e5a8bc0f2045e3f26e373387526b006be9ee176153769c4d7f6425668586b",
+          "commandCounts": {
+            "status": "OBSERVED_NATIVE_PROBE",
+            "nativeQueued": 0,
+            "executedEffects": "OWN_DISTANCE_ONLY",
+            "ownMoveDistance": 0.0
+          },
+          "engineExitCode": 0
+        },
+        {
+          "participantId": "B",
+          "agentId": "probe",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "cf831aff-cb65-45fe-bcee-951ad4a85a40",
+          "artifactSha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+          "adapterArtifact": null,
+          "bridgeSha256": "901e5a8bc0f2045e3f26e373387526b006be9ee176153769c4d7f6425668586b",
+          "commandCounts": {
+            "status": "OBSERVED_NATIVE_PROBE",
+            "nativeQueued": 0,
+            "executedEffects": "OWN_DISTANCE_ONLY",
+            "ownMoveDistance": 0.0
+          },
+          "engineExitCode": 143
+        }
+      ]
+    }
+  ],
+  "focused": {
+    "status": "PASS",
+    "evidenceLevel": "FOCUSED_FIXTURES_AND_NATIVE_MAP",
+    "nativeDisconnectEnabled": true,
+    "scope": "Protocol/referee fixtures, native-data authority, native map placement; optional real host/join disconnect. M0 transport proof is separate.",
+    "tests": [
+      {
+        "name": "python",
+        "exitCode": 0,
+        "log": "python.log"
+      },
+      {
+        "name": "authority-compile",
+        "exitCode": 0,
+        "log": "authority-compile.log"
+      },
+      {
+        "name": "authority",
+        "exitCode": 0,
+        "log": "authority.log"
+      },
+      {
+        "name": "placement",
+        "exitCode": 0,
+        "log": "placement.log"
+      }
+    ]
+  }
+}
