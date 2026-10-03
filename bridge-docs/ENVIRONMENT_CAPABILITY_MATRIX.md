@@ -19,13 +19,23 @@
 - Current local Codex G5 work in progress; it is intentionally excluded.
 - The user's latest Spain custom map unless separately supplied later.
 
-## NOT YET PROVEN
+## VERIFIED BY THIS BRIDGE IMPLEMENTATION — 2026-10-03 UTC
 
-- Headless native host/join between two engine processes.
-- Correct network command submission through existing local bridge calls.
-- Per-player fog isolation in the same network match.
-- Agent-vs-Agent same-game execution.
+- Two headless original 1.15 processes host/join the same native server/session.
+- Native local-player binding distinguishes player slots and alliance groups.
+- M0: both players' move commands are observed through the remote peer's legal current fog observation; distinct initial fog and cross-player command rejection are verified.
+- Original surrender produces native VICTORY/DEFEAT consensus; native peer departure is classified as DISCONNECT without inventing a winner.
+- Legacy and Octopus frozen loops initialize, receive legal observations and submit native actions through the common player gateway; native batch side swap is implemented and exercised.
+- Lobby loading/ready acknowledgement, process cleanup, result/identity reporting and bounded match orchestration work in the remote Linux environment.
+
+Exact candidate identities, raw logs, incomplete/failed iterations and the final test scope are in `evidence/native-bridge-20261003/`.
+
+## STILL NOT PROVEN / NOT IMPLEMENTED
+
 - Human-vs-Agent desktop interoperability.
-- Automated lobby/slot/map/start lifecycle.
+- Windows GUI, Steam invitation flow, password-protected lobbies and NAT traversal.
+- All command types' remote visible effects: M0 specifically proves move; other command receipts remain queue acceptance until subsequent legal evidence supports their effect.
+- Automatic reconnect/rebinding, arbitrary custom maps/mods, single-process PlayerContext self-play and exhaustive multiplayer/team-map coverage.
+- Agent strength or win-rate improvements; bounded validation games are not a strength benchmark.
 
 Do not silently upgrade any NOT YET PROVEN item into a capability claim. Prove it with a native experiment or leave it explicitly unresolved.

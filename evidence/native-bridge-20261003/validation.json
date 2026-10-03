@@ -1,0 +1,496 @@
+{
+  "sourceCommit": "76293f27ed5c98a35ac06a633963f83890288dd9",
+  "branch": "astra/universal-match-bridge-20261003",
+  "enginePackageFilesVerified": 1209,
+  "tests": {
+    "python": {
+      "passed": 32,
+      "includesRealNativeDisconnect": true
+    },
+    "playerScopeNativeDataChecks": 26,
+    "nativePlacementAssertions": 2,
+    "m0NativeChecks": 28
+  },
+  "boundaries": {
+    "windowsGui": "NOT_RUN",
+    "remoteMoveEffect": "PROVEN_BOTH_DIRECTIONS",
+    "reconnect": "NOT_IMPLEMENTED",
+    "otherCommandRemoteEffect": "NOT_EXHAUSTIVELY_VERIFIED"
+  },
+  "nativeRuns": [
+    {
+      "run": "m0-verified",
+      "matchIndex": 1,
+      "matchId": "rwbridge-3d662b9b3498458caea7c2c578547473",
+      "result": {
+        "termination": "native_result",
+        "winner": "A",
+        "loser": "B",
+        "nativeOutcomes": [
+          "victory",
+          "defeat"
+        ],
+        "status": "NATIVE_RESULT"
+      },
+      "participants": [
+        {
+          "participantId": "A",
+          "agentId": "probe",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "c3852982-a87d-40c4-8688-1c607e193176",
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "adapterArtifact": null,
+          "commandCounts": {
+            "status": "OBSERVED_PUBLIC_API_PROBE",
+            "attempted": 3,
+            "nativeQueued": 3,
+            "byKind": {
+              "move": 3
+            },
+            "executedEffects": {
+              "scope": "probe moves only; consult the legal-observation checks",
+              "status": "PASS",
+              "checkName": "side_0_command_effect_seen_by_remote_player",
+              "reportPath": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m0-verified/match-001/transport-proof/summary.json"
+            }
+          }
+        },
+        {
+          "participantId": "B",
+          "agentId": "probe",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "a3dccd9f-d5a2-4e97-8e85-a231fb69bf5a",
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "adapterArtifact": null,
+          "commandCounts": {
+            "status": "OBSERVED_PUBLIC_API_PROBE",
+            "attempted": 3,
+            "nativeQueued": 3,
+            "byKind": {
+              "move": 3
+            },
+            "executedEffects": {
+              "scope": "probe moves only; consult the legal-observation checks",
+              "status": "PASS",
+              "checkName": "side_1_command_effect_seen_by_remote_player",
+              "reportPath": "/workspace/scratch/a98092d8ce05/Rusted-Warfare-Agent-Bridge-Lab/headless-runs/m0-verified/match-001/transport-proof/summary.json"
+            }
+          }
+        }
+      ],
+      "synchronizationEvidence": {
+        "status": "MATCH_AT_NATIVE_CHECKSUM_FRAME",
+        "desyncErrors": [
+          0,
+          0
+        ],
+        "resyncCounts": [
+          0,
+          0
+        ],
+        "checksumFrames": [
+          1505,
+          1505
+        ],
+        "nativeChecksums": [
+          8352991,
+          8352991
+        ],
+        "checksumComparison": "MATCH",
+        "scope": "native transport synchronization metadata"
+      },
+      "transportProof": "PASS",
+      "matchReportSha256": "7c46974e77b7d386ec1cfff858516c8a116d80a18dbd368764922234d12a35e5"
+    },
+    {
+      "run": "m2-final-swap",
+      "matchIndex": 1,
+      "matchId": "rwbridge-c29e68f458f54efd8e459a478197f7a3",
+      "result": {
+        "termination": "timeout",
+        "winner": null,
+        "loser": null,
+        "nativeOutcomes": [
+          "unknown",
+          "unknown"
+        ],
+        "status": "TIMEOUT"
+      },
+      "participants": [
+        {
+          "participantId": "A",
+          "agentId": "legacy",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "26e4024c-7adb-41e6-af6d-63c67dfdcb86",
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "adapterArtifact": {
+            "agentId": "legacy",
+            "artifactDigest": "sha256:10d012670fbe7b0223fe08170d52a3837a0699b01c550b8a8da65d339668a7c2",
+            "baselineDigest": "sha256:a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6",
+            "overlayDigest": "sha256:435075bc3194fa03231df4063e9c231ffe1f0adfc74a542b3381e85d521e0f4e",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 90,
+            "nativeQueued": 88,
+            "rejected": 2,
+            "nativeRejected": 0,
+            "gatewayCommandRejected": 2,
+            "noncommandRequestRejections": 0,
+            "byKind": {
+              "build": 4,
+              "produce": 29,
+              "attackMove": 37,
+              "move": 20
+            },
+            "executedEffects": "UNKNOWN",
+            "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+          }
+        },
+        {
+          "participantId": "B",
+          "agentId": "octopus",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "db10a5c6-775d-446f-8248-35ca96e24dc3",
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "adapterArtifact": {
+            "agentId": "octopus",
+            "artifactDigest": "sha256:2f94cf9ad49685c87e5b5c4a7c620e503e3b42712fb6e4d14fe8fa625c289865",
+            "baselineDigest": "sha256:efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+            "overlayDigest": "sha256:450bccc5b500f14f90fdfbed15bc919a3d20484956bef8fad78fba73520aa3d6",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 159,
+            "nativeQueued": 158,
+            "rejected": 1,
+            "nativeRejected": 0,
+            "gatewayCommandRejected": 1,
+            "noncommandRequestRejections": 0,
+            "byKind": {
+              "move": 94,
+              "build": 4,
+              "produce": 29,
+              "attackMove": 32
+            },
+            "executedEffects": "UNKNOWN",
+            "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+          }
+        }
+      ],
+      "synchronizationEvidence": {
+        "status": "MATCH_AT_NATIVE_CHECKSUM_FRAME",
+        "desyncErrors": [
+          0,
+          0
+        ],
+        "resyncCounts": [
+          0,
+          0
+        ],
+        "checksumFrames": [
+          28896,
+          28896
+        ],
+        "nativeChecksums": [
+          121610080,
+          121610080
+        ],
+        "checksumComparison": "MATCH",
+        "scope": "native transport synchronization metadata"
+      },
+      "transportProof": null,
+      "matchReportSha256": "5fb89a80db86f85a854a17f6d2687db0a7d5603f53f4fcc21b5f0d9a15084b58"
+    },
+    {
+      "run": "m2-final-swap",
+      "matchIndex": 2,
+      "matchId": "rwbridge-8d7cca8769964c319b25ce4532859202",
+      "result": {
+        "termination": "native_result",
+        "winner": "A",
+        "loser": "B",
+        "nativeOutcomes": [
+          "defeat",
+          "victory"
+        ],
+        "status": "NATIVE_RESULT"
+      },
+      "participants": [
+        {
+          "participantId": "B",
+          "agentId": "octopus",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "24ee51ae-d356-4de4-ba5b-de4ed4138d09",
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "adapterArtifact": {
+            "agentId": "octopus",
+            "artifactDigest": "sha256:2f94cf9ad49685c87e5b5c4a7c620e503e3b42712fb6e4d14fe8fa625c289865",
+            "baselineDigest": "sha256:efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+            "overlayDigest": "sha256:450bccc5b500f14f90fdfbed15bc919a3d20484956bef8fad78fba73520aa3d6",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 128,
+            "nativeQueued": 128,
+            "rejected": 0,
+            "nativeRejected": 0,
+            "gatewayCommandRejected": 0,
+            "noncommandRequestRejections": 0,
+            "byKind": {
+              "build": 4,
+              "move": 82,
+              "produce": 31,
+              "attackMove": 11
+            },
+            "executedEffects": "UNKNOWN",
+            "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+          }
+        },
+        {
+          "participantId": "A",
+          "agentId": "legacy",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "54f3cf19-e33c-4c50-91f1-5881dc48d570",
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "adapterArtifact": {
+            "agentId": "legacy",
+            "artifactDigest": "sha256:10d012670fbe7b0223fe08170d52a3837a0699b01c550b8a8da65d339668a7c2",
+            "baselineDigest": "sha256:a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6",
+            "overlayDigest": "sha256:435075bc3194fa03231df4063e9c231ffe1f0adfc74a542b3381e85d521e0f4e",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 69,
+            "nativeQueued": 68,
+            "rejected": 1,
+            "nativeRejected": 0,
+            "gatewayCommandRejected": 1,
+            "noncommandRequestRejections": 0,
+            "byKind": {
+              "build": 4,
+              "produce": 20,
+              "attackMove": 24,
+              "move": 21
+            },
+            "executedEffects": "UNKNOWN",
+            "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+          }
+        }
+      ],
+      "synchronizationEvidence": {
+        "status": "MATCH_AT_NATIVE_CHECKSUM_FRAME",
+        "desyncErrors": [
+          0,
+          0
+        ],
+        "resyncCounts": [
+          0,
+          0
+        ],
+        "checksumFrames": [
+          19866,
+          19866
+        ],
+        "nativeChecksums": [
+          124122378,
+          124122378
+        ],
+        "checksumComparison": "MATCH",
+        "scope": "native transport synchronization metadata"
+      },
+      "transportProof": null,
+      "matchReportSha256": "f6c1358918ad8f00622074fbea1b792e5cb565785b8573617f4106b1f8423882"
+    },
+    {
+      "run": "m2-selfplay",
+      "matchIndex": 1,
+      "matchId": "rwbridge-7ffa4b260676474f93db7453084e8a21",
+      "result": {
+        "termination": "timeout",
+        "winner": null,
+        "loser": null,
+        "nativeOutcomes": [
+          "unknown",
+          "unknown"
+        ],
+        "status": "TIMEOUT"
+      },
+      "participants": [
+        {
+          "participantId": "A",
+          "agentId": "octopus",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "7a5ef7e2-b86e-4c3b-b24b-e57fad355ce8",
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "adapterArtifact": {
+            "agentId": "octopus",
+            "artifactDigest": "sha256:2f94cf9ad49685c87e5b5c4a7c620e503e3b42712fb6e4d14fe8fa625c289865",
+            "baselineDigest": "sha256:efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+            "overlayDigest": "sha256:450bccc5b500f14f90fdfbed15bc919a3d20484956bef8fad78fba73520aa3d6",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 25,
+            "nativeQueued": 24,
+            "rejected": 1,
+            "nativeRejected": 1,
+            "gatewayCommandRejected": 0,
+            "noncommandRequestRejections": 0,
+            "byKind": {
+              "build": 4,
+              "move": 14,
+              "produce": 7
+            },
+            "executedEffects": "UNKNOWN",
+            "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+          }
+        },
+        {
+          "participantId": "B",
+          "agentId": "octopus",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "1b6d287e-b5e3-4157-b7d6-27767bcf6a05",
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "adapterArtifact": {
+            "agentId": "octopus",
+            "artifactDigest": "sha256:2f94cf9ad49685c87e5b5c4a7c620e503e3b42712fb6e4d14fe8fa625c289865",
+            "baselineDigest": "sha256:efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885",
+            "overlayDigest": "sha256:450bccc5b500f14f90fdfbed15bc919a3d20484956bef8fad78fba73520aa3d6",
+            "adapterKind": "frozen-client-compatibility",
+            "strategyModified": false
+          },
+          "commandCounts": {
+            "status": "OBSERVED",
+            "attempted": 39,
+            "nativeQueued": 39,
+            "rejected": 0,
+            "nativeRejected": 0,
+            "gatewayCommandRejected": 0,
+            "noncommandRequestRejections": 0,
+            "byKind": {
+              "move": 28,
+              "build": 3,
+              "produce": 7,
+              "attackMove": 1
+            },
+            "executedEffects": "UNKNOWN",
+            "semantics": "HTTP command submissions; native queue receipt is not executed effect"
+          }
+        }
+      ],
+      "synchronizationEvidence": {
+        "status": "MATCH_AT_NATIVE_CHECKSUM_FRAME",
+        "desyncErrors": [
+          0,
+          0
+        ],
+        "resyncCounts": [
+          0,
+          0
+        ],
+        "checksumFrames": [
+          7224,
+          7224
+        ],
+        "nativeChecksums": [
+          45825951,
+          45825951
+        ],
+        "checksumComparison": "MATCH",
+        "scope": "native transport synchronization metadata"
+      },
+      "transportProof": null,
+      "matchReportSha256": "1b09d448c79309ed30dcbb1c2cc81fa2841dd089eaed0c62b5f6429e8c212c86"
+    },
+    {
+      "run": "native-disconnect-focused-72ddc5a9c9",
+      "matchIndex": 1,
+      "matchId": "rwbridge-5564ff94836d4804b1f134a5687a09cf",
+      "result": {
+        "termination": "disconnect",
+        "winner": null,
+        "loser": null,
+        "nativeOutcomes": [
+          "unknown",
+          "unknown"
+        ],
+        "status": "DISCONNECT"
+      },
+      "participants": [
+        {
+          "participantId": "A",
+          "agentId": "probe",
+          "playerId": 0,
+          "teamId": 0,
+          "sessionId": "0d509118-cffa-4b39-8302-3f00078c9c0d",
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "adapterArtifact": null,
+          "commandCounts": {
+            "status": "OBSERVED_NATIVE_PROBE",
+            "nativeQueued": 0,
+            "executedEffects": "OWN_DISTANCE_ONLY",
+            "ownMoveDistance": 0.0
+          }
+        },
+        {
+          "participantId": "B",
+          "agentId": "probe",
+          "playerId": 1,
+          "teamId": 1,
+          "sessionId": "cbb600bb-b5cf-467e-b589-72437a7efdd3",
+          "bridgeSha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+          "adapterArtifact": null,
+          "commandCounts": {
+            "status": "OBSERVED_NATIVE_PROBE",
+            "nativeQueued": 0,
+            "executedEffects": "OWN_DISTANCE_ONLY",
+            "ownMoveDistance": 0.0
+          }
+        }
+      ],
+      "synchronizationEvidence": {
+        "status": "NEEDS_EVIDENCE",
+        "desyncErrors": [
+          0,
+          0
+        ],
+        "resyncCounts": [
+          0,
+          0
+        ],
+        "checksumFrames": [
+          0,
+          -1
+        ],
+        "nativeChecksums": [
+          8048350,
+          0
+        ],
+        "checksumComparison": "NOT_COMPARABLE",
+        "scope": "native transport synchronization metadata",
+        "checksumComparisonReason": "different checksum frames; checksum values were not compared"
+      },
+      "transportProof": null,
+      "matchReportSha256": "8988b0215f1628eef85ed0927df2f1d99bfa0b71a34cc1976ad08e5e54a10615"
+    }
+  ]
+}

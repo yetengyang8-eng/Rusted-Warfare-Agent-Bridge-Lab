@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "gameJarSha256": "8a550a37e2d8a5430866090d4e7d5892f9010b47f52a5a09350fc66c620deec9",
+  "baselines": {
+    "octopus": {
+      "file": "octopus-g42-83c09fb.jar",
+      "sha256": "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885"
+    },
+    "legacy": {
+      "file": "legacy-production-capacity.jar",
+      "sha256": "a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6"
+    }
+  },
+  "artifacts": {
+    "bridge": {
+      "path": "build/bridge.jar",
+      "sha256": "765cadc84e505955e2b313a3c8e35a1f87cfd0f60d13b2229e45a779089d224b",
+      "sources": {
+        "bridge/src/io/rwagent/bootstrap/BridgeLog.java": "ef1b3ebfbfb718e814c7d70eb18b9fd3ee0bd9b0906494ab5e2d6791e93d4b95",
+        "bridge/src/io/rwagent/bootstrap/CombatBridge.java": "6b4dbb4335f1319ba5838c45c628fc97ab560ab3e6cbdaae31a30269ad77bee4",
+        "bridge/src/io/rwagent/bootstrap/EconomyBridge.java": "bb237a90ab8bb594db9f7580f08255a9206d323f37187498364cfd049456ec99",
+        "bridge/src/io/rwagent/bootstrap/EngagementGeometry.java": "1acae03f9b3d8e56e5d36594fc8e7f9264de21f353054eafe1078afd90bab2cc",
+        "bridge/src/io/rwagent/bootstrap/GuardBridge.java": "7e1c488552b03e36243cbceb8c39b3d46e26ac49cbbcc1d888cb26eb7e6bc783",
+        "bridge/src/io/rwagent/bootstrap/Json.java": "f365f3ab42a0097b1f74b34db1eadd1c6a537b2781a6c43198dc4386cf953175",
+        "bridge/src/io/rwagent/bootstrap/LegalVisibility.java": "515a953fb8bf07266f834ed58d468c885c70ac7bcbbc3b694a0bd70794390d6a",
+        "bridge/src/io/rwagent/bootstrap/PlayerBinding.java": "62acf4e861c1d361336c5667886988219e0e1a40a8879f4707067cd844a5a2f9",
+        "bridge/src/io/rwagent/bootstrap/RuntimeBridge.java": "79a705491b4aa44bfcdce1f62030c30d08432abe7407d22508aa22d1093d8662",
+        "bridge/src/io/rwagent/bootstrap/ScoutBridge.java": "481a3e3a67dc785109eb83e7d6e61c23e42f1835f227088cd18456fd23cdd319",
+        "bridge/src/io/rwagent/bootstrap/StaticMapKnowledge.java": "96d30e7d51578d3ad1b4c14bc04a9547a5a0d71af2c610892870556735a08653",
+        "bridge/src/io/rwagent/bootstrap/TargetCatalog.java": "d7fd1a7bc4b120c7b18f7714a3fa3f1bbd97b7a4adcae20fcc25b5ed726f288a",
+        "bridge/src/io/rwagent/bootstrap/TerrainSemantics.java": "ff6466b0355bc59c708b3020d872a89e5d9d1520e78eaa801044529422e7b274",
+        "bridge/src/io/rwbridge/engine/NativeNetworkRunner.java": "0d2d441b22bf9a6c0e459239644d7ea7f45a8ad236237b2ad953398586bbdae7"
+      }
+    },
+    "octopus": {
+      "path": "build/adapters/octopus.jar",
+      "sha256": "450bccc5b500f14f90fdfbed15bc919a3d20484956bef8fad78fba73520aa3d6",
+      "sources": {
+        "build/adapters-src/octopus/io/rwagent/client/BattleClient.java": "1b2c95ab4b707d88e87182083ff44e1fc40e02963b18401444ff2508d168cecf",
+        "build/adapters-src/octopus/io/rwagent/client/BootstrapClient.java": "e58c42459df5ce869143cf67ae12980490dd74d3c29c56c1e991bf1cea87f6eb",
+        "build/adapters-src/octopus/io/rwagent/client/EconomyClient.java": "079e968d62b8f359821c505a3ecef9febc24b839b87a8f257ffe154c717eaaf4",
+        "build/adapters-src/octopus/io/rwagent/client/DevelopmentClient.java": "9e0794838e26f8db435cab09047a05438fe5cd94aae96243f6d4b71096d120c2",
+        "build/adapters-src/octopus/io/rwagent/client/ControlLoop.java": "0c95f71154db18a38a83b9d1db7466edbabfb00de675932344712012e608dd34",
+        "build/adapters-src/octopus/io/rwagent/client/NativeCreditWitness.java": "5c45576dbe3a17215c82cc302cc022d19dfff0f6fb9d6faf6fbf4113f74320b5",
+        "build/adapters-src/octopus/io/rwagent/client/NativeTransportGuard.java": "a8e7ad9d2dee8df39364f4410a1cd98c435bac517f6f0e87183e8d4c881696c8"
+      }
+    },
+    "legacy": {
+      "path": "build/adapters/legacy.jar",
+      "sha256": "435075bc3194fa03231df4063e9c231ffe1f0adfc74a542b3381e85d521e0f4e",
+      "sources": {
+        "build/adapters-src/legacy/io/rwagent/client/BattleClient.java": "c1a14aa32c31b0f6065eaf56fd6554d18b66b2180dfe7e7329f99084209a5697",
+        "build/adapters-src/legacy/io/rwagent/client/BootstrapClient.java": "e58c42459df5ce869143cf67ae12980490dd74d3c29c56c1e991bf1cea87f6eb",
+        "build/adapters-src/legacy/io/rwagent/client/EconomyClient.java": "079e968d62b8f359821c505a3ecef9febc24b839b87a8f257ffe154c717eaaf4",
+        "build/adapters-src/legacy/io/rwagent/client/DevelopmentClient.java": "9e0794838e26f8db435cab09047a05438fe5cd94aae96243f6d4b71096d120c2",
+        "build/adapters-src/legacy/io/rwagent/client/ControlLoop.java": "0c95f71154db18a38a83b9d1db7466edbabfb00de675932344712012e608dd34",
+        "build/adapters-src/legacy/io/rwagent/client/NativeTransportGuard.java": "a8e7ad9d2dee8df39364f4410a1cd98c435bac517f6f0e87183e8d4c881696c8"
+      }
+    }
+  }
+}

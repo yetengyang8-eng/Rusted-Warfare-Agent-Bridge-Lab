@@ -4,6 +4,7 @@
 *.tmp
 __pycache__/
 .pytest_cache/
+/build/
 agent/build/
 agent/dist/
 multiplayer-probe-runs/
