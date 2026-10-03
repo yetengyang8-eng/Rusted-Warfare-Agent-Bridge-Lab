@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "profiles": {
+    "A": {
+      "name": "cap32",
+      "jvmProperties": {
+        "rwagent.mobileUnitHardCap": 32
+      }
+    },
+    "B": {
+      "name": "cap40",
+      "jvmProperties": {
+        "rwagent.mobileUnitHardCap": 40
+      }
+    }
+  }
+}

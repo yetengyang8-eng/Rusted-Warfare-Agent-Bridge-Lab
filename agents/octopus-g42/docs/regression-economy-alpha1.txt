@@ -1,0 +1,10 @@
+2026-09-20 22:24:10.651: GameEngine:GameEngine()
+2026-09-20 22:24:10.688: MapLayer create: ground
+2026-09-20 22:24:10.792 [RW-Agent] Local Agent API ready at http://127.0.0.1:47656
+PASS GET /state -> 200 {"status":"running","schemaVersion":1,"sessionId":"110da729-cfa5-4b21-94cc-e51a3c5577ea","map":{"width":2200.000,"height":2200.000,"tilesWide":110,"tilesHigh":110,"tileWidth":20,"tileHeight":20},"frame":0,"gameTimeMs":0,"networked":false,"replay":false,"player":{"teamId":0,"name":"","credits":10000.000},"ownUnits":[{"id":4,"type":"builder","x":940.000,"y":1780.000,"hp":170.000,"maxHp":170.000,"buildProgress":1.0,"productionQueue":-1,"dead":false,"mobile":true}]}
+java.lang.AssertionError: GET /economy/plan?unitId=4 -> 409 {"status":"error","message":"landFactory has no native tank production action"}
+	at BridgeHarness.require(BridgeHarness.java:123)
+	at BridgeHarness.check(BridgeHarness.java:131)
+	at EconomyHarness.check(EconomyHarness.java:90)
+	at EconomyHarness.test(EconomyHarness.java:47)
+	at EconomyHarness.main(EconomyHarness.java:18)

@@ -1,0 +1,3193 @@
+{
+  "schemaVersion": 1,
+  "gameJarSha256": "8a550a37e2d8a5430866090d4e7d5892f9010b47f52a5a09350fc66c620deec9",
+  "catalogRole": "STATIC_CANDIDATES_REQUIRING_RUNTIME_INTEGRATION",
+  "generatedDate": "2026-09-29",
+  "baseAssetRoot": "G:\\deepseek 工作台\\游戏环境\\rustedwarfare PC 1.15 原版\\assets",
+  "aliasMap": {
+    "builder": "builder",
+    "scout": "scout",
+    "tank": "c_tank",
+    "c_tank": "c_tank",
+    "heavyTank": "heavyTank",
+    "artillery": "c_artillery",
+    "c_artillery": "c_artillery",
+    "landFactory": "landFactory",
+    "airFactory": "airFactory",
+    "extractor": "extractorT1",
+    "extractorT1": "extractorT1",
+    "extractorT2": "extractorT2",
+    "turret": "c_turret_t1",
+    "c_turret_t1": "c_turret_t1"
+  },
+  "statusDefinitions": {
+    "VERIFIED_STATIC_CONFIG": "E1: explicit value in frozen original INI, copyFrom provenance retained; not live observation.",
+    "VERIFIED_STATIC_BYTECODE": "E1: method constant/branch or binding in javap of frozen game-lib.jar.",
+    "DERIVED_STATIC_DEFAULT": "E1-derived: absent key resolved using loader/default source; no live instantiation.",
+    "DERIVED_STATIC": "E1-derived: combined rules; source may include repository decompilation.",
+    "DERIVED_EFFECTIVE_CAPABILITY": "AND canAttack with domain flag; inherited raw values preserved in note.",
+    "NOT_APPLICABLE": "Value null deliberately means no applicable weapon or mobility field; never coerce unknown to false."
+  },
+  "limitations": [
+    "No runtime probes, native matches or E4 acceptance were performed in this task.",
+    "Base speed/range can change with current unit stats, globalScale, movement modifiers, upgrade/state and per-turret restrictions.",
+    "canAttackLand means surface targets, including water surface; target current altitude/submerged/touching-water state matters.",
+    "Public type catalog must never be used to infer hidden enemy instance state."
+  ],
+  "units": [
+    {
+      "id": "builder",
+      "fields": {
+        "identity": {
+          "value": "builder",
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar.javap.txt",
+              "selector": "static {};",
+              "evidenceLevel": "E1",
+              "line": 2011
+            }
+          ],
+          "note": "Enum static initializer name -> subclass; factory binding in ar$52"
+        },
+        "aliases": {
+          "value": [
+            "builder"
+          ],
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar.javap.txt",
+              "selector": "static {};",
+              "evidenceLevel": "E1",
+              "line": 2011
+            }
+          ]
+        },
+        "cost": {
+          "value": 500,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar$52.javap.txt",
+              "selector": " c();",
+              "evidenceLevel": "E1",
+              "line": 34
+            }
+          ],
+          "unit": "credits",
+          "scope": "T1 factory/type base price"
+        },
+        "building": {
+          "value": false,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.am.javap.txt",
+              "selector": " bI();",
+              "evidenceLevel": "E1",
+              "line": 1363
+            }
+          ]
+        },
+        "mobile": {
+          "value": true,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.w.javap.txt",
+              "selector": " I();",
+              "evidenceLevel": "E1",
+              "line": 11
+            }
+          ]
+        },
+        "movementType": {
+          "value": "LAND",
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.j.javap.txt",
+              "selector": " h();",
+              "evidenceLevel": "E1",
+              "line": 232
+            }
+          ]
+        },
+        "sightRange": {
+          "value": 15,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " int s();",
+              "evidenceLevel": "E1",
+              "line": 14499
+            }
+          ],
+          "unit": "tiles"
+        },
+        "sightRangeWhileNotBuilt": {
+          "value": 15,
+          "status": "DERIVED_STATIC",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " int s();",
+              "evidenceLevel": "E1",
+              "line": 14499
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/y.java",
+              "selector": "c(boolean) reveal",
+              "evidenceLevel": "E1",
+              "line": 4583
+            }
+          ],
+          "unit": "tiles",
+          "note": "Native y.c(boolean) uses s(); no custom unfinished override."
+        },
+        "canAttack": {
+          "value": false,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 771
+            }
+          ]
+        },
+        "canAttackLand": {
+          "value": false,
+          "status": "DERIVED_EFFECTIVE_CAPABILITY",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 771
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ag();",
+              "evidenceLevel": "E1",
+              "line": 9988
+            }
+          ],
+          "note": "Effective capability false because canAttack=false; inherited raw flag is true."
+        },
+        "canAttackAir": {
+          "value": false,
+          "status": "DERIVED_EFFECTIVE_CAPABILITY",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 771
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " af();",
+              "evidenceLevel": "E1",
+              "line": 9982
+            }
+          ],
+          "note": "Effective capability false because canAttack=false; inherited raw flag is true."
+        },
+        "canAttackUnderwater": {
+          "value": false,
+          "status": "DERIVED_EFFECTIVE_CAPABILITY",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 771
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ae();",
+              "evidenceLevel": "E1",
+              "line": 9976
+            }
+          ],
+          "note": "Effective capability false because canAttack=false; inherited raw flag is false."
+        },
+        "canAttackNotTouchingWater": {
+          "value": true,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ah();",
+              "evidenceLevel": "E1",
+              "line": 9994
+            }
+          ],
+          "scope": "raw base domain flag; AND with canAttack"
+        },
+        "maxSpeed": {
+          "value": 0.8,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+              "selector": " z();",
+              "evidenceLevel": "E1",
+              "line": 737
+            }
+          ],
+          "unit": "raw engine movement value",
+          "conditionalValue": 0.6,
+          "condition": "cK()==true (over-liquid rule)",
+          "conditionSource": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.am.javap.txt",
+              "selector": " cK();",
+              "evidenceLevel": "E1",
+              "line": 5451
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.gameFramework.utility.y.javap.txt",
+              "selector": " boolean d(float, float);",
+              "evidenceLevel": "E1",
+              "line": 800
+            }
+          ]
+        },
+        "maxTurnSpeed": {
+          "value": 3.8,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+              "selector": " A();",
+              "evidenceLevel": "E1",
+              "line": 748
+            }
+          ],
+          "conditionalValue": 1.7,
+          "condition": "cK()==true",
+          "unit": "raw engine body rotation value"
+        },
+        "attackRange": {
+          "value": null,
+          "status": "NOT_APPLICABLE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 771
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+              "selector": " m();",
+              "evidenceLevel": "E1",
+              "line": 725
+            }
+          ],
+          "unit": "world units",
+          "note": "m() returns 30, but builder cannot attack; retain as noncombat rawM=30, not weapon range.",
+          "rawM": 30
+        },
+        "moveAccelerationSpeed": {
+          "value": 0.04,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+              "selector": " C();",
+              "evidenceLevel": "E1",
+              "line": 777
+            }
+          ]
+        },
+        "moveDecelerationSpeed": {
+          "value": 0.1,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+              "selector": " D();",
+              "evidenceLevel": "E1",
+              "line": 783
+            }
+          ]
+        },
+        "turnAcceleration": {
+          "value": 0.35,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+              "selector": " B();",
+              "evidenceLevel": "E1",
+              "line": 759
+            }
+          ]
+        }
+      },
+      "runtimeVerification": "NOT_PERFORMED_THIS_TASK"
+    },
+    {
+      "id": "scout",
+      "fields": {
+        "identity": {
+          "value": "scout",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 3
+            }
+          ]
+        },
+        "aliases": {
+          "value": [
+            "scout"
+          ],
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 3
+            }
+          ]
+        },
+        "cost": {
+          "value": 700,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[core] price",
+              "evidenceLevel": "E1",
+              "line": 5
+            }
+          ],
+          "unit": "credits",
+          "scope": "type base price; not upgrade increment"
+        },
+        "maxHp": {
+          "value": 350,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[core] maxHp",
+              "evidenceLevel": "E1",
+              "line": 6
+            }
+          ],
+          "unit": "hitpoints"
+        },
+        "building": {
+          "value": false,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "isBuilding default false",
+              "evidenceLevel": "E1",
+              "line": 1708
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String isBuilding",
+              "evidenceLevel": "E1",
+              "line": 6490
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "mobile": {
+          "value": true,
+          "status": "DERIVED_STATIC",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "isBuilding default false",
+              "evidenceLevel": "E1",
+              "line": 1708
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String isBuilding",
+              "evidenceLevel": "E1",
+              "line": 6490
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "I() mobility gate",
+              "evidenceLevel": "E1",
+              "line": 570
+            }
+          ],
+          "note": "Base type mobility; transported/attached/disabled state still gates movement."
+        },
+        "movementType": {
+          "value": "HOVER",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[movement] movementType",
+              "evidenceLevel": "E1",
+              "line": 132
+            }
+          ]
+        },
+        "maxSpeed": {
+          "value": 1.0,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[movement] moveSpeed",
+              "evidenceLevel": "E1",
+              "line": 133
+            }
+          ],
+          "unit": "raw engine movement value",
+          "scope": "base config at globalScale=1; not current speed"
+        },
+        "moveAccelerationSpeed": {
+          "value": 0.03,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[movement] moveAccelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 134
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "moveDecelerationSpeed": {
+          "value": 0.06,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[movement] moveDecelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 135
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "maxTurnSpeed": {
+          "value": 2.4,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[movement] maxTurnSpeed",
+              "evidenceLevel": "E1",
+              "line": 141
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "turnAcceleration": {
+          "value": 0.2,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[movement] turnAcceleration",
+              "evidenceLevel": "E1",
+              "line": 142
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "sightRange": {
+          "value": 22,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[core] fogOfWarSightRange",
+              "evidenceLevel": "E1",
+              "line": 18
+            }
+          ],
+          "unit": "tiles"
+        },
+        "canAttack": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[attack] canAttack",
+              "evidenceLevel": "E1",
+              "line": 62
+            }
+          ]
+        },
+        "canAttackLand": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[attack] canAttackLandUnits",
+              "evidenceLevel": "E1",
+              "line": 64
+            }
+          ],
+          "scope": "surface including water surface"
+        },
+        "canAttackAir": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[attack] canAttackFlyingUnits",
+              "evidenceLevel": "E1",
+              "line": 63
+            }
+          ]
+        },
+        "canAttackUnderwater": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[attack] canAttackUnderwaterUnits",
+              "evidenceLevel": "E1",
+              "line": 65
+            }
+          ]
+        },
+        "canAttackNotTouchingWater": {
+          "value": true,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "canAttackNotTouchingWaterUnits null default",
+              "evidenceLevel": "E1",
+              "line": 2241
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "ah() null -> true",
+              "evidenceLevel": "E1",
+              "line": 2390
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "attackRange": {
+          "value": 110,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[attack] maxAttackRange",
+              "evidenceLevel": "E1",
+              "line": 71
+            }
+          ],
+          "unit": "world units",
+          "scope": "base maximum; not a guarantee of fire"
+        },
+        "globalScale": {
+          "value": 1,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "globalScale default 1",
+              "evidenceLevel": "E1",
+              "line": 1257
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "sightRangeWhileNotBuilt": {
+          "value": 15,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+              "selector": "[core] fogOfWarSightRangeWhileNotBuilt",
+              "evidenceLevel": "E1",
+              "line": 21
+            }
+          ],
+          "unit": "tiles"
+        }
+      },
+      "runtimeVerification": "NOT_PERFORMED_THIS_TASK"
+    },
+    {
+      "id": "c_tank",
+      "fields": {
+        "identity": {
+          "value": "c_tank",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 5
+            }
+          ]
+        },
+        "aliases": {
+          "value": [
+            "tank",
+            "c_tank"
+          ],
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 5
+            },
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[core] overrideAndReplace",
+              "evidenceLevel": "E1",
+              "line": 8
+            }
+          ]
+        },
+        "cost": {
+          "value": 350,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[core] price",
+              "evidenceLevel": "E1",
+              "line": 15
+            }
+          ],
+          "unit": "credits",
+          "scope": "type base price; not upgrade increment"
+        },
+        "maxHp": {
+          "value": 210,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[core] maxHp",
+              "evidenceLevel": "E1",
+              "line": 16
+            }
+          ],
+          "unit": "hitpoints"
+        },
+        "building": {
+          "value": false,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "isBuilding default false",
+              "evidenceLevel": "E1",
+              "line": 1708
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String isBuilding",
+              "evidenceLevel": "E1",
+              "line": 6490
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "mobile": {
+          "value": true,
+          "status": "DERIVED_STATIC",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "isBuilding default false",
+              "evidenceLevel": "E1",
+              "line": 1708
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String isBuilding",
+              "evidenceLevel": "E1",
+              "line": 6490
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "I() mobility gate",
+              "evidenceLevel": "E1",
+              "line": 570
+            }
+          ],
+          "note": "Base type mobility; transported/attached/disabled state still gates movement."
+        },
+        "movementType": {
+          "value": "LAND",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[movement] movementType",
+              "evidenceLevel": "E1",
+              "line": 96
+            }
+          ]
+        },
+        "maxSpeed": {
+          "value": 1.1,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[movement] moveSpeed",
+              "evidenceLevel": "E1",
+              "line": 97
+            }
+          ],
+          "unit": "raw engine movement value",
+          "scope": "base config at globalScale=1; not current speed"
+        },
+        "moveAccelerationSpeed": {
+          "value": 0.07,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[movement] moveAccelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 98
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "moveDecelerationSpeed": {
+          "value": 0.17,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[movement] moveDecelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 99
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "maxTurnSpeed": {
+          "value": 4.1,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[movement] maxTurnSpeed",
+              "evidenceLevel": "E1",
+              "line": 101
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "turnAcceleration": {
+          "value": 0.25,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[movement] turnAcceleration",
+              "evidenceLevel": "E1",
+              "line": 102
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "sightRange": {
+          "value": 15,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "fogOfWarSightRange default 15",
+              "evidenceLevel": "E1",
+              "line": 1692
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String fogOfWarSightRange",
+              "evidenceLevel": "E1",
+              "line": 6364
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies.",
+          "unit": "tiles"
+        },
+        "canAttack": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[attack] canAttack",
+              "evidenceLevel": "E1",
+              "line": 53
+            }
+          ]
+        },
+        "canAttackLand": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[attack] canAttackLandUnits",
+              "evidenceLevel": "E1",
+              "line": 55
+            }
+          ],
+          "scope": "surface including water surface"
+        },
+        "canAttackAir": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[attack] canAttackFlyingUnits",
+              "evidenceLevel": "E1",
+              "line": 54
+            }
+          ]
+        },
+        "canAttackUnderwater": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[attack] canAttackUnderwaterUnits",
+              "evidenceLevel": "E1",
+              "line": 56
+            }
+          ]
+        },
+        "canAttackNotTouchingWater": {
+          "value": true,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "canAttackNotTouchingWaterUnits null default",
+              "evidenceLevel": "E1",
+              "line": 2241
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "ah() null -> true",
+              "evidenceLevel": "E1",
+              "line": 2390
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "attackRange": {
+          "value": 130,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+              "selector": "[attack] maxAttackRange",
+              "evidenceLevel": "E1",
+              "line": 62
+            }
+          ],
+          "unit": "world units",
+          "scope": "base maximum; not a guarantee of fire"
+        },
+        "globalScale": {
+          "value": 1,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "globalScale default 1",
+              "evidenceLevel": "E1",
+              "line": 1257
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "sightRangeWhileNotBuilt": {
+          "value": 15,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "fogOfWarSightRange default 15",
+              "evidenceLevel": "E1",
+              "line": 1692
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String fogOfWarSightRange",
+              "evidenceLevel": "E1",
+              "line": 6364
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "unfinished sight -1 sentinel",
+              "evidenceLevel": "E1",
+              "line": 1693
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "c(boolean) resolves unfinished sight",
+              "evidenceLevel": "E1",
+              "line": 3712
+            }
+          ],
+          "unit": "tiles",
+          "note": "-1 loader sentinel means use current completed-unit sight stat; candidate resolves base value only."
+        }
+      },
+      "runtimeVerification": "NOT_PERFORMED_THIS_TASK"
+    },
+    {
+      "id": "heavyTank",
+      "fields": {
+        "identity": {
+          "value": "heavyTank",
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar.javap.txt",
+              "selector": "static {};",
+              "evidenceLevel": "E1",
+              "line": 2011
+            }
+          ],
+          "note": "Enum static initializer name -> subclass; factory binding in ar$16"
+        },
+        "aliases": {
+          "value": [
+            "heavyTank"
+          ],
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar.javap.txt",
+              "selector": "static {};",
+              "evidenceLevel": "E1",
+              "line": 2011
+            }
+          ]
+        },
+        "cost": {
+          "value": 800,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar$16.javap.txt",
+              "selector": " c();",
+              "evidenceLevel": "E1",
+              "line": 34
+            }
+          ],
+          "unit": "credits",
+          "scope": "T1 factory/type base price"
+        },
+        "building": {
+          "value": false,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.am.javap.txt",
+              "selector": " bI();",
+              "evidenceLevel": "E1",
+              "line": 1363
+            }
+          ]
+        },
+        "mobile": {
+          "value": true,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.w.javap.txt",
+              "selector": " I();",
+              "evidenceLevel": "E1",
+              "line": 11
+            }
+          ]
+        },
+        "movementType": {
+          "value": "LAND",
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.j.javap.txt",
+              "selector": " h();",
+              "evidenceLevel": "E1",
+              "line": 232
+            }
+          ]
+        },
+        "sightRange": {
+          "value": 15,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " int s();",
+              "evidenceLevel": "E1",
+              "line": 14499
+            }
+          ],
+          "unit": "tiles"
+        },
+        "sightRangeWhileNotBuilt": {
+          "value": 15,
+          "status": "DERIVED_STATIC",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " int s();",
+              "evidenceLevel": "E1",
+              "line": 14499
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/y.java",
+              "selector": "c(boolean) reveal",
+              "evidenceLevel": "E1",
+              "line": 4583
+            }
+          ],
+          "unit": "tiles",
+          "note": "Native y.c(boolean) uses s(); no custom unfinished override."
+        },
+        "canAttack": {
+          "value": true,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.f.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 598
+            }
+          ]
+        },
+        "canAttackLand": {
+          "value": true,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ag();",
+              "evidenceLevel": "E1",
+              "line": 9988
+            }
+          ],
+          "scope": "raw base domain flag; AND with canAttack"
+        },
+        "canAttackAir": {
+          "value": true,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.f.javap.txt",
+              "selector": " af();",
+              "evidenceLevel": "E1",
+              "line": 604
+            }
+          ],
+          "scope": "raw base domain flag; AND with canAttack"
+        },
+        "canAttackUnderwater": {
+          "value": false,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ae();",
+              "evidenceLevel": "E1",
+              "line": 9976
+            }
+          ],
+          "scope": "raw base domain flag; AND with canAttack"
+        },
+        "canAttackNotTouchingWater": {
+          "value": true,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ah();",
+              "evidenceLevel": "E1",
+              "line": 9994
+            }
+          ],
+          "scope": "raw base domain flag; AND with canAttack"
+        },
+        "maxSpeed": {
+          "value": 0.8,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.f.javap.txt",
+              "selector": " z();",
+              "evidenceLevel": "E1",
+              "line": 536
+            }
+          ],
+          "unit": "raw engine value"
+        },
+        "maxTurnSpeed": {
+          "value": 1.9,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.f.javap.txt",
+              "selector": " A();",
+              "evidenceLevel": "E1",
+              "line": 548
+            }
+          ],
+          "unit": "raw engine value"
+        },
+        "moveAccelerationSpeed": {
+          "value": 0.05,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.f.javap.txt",
+              "selector": " C();",
+              "evidenceLevel": "E1",
+              "line": 572
+            }
+          ],
+          "unit": "raw engine value"
+        },
+        "moveDecelerationSpeed": {
+          "value": 0.1,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.f.javap.txt",
+              "selector": " D();",
+              "evidenceLevel": "E1",
+              "line": 578
+            }
+          ],
+          "unit": "raw engine value"
+        },
+        "turnAcceleration": {
+          "value": 0.2,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.f.javap.txt",
+              "selector": " B();",
+              "evidenceLevel": "E1",
+              "line": 554
+            }
+          ],
+          "unit": "raw engine value"
+        },
+        "attackRange": {
+          "value": 160,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.f.javap.txt",
+              "selector": " m();",
+              "evidenceLevel": "E1",
+              "line": 524
+            }
+          ],
+          "unit": "world units"
+        }
+      },
+      "runtimeVerification": "NOT_PERFORMED_THIS_TASK"
+    },
+    {
+      "id": "c_artillery",
+      "fields": {
+        "identity": {
+          "value": "c_artillery",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 5
+            }
+          ]
+        },
+        "aliases": {
+          "value": [
+            "artillery",
+            "c_artillery"
+          ],
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 5
+            },
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[core] overrideAndReplace",
+              "evidenceLevel": "E1",
+              "line": 8
+            }
+          ]
+        },
+        "cost": {
+          "value": 900,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[core] price",
+              "evidenceLevel": "E1",
+              "line": 15
+            }
+          ],
+          "unit": "credits",
+          "scope": "type base price; not upgrade increment"
+        },
+        "maxHp": {
+          "value": 140,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[core] maxHp",
+              "evidenceLevel": "E1",
+              "line": 16
+            }
+          ],
+          "unit": "hitpoints"
+        },
+        "building": {
+          "value": false,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "isBuilding default false",
+              "evidenceLevel": "E1",
+              "line": 1708
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String isBuilding",
+              "evidenceLevel": "E1",
+              "line": 6490
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "mobile": {
+          "value": true,
+          "status": "DERIVED_STATIC",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "isBuilding default false",
+              "evidenceLevel": "E1",
+              "line": 1708
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String isBuilding",
+              "evidenceLevel": "E1",
+              "line": 6490
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "I() mobility gate",
+              "evidenceLevel": "E1",
+              "line": 570
+            }
+          ],
+          "note": "Base type mobility; transported/attached/disabled state still gates movement."
+        },
+        "movementType": {
+          "value": "LAND",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[movement] movementType",
+              "evidenceLevel": "E1",
+              "line": 112
+            }
+          ]
+        },
+        "maxSpeed": {
+          "value": 0.9,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[movement] moveSpeed",
+              "evidenceLevel": "E1",
+              "line": 113
+            }
+          ],
+          "unit": "raw engine movement value",
+          "scope": "base config at globalScale=1; not current speed"
+        },
+        "moveAccelerationSpeed": {
+          "value": 0.05,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[movement] moveAccelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 114
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "moveDecelerationSpeed": {
+          "value": 0.12,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[movement] moveDecelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 115
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "maxTurnSpeed": {
+          "value": 1.7,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[movement] maxTurnSpeed",
+              "evidenceLevel": "E1",
+              "line": 117
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "turnAcceleration": {
+          "value": 0.05,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[movement] turnAcceleration",
+              "evidenceLevel": "E1",
+              "line": 118
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "sightRange": {
+          "value": 15,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "fogOfWarSightRange default 15",
+              "evidenceLevel": "E1",
+              "line": 1692
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String fogOfWarSightRange",
+              "evidenceLevel": "E1",
+              "line": 6364
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies.",
+          "unit": "tiles"
+        },
+        "canAttack": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[attack] canAttack",
+              "evidenceLevel": "E1",
+              "line": 52
+            }
+          ]
+        },
+        "canAttackLand": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[attack] canAttackLandUnits",
+              "evidenceLevel": "E1",
+              "line": 54
+            }
+          ],
+          "scope": "surface including water surface"
+        },
+        "canAttackAir": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[attack] canAttackFlyingUnits",
+              "evidenceLevel": "E1",
+              "line": 53
+            }
+          ]
+        },
+        "canAttackUnderwater": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[attack] canAttackUnderwaterUnits",
+              "evidenceLevel": "E1",
+              "line": 55
+            }
+          ]
+        },
+        "canAttackNotTouchingWater": {
+          "value": true,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "canAttackNotTouchingWaterUnits null default",
+              "evidenceLevel": "E1",
+              "line": 2241
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "ah() null -> true",
+              "evidenceLevel": "E1",
+              "line": 2390
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "attackRange": {
+          "value": 290,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+              "selector": "[attack] maxAttackRange",
+              "evidenceLevel": "E1",
+              "line": 62
+            }
+          ],
+          "unit": "world units",
+          "scope": "base maximum; not a guarantee of fire"
+        },
+        "globalScale": {
+          "value": 1,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "globalScale default 1",
+              "evidenceLevel": "E1",
+              "line": 1257
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "sightRangeWhileNotBuilt": {
+          "value": 15,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "fogOfWarSightRange default 15",
+              "evidenceLevel": "E1",
+              "line": 1692
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String fogOfWarSightRange",
+              "evidenceLevel": "E1",
+              "line": 6364
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "unfinished sight -1 sentinel",
+              "evidenceLevel": "E1",
+              "line": 1693
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "c(boolean) resolves unfinished sight",
+              "evidenceLevel": "E1",
+              "line": 3712
+            }
+          ],
+          "unit": "tiles",
+          "note": "-1 loader sentinel means use current completed-unit sight stat; candidate resolves base value only."
+        }
+      },
+      "runtimeVerification": "NOT_PERFORMED_THIS_TASK"
+    },
+    {
+      "id": "landFactory",
+      "fields": {
+        "identity": {
+          "value": "landFactory",
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar.javap.txt",
+              "selector": "static {};",
+              "evidenceLevel": "E1",
+              "line": 2011
+            }
+          ],
+          "note": "Enum static initializer name -> subclass; factory binding in ar$12"
+        },
+        "aliases": {
+          "value": [
+            "landFactory"
+          ],
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar.javap.txt",
+              "selector": "static {};",
+              "evidenceLevel": "E1",
+              "line": 2011
+            }
+          ]
+        },
+        "cost": {
+          "value": 700,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar$12.javap.txt",
+              "selector": " c();",
+              "evidenceLevel": "E1",
+              "line": 40
+            }
+          ],
+          "unit": "credits",
+          "scope": "T1 factory/type base price"
+        },
+        "building": {
+          "value": true,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " bI();",
+              "evidenceLevel": "E1",
+              "line": 848
+            }
+          ]
+        },
+        "mobile": {
+          "value": false,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " I();",
+              "evidenceLevel": "E1",
+              "line": 570
+            }
+          ]
+        },
+        "movementType": {
+          "value": "NONE",
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " h();",
+              "evidenceLevel": "E1",
+              "line": 576
+            }
+          ]
+        },
+        "sightRange": {
+          "value": 15,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " int s();",
+              "evidenceLevel": "E1",
+              "line": 14499
+            }
+          ],
+          "unit": "tiles"
+        },
+        "sightRangeWhileNotBuilt": {
+          "value": 15,
+          "status": "DERIVED_STATIC",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " int s();",
+              "evidenceLevel": "E1",
+              "line": 14499
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/y.java",
+              "selector": "c(boolean) reveal",
+              "evidenceLevel": "E1",
+              "line": 4583
+            }
+          ],
+          "unit": "tiles",
+          "note": "Native y.c(boolean) uses s(); no custom unfinished override."
+        },
+        "canAttack": {
+          "value": false,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 355
+            }
+          ]
+        },
+        "canAttackLand": {
+          "value": false,
+          "status": "DERIVED_EFFECTIVE_CAPABILITY",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 355
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ag();",
+              "evidenceLevel": "E1",
+              "line": 9988
+            }
+          ],
+          "note": "Effective capability false because canAttack=false; inherited raw flag is true."
+        },
+        "canAttackAir": {
+          "value": false,
+          "status": "DERIVED_EFFECTIVE_CAPABILITY",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 355
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " af();",
+              "evidenceLevel": "E1",
+              "line": 9982
+            }
+          ],
+          "note": "Effective capability false because canAttack=false; inherited raw flag is true."
+        },
+        "canAttackUnderwater": {
+          "value": false,
+          "status": "DERIVED_EFFECTIVE_CAPABILITY",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 355
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ae();",
+              "evidenceLevel": "E1",
+              "line": 9976
+            }
+          ],
+          "note": "Effective capability false because canAttack=false; inherited raw flag is false."
+        },
+        "canAttackNotTouchingWater": {
+          "value": true,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ah();",
+              "evidenceLevel": "E1",
+              "line": 9994
+            }
+          ],
+          "scope": "raw base domain flag; AND with canAttack"
+        },
+        "maxSpeed": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " z();",
+              "evidenceLevel": "E1",
+              "line": 594
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "maxTurnSpeed": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " A();",
+              "evidenceLevel": "E1",
+              "line": 600
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "attackRange": {
+          "value": null,
+          "status": "NOT_APPLICABLE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 355
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " m();",
+              "evidenceLevel": "E1",
+              "line": 370
+            }
+          ],
+          "unit": "world units",
+          "rawM": 0,
+          "note": "Noncombat factory."
+        },
+        "moveAccelerationSpeed": {
+          "value": null,
+          "status": "NOT_APPLICABLE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " I();",
+              "evidenceLevel": "E1",
+              "line": 570
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " C();",
+              "evidenceLevel": "E1",
+              "line": 13726
+            }
+          ],
+          "rawInheritedValue": 99,
+          "note": "Immobile building; do not interpret inherited default as usable movement stat."
+        },
+        "moveDecelerationSpeed": {
+          "value": null,
+          "status": "NOT_APPLICABLE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " I();",
+              "evidenceLevel": "E1",
+              "line": 570
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " D();",
+              "evidenceLevel": "E1",
+              "line": 13732
+            }
+          ],
+          "rawInheritedValue": 99,
+          "note": "Immobile building; do not interpret inherited default as usable movement stat."
+        },
+        "turnAcceleration": {
+          "value": null,
+          "status": "NOT_APPLICABLE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " I();",
+              "evidenceLevel": "E1",
+              "line": 570
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " B();",
+              "evidenceLevel": "E1",
+              "line": 13621
+            }
+          ],
+          "rawInheritedValue": -1,
+          "note": "Immobile building; do not interpret inherited default as usable movement stat."
+        },
+        "upgradeToT2Cost": {
+          "value": 2000,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar$12.javap.txt",
+              "selector": " c(int);",
+              "evidenceLevel": "E1",
+              "line": 46
+            }
+          ],
+          "unit": "credits",
+          "scope": "c(2), incremental upgrade cost"
+        }
+      },
+      "runtimeVerification": "NOT_PERFORMED_THIS_TASK"
+    },
+    {
+      "id": "airFactory",
+      "fields": {
+        "identity": {
+          "value": "airFactory",
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar.javap.txt",
+              "selector": "static {};",
+              "evidenceLevel": "E1",
+              "line": 2011
+            }
+          ],
+          "note": "Enum static initializer name -> subclass; factory binding in ar$23"
+        },
+        "aliases": {
+          "value": [
+            "airFactory"
+          ],
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar.javap.txt",
+              "selector": "static {};",
+              "evidenceLevel": "E1",
+              "line": 2011
+            }
+          ]
+        },
+        "cost": {
+          "value": 1000,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar$23.javap.txt",
+              "selector": " c();",
+              "evidenceLevel": "E1",
+              "line": 40
+            }
+          ],
+          "unit": "credits",
+          "scope": "T1 factory/type base price"
+        },
+        "building": {
+          "value": true,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " bI();",
+              "evidenceLevel": "E1",
+              "line": 848
+            }
+          ]
+        },
+        "mobile": {
+          "value": false,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " I();",
+              "evidenceLevel": "E1",
+              "line": 570
+            }
+          ]
+        },
+        "movementType": {
+          "value": "NONE",
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " h();",
+              "evidenceLevel": "E1",
+              "line": 576
+            }
+          ]
+        },
+        "sightRange": {
+          "value": 15,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " int s();",
+              "evidenceLevel": "E1",
+              "line": 14499
+            }
+          ],
+          "unit": "tiles"
+        },
+        "sightRangeWhileNotBuilt": {
+          "value": 15,
+          "status": "DERIVED_STATIC",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " int s();",
+              "evidenceLevel": "E1",
+              "line": 14499
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/y.java",
+              "selector": "c(boolean) reveal",
+              "evidenceLevel": "E1",
+              "line": 4583
+            }
+          ],
+          "unit": "tiles",
+          "note": "Native y.c(boolean) uses s(); no custom unfinished override."
+        },
+        "canAttack": {
+          "value": false,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 355
+            }
+          ]
+        },
+        "canAttackLand": {
+          "value": false,
+          "status": "DERIVED_EFFECTIVE_CAPABILITY",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 355
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ag();",
+              "evidenceLevel": "E1",
+              "line": 9988
+            }
+          ],
+          "note": "Effective capability false because canAttack=false; inherited raw flag is true."
+        },
+        "canAttackAir": {
+          "value": false,
+          "status": "DERIVED_EFFECTIVE_CAPABILITY",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 355
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " af();",
+              "evidenceLevel": "E1",
+              "line": 9982
+            }
+          ],
+          "note": "Effective capability false because canAttack=false; inherited raw flag is true."
+        },
+        "canAttackUnderwater": {
+          "value": false,
+          "status": "DERIVED_EFFECTIVE_CAPABILITY",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 355
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ae();",
+              "evidenceLevel": "E1",
+              "line": 9976
+            }
+          ],
+          "note": "Effective capability false because canAttack=false; inherited raw flag is false."
+        },
+        "canAttackNotTouchingWater": {
+          "value": true,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " ah();",
+              "evidenceLevel": "E1",
+              "line": 9994
+            }
+          ],
+          "scope": "raw base domain flag; AND with canAttack"
+        },
+        "maxSpeed": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " z();",
+              "evidenceLevel": "E1",
+              "line": 594
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "maxTurnSpeed": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " A();",
+              "evidenceLevel": "E1",
+              "line": 600
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "attackRange": {
+          "value": null,
+          "status": "NOT_APPLICABLE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " l();",
+              "evidenceLevel": "E1",
+              "line": 355
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+              "selector": " m();",
+              "evidenceLevel": "E1",
+              "line": 370
+            }
+          ],
+          "unit": "world units",
+          "rawM": 0,
+          "note": "Noncombat factory."
+        },
+        "moveAccelerationSpeed": {
+          "value": null,
+          "status": "NOT_APPLICABLE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " I();",
+              "evidenceLevel": "E1",
+              "line": 570
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " C();",
+              "evidenceLevel": "E1",
+              "line": 13726
+            }
+          ],
+          "rawInheritedValue": 99,
+          "note": "Immobile building; do not interpret inherited default as usable movement stat."
+        },
+        "moveDecelerationSpeed": {
+          "value": null,
+          "status": "NOT_APPLICABLE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " I();",
+              "evidenceLevel": "E1",
+              "line": 570
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " D();",
+              "evidenceLevel": "E1",
+              "line": 13732
+            }
+          ],
+          "rawInheritedValue": 99,
+          "note": "Immobile building; do not interpret inherited default as usable movement stat."
+        },
+        "turnAcceleration": {
+          "value": null,
+          "status": "NOT_APPLICABLE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+              "selector": " I();",
+              "evidenceLevel": "E1",
+              "line": 570
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+              "selector": " B();",
+              "evidenceLevel": "E1",
+              "line": 13621
+            }
+          ],
+          "rawInheritedValue": -1,
+          "note": "Immobile building; do not interpret inherited default as usable movement stat."
+        },
+        "upgradeToT2Cost": {
+          "value": 1500,
+          "status": "VERIFIED_STATIC_BYTECODE",
+          "source": [
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar$23.javap.txt",
+              "selector": " c(int);",
+              "evidenceLevel": "E1",
+              "line": 46
+            }
+          ],
+          "unit": "credits",
+          "scope": "c(2), incremental upgrade cost"
+        }
+      },
+      "runtimeVerification": "NOT_PERFORMED_THIS_TASK"
+    },
+    {
+      "id": "extractorT1",
+      "fields": {
+        "identity": {
+          "value": "extractorT1",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 3
+            }
+          ]
+        },
+        "aliases": {
+          "value": [
+            "extractor",
+            "extractorT1"
+          ],
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 3
+            },
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor.ini",
+              "selector": "[core] overrideAndReplace",
+              "evidenceLevel": "E1",
+              "line": 11
+            }
+          ]
+        },
+        "cost": {
+          "value": 700,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor.ini",
+              "selector": "[core] price",
+              "evidenceLevel": "E1",
+              "line": 6
+            }
+          ],
+          "unit": "credits",
+          "scope": "type base price; not upgrade increment"
+        },
+        "maxHp": {
+          "value": 800,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor.ini",
+              "selector": "[core] maxHp",
+              "evidenceLevel": "E1",
+              "line": 7
+            }
+          ],
+          "unit": "hitpoints"
+        },
+        "building": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[core] isBuilding",
+              "evidenceLevel": "E1",
+              "line": 23
+            }
+          ]
+        },
+        "mobile": {
+          "value": false,
+          "status": "DERIVED_STATIC",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[core] isBuilding",
+              "evidenceLevel": "E1",
+              "line": 23
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "I() mobility gate",
+              "evidenceLevel": "E1",
+              "line": 570
+            }
+          ],
+          "note": "Base type mobility; transported/attached/disabled state still gates movement."
+        },
+        "movementType": {
+          "value": "NONE",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] movementType",
+              "evidenceLevel": "E1",
+              "line": 56
+            }
+          ]
+        },
+        "maxSpeed": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] moveSpeed",
+              "evidenceLevel": "E1",
+              "line": 57
+            }
+          ],
+          "unit": "raw engine movement value",
+          "scope": "base config at globalScale=1; not current speed"
+        },
+        "moveAccelerationSpeed": {
+          "value": 0.01,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] moveAccelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 58
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "moveDecelerationSpeed": {
+          "value": 0.01,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] moveDecelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 59
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "maxTurnSpeed": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] maxTurnSpeed",
+              "evidenceLevel": "E1",
+              "line": 61
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "turnAcceleration": {
+          "value": 0.1,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] turnAcceleration",
+              "evidenceLevel": "E1",
+              "line": 62
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "sightRange": {
+          "value": 15,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "fogOfWarSightRange default 15",
+              "evidenceLevel": "E1",
+              "line": 1692
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String fogOfWarSightRange",
+              "evidenceLevel": "E1",
+              "line": 6364
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies.",
+          "unit": "tiles"
+        },
+        "canAttack": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[attack] canAttack",
+              "evidenceLevel": "E1",
+              "line": 49
+            }
+          ]
+        },
+        "canAttackLand": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[attack] canAttackLandUnits",
+              "evidenceLevel": "E1",
+              "line": 51
+            }
+          ],
+          "scope": "surface including water surface"
+        },
+        "canAttackAir": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[attack] canAttackFlyingUnits",
+              "evidenceLevel": "E1",
+              "line": 50
+            }
+          ]
+        },
+        "canAttackUnderwater": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[attack] canAttackUnderwaterUnits",
+              "evidenceLevel": "E1",
+              "line": 52
+            }
+          ]
+        },
+        "canAttackNotTouchingWater": {
+          "value": true,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "canAttackNotTouchingWaterUnits null default",
+              "evidenceLevel": "E1",
+              "line": 2241
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "ah() null -> true",
+              "evidenceLevel": "E1",
+              "line": 2390
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "attackRange": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[attack] maxAttackRange",
+              "evidenceLevel": "E1",
+              "line": 53
+            }
+          ],
+          "unit": "world units",
+          "scope": "base maximum; not a guarantee of fire"
+        },
+        "globalScale": {
+          "value": 1,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "globalScale default 1",
+              "evidenceLevel": "E1",
+              "line": 1257
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "sightRangeWhileNotBuilt": {
+          "value": 15,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "fogOfWarSightRange default 15",
+              "evidenceLevel": "E1",
+              "line": 1692
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String fogOfWarSightRange",
+              "evidenceLevel": "E1",
+              "line": 6364
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "unfinished sight -1 sentinel",
+              "evidenceLevel": "E1",
+              "line": 1693
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "c(boolean) resolves unfinished sight",
+              "evidenceLevel": "E1",
+              "line": 3712
+            }
+          ],
+          "unit": "tiles",
+          "note": "-1 loader sentinel means use current completed-unit sight stat; candidate resolves base value only."
+        },
+        "upgradeToT2Cost": {
+          "value": 1400,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor.ini",
+              "selector": "[action_upgradeT2] price",
+              "evidenceLevel": "E1",
+              "line": 19
+            }
+          ],
+          "unit": "credits",
+          "scope": "incremental action cost"
+        }
+      },
+      "runtimeVerification": "NOT_PERFORMED_THIS_TASK"
+    },
+    {
+      "id": "extractorT2",
+      "fields": {
+        "identity": {
+          "value": "extractorT2",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractorT2.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 3
+            }
+          ]
+        },
+        "aliases": {
+          "value": [
+            "extractorT2"
+          ],
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractorT2.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 3
+            }
+          ]
+        },
+        "cost": {
+          "value": 2100,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractorT2.ini",
+              "selector": "[core] price",
+              "evidenceLevel": "E1",
+              "line": 6
+            }
+          ],
+          "unit": "credits",
+          "scope": "type base price; not upgrade increment"
+        },
+        "maxHp": {
+          "value": 1000,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractorT2.ini",
+              "selector": "[core] maxHp",
+              "evidenceLevel": "E1",
+              "line": 7
+            }
+          ],
+          "unit": "hitpoints"
+        },
+        "building": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[core] isBuilding",
+              "evidenceLevel": "E1",
+              "line": 23
+            }
+          ]
+        },
+        "mobile": {
+          "value": false,
+          "status": "DERIVED_STATIC",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[core] isBuilding",
+              "evidenceLevel": "E1",
+              "line": 23
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "I() mobility gate",
+              "evidenceLevel": "E1",
+              "line": 570
+            }
+          ],
+          "note": "Base type mobility; transported/attached/disabled state still gates movement."
+        },
+        "movementType": {
+          "value": "NONE",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] movementType",
+              "evidenceLevel": "E1",
+              "line": 56
+            }
+          ]
+        },
+        "maxSpeed": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] moveSpeed",
+              "evidenceLevel": "E1",
+              "line": 57
+            }
+          ],
+          "unit": "raw engine movement value",
+          "scope": "base config at globalScale=1; not current speed"
+        },
+        "moveAccelerationSpeed": {
+          "value": 0.01,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] moveAccelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 58
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "moveDecelerationSpeed": {
+          "value": 0.01,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] moveDecelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 59
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "maxTurnSpeed": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] maxTurnSpeed",
+              "evidenceLevel": "E1",
+              "line": 61
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "turnAcceleration": {
+          "value": 0.1,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[movement] turnAcceleration",
+              "evidenceLevel": "E1",
+              "line": 62
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "sightRange": {
+          "value": 15,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "fogOfWarSightRange default 15",
+              "evidenceLevel": "E1",
+              "line": 1692
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String fogOfWarSightRange",
+              "evidenceLevel": "E1",
+              "line": 6364
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies.",
+          "unit": "tiles"
+        },
+        "canAttack": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[attack] canAttack",
+              "evidenceLevel": "E1",
+              "line": 49
+            }
+          ]
+        },
+        "canAttackLand": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[attack] canAttackLandUnits",
+              "evidenceLevel": "E1",
+              "line": 51
+            }
+          ],
+          "scope": "surface including water surface"
+        },
+        "canAttackAir": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[attack] canAttackFlyingUnits",
+              "evidenceLevel": "E1",
+              "line": 50
+            }
+          ]
+        },
+        "canAttackUnderwater": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[attack] canAttackUnderwaterUnits",
+              "evidenceLevel": "E1",
+              "line": 52
+            }
+          ]
+        },
+        "canAttackNotTouchingWater": {
+          "value": true,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "canAttackNotTouchingWaterUnits null default",
+              "evidenceLevel": "E1",
+              "line": 2241
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "ah() null -> true",
+              "evidenceLevel": "E1",
+              "line": 2390
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "attackRange": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+              "selector": "[attack] maxAttackRange",
+              "evidenceLevel": "E1",
+              "line": 53
+            }
+          ],
+          "unit": "world units",
+          "scope": "base maximum; not a guarantee of fire"
+        },
+        "globalScale": {
+          "value": 1,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "globalScale default 1",
+              "evidenceLevel": "E1",
+              "line": 1257
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "sightRangeWhileNotBuilt": {
+          "value": 15,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "fogOfWarSightRange default 15",
+              "evidenceLevel": "E1",
+              "line": 1692
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String fogOfWarSightRange",
+              "evidenceLevel": "E1",
+              "line": 6364
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "unfinished sight -1 sentinel",
+              "evidenceLevel": "E1",
+              "line": 1693
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "c(boolean) resolves unfinished sight",
+              "evidenceLevel": "E1",
+              "line": 3712
+            }
+          ],
+          "unit": "tiles",
+          "note": "-1 loader sentinel means use current completed-unit sight stat; candidate resolves base value only."
+        },
+        "upgradeFromT1Cost": {
+          "value": 1400,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/extractor/extractor.ini",
+              "selector": "[action_upgradeT2] price",
+              "evidenceLevel": "E1",
+              "line": 19
+            }
+          ],
+          "unit": "credits",
+          "scope": "incremental action cost"
+        }
+      },
+      "runtimeVerification": "NOT_PERFORMED_THIS_TASK"
+    },
+    {
+      "id": "c_turret_t1",
+      "fields": {
+        "identity": {
+          "value": "c_turret_t1",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_t1.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 3
+            }
+          ]
+        },
+        "aliases": {
+          "value": [
+            "turret",
+            "c_turret_t1"
+          ],
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_t1.ini",
+              "selector": "[core] name",
+              "evidenceLevel": "E1",
+              "line": 3
+            },
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_t1.ini",
+              "selector": "[core] overrideAndReplace",
+              "evidenceLevel": "E1",
+              "line": 7
+            }
+          ]
+        },
+        "cost": {
+          "value": 500,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_t1.ini",
+              "selector": "[core] price",
+              "evidenceLevel": "E1",
+              "line": 9
+            }
+          ],
+          "unit": "credits",
+          "scope": "type base price; not upgrade increment"
+        },
+        "maxHp": {
+          "value": 700,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_t1.ini",
+              "selector": "[core] maxHp",
+              "evidenceLevel": "E1",
+              "line": 10
+            }
+          ],
+          "unit": "hitpoints"
+        },
+        "building": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_common_land.ini",
+              "selector": "[core] isBuilding",
+              "evidenceLevel": "E1",
+              "line": 24
+            }
+          ]
+        },
+        "mobile": {
+          "value": false,
+          "status": "DERIVED_STATIC",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_common_land.ini",
+              "selector": "[core] isBuilding",
+              "evidenceLevel": "E1",
+              "line": 24
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "I() mobility gate",
+              "evidenceLevel": "E1",
+              "line": 570
+            }
+          ],
+          "note": "Base type mobility; transported/attached/disabled state still gates movement."
+        },
+        "movementType": {
+          "value": "NONE",
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_common_land.ini",
+              "selector": "[movement] movementType",
+              "evidenceLevel": "E1",
+              "line": 52
+            }
+          ]
+        },
+        "maxSpeed": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_common_land.ini",
+              "selector": "[movement] moveSpeed",
+              "evidenceLevel": "E1",
+              "line": 53
+            }
+          ],
+          "unit": "raw engine movement value",
+          "scope": "base config at globalScale=1; not current speed"
+        },
+        "moveAccelerationSpeed": {
+          "value": 0.01,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_common_land.ini",
+              "selector": "[movement] moveAccelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 54
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "moveDecelerationSpeed": {
+          "value": 0.01,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_common_land.ini",
+              "selector": "[movement] moveDecelerationSpeed",
+              "evidenceLevel": "E1",
+              "line": 55
+            }
+          ],
+          "unit": "raw engine movement value"
+        },
+        "maxTurnSpeed": {
+          "value": 0,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_common_land.ini",
+              "selector": "[movement] maxTurnSpeed",
+              "evidenceLevel": "E1",
+              "line": 57
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "turnAcceleration": {
+          "value": 0.1,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_common_land.ini",
+              "selector": "[movement] turnAcceleration",
+              "evidenceLevel": "E1",
+              "line": 58
+            }
+          ],
+          "unit": "raw engine body rotation value"
+        },
+        "sightRange": {
+          "value": 15,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "fogOfWarSightRange default 15",
+              "evidenceLevel": "E1",
+              "line": 1692
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String fogOfWarSightRange",
+              "evidenceLevel": "E1",
+              "line": 6364
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies.",
+          "unit": "tiles"
+        },
+        "canAttack": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_t1.ini",
+              "selector": "[attack] canAttack",
+              "evidenceLevel": "E1",
+              "line": 87
+            }
+          ]
+        },
+        "canAttackLand": {
+          "value": true,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_t1.ini",
+              "selector": "[attack] canAttackLandUnits",
+              "evidenceLevel": "E1",
+              "line": 89
+            }
+          ],
+          "scope": "surface including water surface"
+        },
+        "canAttackAir": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_t1.ini",
+              "selector": "[attack] canAttackFlyingUnits",
+              "evidenceLevel": "E1",
+              "line": 88
+            }
+          ]
+        },
+        "canAttackUnderwater": {
+          "value": false,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_t1.ini",
+              "selector": "[attack] canAttackUnderwaterUnits",
+              "evidenceLevel": "E1",
+              "line": 90
+            }
+          ]
+        },
+        "canAttackNotTouchingWater": {
+          "value": true,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "canAttackNotTouchingWaterUnits null default",
+              "evidenceLevel": "E1",
+              "line": 2241
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "ah() null -> true",
+              "evidenceLevel": "E1",
+              "line": 2390
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "attackRange": {
+          "value": 165,
+          "status": "VERIFIED_STATIC_CONFIG",
+          "source": [
+            {
+              "path": "evidence/sources/frozen/assets/units/turrets/turret_t1.ini",
+              "selector": "[attack] maxAttackRange",
+              "evidenceLevel": "E1",
+              "line": 96
+            }
+          ],
+          "unit": "world units",
+          "scope": "base maximum; not a guarantee of fire"
+        },
+        "globalScale": {
+          "value": 1,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "globalScale default 1",
+              "evidenceLevel": "E1",
+              "line": 1257
+            }
+          ],
+          "note": "No explicit key in resolved copyFrom chain; frozen loader/default applies."
+        },
+        "sightRangeWhileNotBuilt": {
+          "value": 15,
+          "status": "DERIVED_STATIC_DEFAULT",
+          "source": [
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "fogOfWarSightRange default 15",
+              "evidenceLevel": "E1",
+              "line": 1692
+            },
+            {
+              "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+              "selector": "// String fogOfWarSightRange",
+              "evidenceLevel": "E1",
+              "line": 6364
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+              "selector": "unfinished sight -1 sentinel",
+              "evidenceLevel": "E1",
+              "line": 1693
+            },
+            {
+              "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+              "selector": "c(boolean) resolves unfinished sight",
+              "evidenceLevel": "E1",
+              "line": 3712
+            }
+          ],
+          "unit": "tiles",
+          "note": "-1 loader sentinel means use current completed-unit sight stat; candidate resolves base value only."
+        }
+      },
+      "runtimeVerification": "NOT_PERFORMED_THIS_TASK"
+    }
+  ]
+}

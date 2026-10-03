@@ -1,0 +1,2801 @@
+{
+  "schemaVersion": 1,
+  "scope": "All packet files except this manifest itself",
+  "files": [
+    {
+      "path": "CODE_POINTERS.md",
+      "bytes": 7276,
+      "sha256": "448db29d9db0fffe2373f56de42bea60679a68ded813f9a9ab0f459bf553e948"
+    },
+    {
+      "path": "CONFLICTS.md",
+      "bytes": 6738,
+      "sha256": "a68201e0f9f8d496e26b4c8db6bc1ff54c7144807ef1e3c79e1001e3803d4021"
+    },
+    {
+      "path": "MOVEMENT.md",
+      "bytes": 4710,
+      "sha256": "491b47a3bd5f57fc43b1a9afaf3bcc637307d075c612c2436be3d1592769dbdd"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3609,
+      "sha256": "187e316f6f630e1e857186a4cb523d403b1b251dc4f2eb468c49416a71af1fc6"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 219583,
+      "sha256": "93067b3cbd8a3fe1161cccd7641db78bae2484755cbf0d0e988350d7111e5094"
+    },
+    {
+      "path": "STATIC_VERIFICATION.json",
+      "bytes": 19382,
+      "sha256": "56f44f275445acc1691e3be3bee1d0571117497032e2eeef7245f611fd8942a4"
+    },
+    {
+      "path": "TARGETING.md",
+      "bytes": 5194,
+      "sha256": "6687e31d7cfb5bd77fd65f0385af87331294f06b2461c562e9c5ad4287298bd9"
+    },
+    {
+      "path": "TERRAIN.md",
+      "bytes": 7568,
+      "sha256": "55b6fb736e485c602359ca65d29d4c4cbe3f87403ed122b585213d1c130461be"
+    },
+    {
+      "path": "TERRAIN_MAP_CANDIDATES.json",
+      "bytes": 253855,
+      "sha256": "ec38ef06c7ba378db7d4eb420a087f5205183a0bf02df400085db4d80196beb9"
+    },
+    {
+      "path": "UNIT_CATALOG_CANDIDATES.json",
+      "bytes": 108801,
+      "sha256": "263cdaaa3e923e8307c37f059e50bee529b8ecd7c3e215937ce2adf615a0e236"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 4651,
+      "sha256": "1c6741687adc89fcda9bd02499398401cc23643a892559533b330359f6748443"
+    },
+    {
+      "path": "VISION.md",
+      "bytes": 4949,
+      "sha256": "5482d3df4e702b8328550d2344715cde8b72660a50a7cf678f5c0909d3d624a4"
+    },
+    {
+      "path": "evidence/COMMUNITY_CROSSWALK.json",
+      "bytes": 14071,
+      "sha256": "9c85c28cb31dd5a100f9af7097502108dcf1895650cfe4e38cc91d9144ba5b25"
+    },
+    {
+      "path": "evidence/bytecode_witnesses.md",
+      "bytes": 48259,
+      "sha256": "309e924fa0432fa4f6e3b31fa9f08137056cf3a136bee5bdac7c4f34addd1fcb"
+    },
+    {
+      "path": "evidence/sources/SOURCE_SNAPSHOT_MANIFEST.json",
+      "bytes": 176772,
+      "sha256": "dcdcff202ebdb724b46e2b010e32ca663329441f125dde8f2152495a01446865"
+    },
+    {
+      "path": "evidence/sources/bytecode/ao.javap.txt",
+      "bytes": 10598,
+      "sha256": "0b482150e76f3cc1f2f5766d96804007c6491f937a7a63f1b0980dd90c9b3289"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.b.b.javap.txt",
+      "bytes": 257366,
+      "sha256": "383822787d692d3875a2ebc4e17a357bcc38cc282abd4a2a7921feaff4cbfaef"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.b.g.javap.txt",
+      "bytes": 46992,
+      "sha256": "75a9e021a648618201cb559a545a40193ab3a0a1f8873e6632f588daff645343"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.n.javap.txt",
+      "bytes": 254023,
+      "sha256": "18c72b58d5b4fa9380d6ffac606c26d2539bb4e4431c315ea53212d4d175ecc4"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.am.javap.txt",
+      "bytes": 290535,
+      "sha256": "78e6ec5600a9fa55eec6085a007f0bae2cf0c5853529a3516d234b3c490f0705"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar$12.javap.txt",
+      "bytes": 1911,
+      "sha256": "5e68af0e04f65b68371471d19f82cd88e084ad3a3e4e9174b35d4c68ccc06ac1"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar$16.javap.txt",
+      "bytes": 1439,
+      "sha256": "88bf0945d4c4dd6cf66e1cbc3d7aba55878241875381141656147acab86659c6"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar$23.javap.txt",
+      "bytes": 1912,
+      "sha256": "373e0e5a340fcec0608ba222713642748b799e396c2b56b2f25fae1eb7cc369c"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar$52.javap.txt",
+      "bytes": 2049,
+      "sha256": "13f71efaee5268e1ba2a12d8acf11a84c8f9ff3f52ea950951855c87152767c0"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.ar.javap.txt",
+      "bytes": 125457,
+      "sha256": "9b4c329e48cae9a1fe86d2c235f4e9d32de31b746ec14ed5066eab26b195a362"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.ag.javap.txt",
+      "bytes": 956247,
+      "sha256": "396d035e86063ceb584f79e23e13166938c548b87bd1cba86266c6e93548977d"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.custom.j.javap.txt",
+      "bytes": 685482,
+      "sha256": "738183ac9427de4b10490164f86f954aebe57a8939f854211042f123b5beacba"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.a.javap.txt",
+      "bytes": 17943,
+      "sha256": "7330238b0f5721cd34836c3d7ea354c1bb56628791b09f3b4d9e7002f1b6b138"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.d.javap.txt",
+      "bytes": 37995,
+      "sha256": "67289034eb9d6cb0ff6ada14d84e74fc820b01c911a050f4468657a563c65309"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.i.javap.txt",
+      "bytes": 19624,
+      "sha256": "9e5910dea7c5ff8719a061c32402f4030686265c7bda51b9f2494de36c3dfb8d"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.d.m.javap.txt",
+      "bytes": 22952,
+      "sha256": "901ed46b2aa51f0b29d003623ad88249cda63d6f87055a610c9c39440e8c0da9"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.b.javap.txt",
+      "bytes": 47691,
+      "sha256": "9bb8eb39186ad55d845584f1e13b005c58dbe798585975df6fcd63f5b1386ea2"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.f.javap.txt",
+      "bytes": 27978,
+      "sha256": "ccc158be197539b8b561ff062e792350d2247fcee26410bdb3b61ed83841e724"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.e.j.javap.txt",
+      "bytes": 10486,
+      "sha256": "fffe61b7deb245ea7f2981bebf6bc6145dfda2aaceba4738d92b0fa9ed223f7d"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.w.javap.txt",
+      "bytes": 682,
+      "sha256": "281f459b4cab762f00b41721f9a2250b303f3f3b8c07f8f611bd045fd038b2bb"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.game.units.y.javap.txt",
+      "bytes": 655814,
+      "sha256": "d2167411ee185240d71022dacf484841c8853a906eb3add7b3e0a7b1080a2f63"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.gameFramework.k.i.javap.txt",
+      "bytes": 68137,
+      "sha256": "77527c13ca0f2a21119e5cebda504aaa6e6d5ce05b560f4a6c7336c085e55710"
+    },
+    {
+      "path": "evidence/sources/bytecode/com.corrodinggames.rts.gameFramework.utility.y.javap.txt",
+      "bytes": 63457,
+      "sha256": "a6fc2b21c53758092a009436e3277b5eef097e9ede8e7223fab6457c52567406"
+    },
+    {
+      "path": "evidence/sources/community/对接 v2.6教程 1.15单位表 （注：重点是单位名，价格被发现几处小错）.txt",
+      "bytes": 6509,
+      "sha256": "37d79d44811edc0905f2fb8c573a8194ba7401bf5776fbce0803dd2e87402a4a"
+    },
+    {
+      "path": "evidence/sources/community/星星版铁锈机制库_清洗转写.txt",
+      "bytes": 8238,
+      "sha256": "dc4380a7cb6c9a4f036a888831d06a476ee3517efb2d5ec0f792772ab41d5254"
+    },
+    {
+      "path": "evidence/sources/community/铁锈单位代码表JSON版.json",
+      "bytes": 520117,
+      "sha256": "87397f71d1cd31e7b45f2ada5e809bd27e47e37438ce6fc93f480c4742724425"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/bootstrap/CombatBridge.java",
+      "bytes": 62221,
+      "sha256": "caeb5bb02fe1fa614afdddbd29ecaa235c38088d134b6f163f05d6dd53e13609"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/bootstrap/EconomyBridge.java",
+      "bytes": 32429,
+      "sha256": "b9f1078f358c5f60403f65609801b4ea5d576b25e43e3e730b82402d739ee2e4"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/bootstrap/GuardBridge.java",
+      "bytes": 4040,
+      "sha256": "8af15a6b3d74ac7ff5b5bc288a244593386069d088f2264f70f902021e318476"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/bootstrap/RuntimeBridge.java",
+      "bytes": 26691,
+      "sha256": "91e1049e0e8ec657da50287285bb50d73469b59a8abfa914599bcaede55dfc04"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/bootstrap/RwAgent.java",
+      "bytes": 3512,
+      "sha256": "8203e41a07b737b809f5bcba4ed5581b771baea46e90aaa5be619d97d5c84069"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/bootstrap/ScoutBridge.java",
+      "bytes": 29713,
+      "sha256": "0bc3bc6f5e26435eab8fe659a269914c66ba37c773fdb246e101930e14699bed"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/AgentClient.java",
+      "bytes": 3248,
+      "sha256": "f51ef7990ff17a13142e9eca708a582f99845bd1f8802f431909d5c14704a71d"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/AutopilotClient.java",
+      "bytes": 1863,
+      "sha256": "66fd58a8bfa10e5290f591a64cae6eeaaf69408c600a4e2ac17c9b737b1dd191"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/BattleClient.java",
+      "bytes": 205349,
+      "sha256": "e9f82bc714041804311384cc6a60739b15f2e2616c674fc5703fb5a3ec0b54cf"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/ControlLoop.java",
+      "bytes": 12509,
+      "sha256": "b164e52a061bdd30492bf73671b2d1ceec3f5df5323bdfa2b8d1430aac290509"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/DevelopmentClient.java",
+      "bytes": 27876,
+      "sha256": "89d3fb0ce4d2a4855737ab0c9fb3210bb1d320f6b054ce13a81bc6cdc45963e8"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/EconomyClient.java",
+      "bytes": 15831,
+      "sha256": "3ddfab552248014fbfc55e5dc2a082ec3e078001aa8be9a1435a8b32f7f2efa5"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/FrontierClient.java",
+      "bytes": 245,
+      "sha256": "0592a4264cd8e85408973ac896af28f471e1b7622b1277caf7506f5e4c3bab78"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/Json.java",
+      "bytes": 4224,
+      "sha256": "0b82ea66b23fff4ce9d1b370a698bba5c66db09f5927bdbcfa91ccdfc13b1f19"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/MatchClient.java",
+      "bytes": 1600,
+      "sha256": "14edf2755b6796e516132d486165d75cac888f66a6e24f4cc27ceb31f7e7da6a"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/OpeningClient.java",
+      "bytes": 242,
+      "sha256": "cba4e393ae45cdffbdf03d5955874720713d54b2bd1631367f19491bfb307d69"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/PreflightClient.java",
+      "bytes": 2431,
+      "sha256": "1362aa70531a6b95c678ffbab7cb19ae3077ade2a8e4784fed2c01d80d74be93"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/client/ReportFiles.java",
+      "bytes": 2473,
+      "sha256": "7a12157c320f0372d87e8c7b0813826c33eb8f9f43c353e440dc704b70d55409"
+    },
+    {
+      "path": "evidence/sources/current_agent/developer/src/io/rwagent/headless/HeadlessRunner.java",
+      "bytes": 7048,
+      "sha256": "7ca2263511e7b45e1202ca7c4dc4681043b51726a1c22f4f7e570e3c8b9cb143"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/maps/skirmish/[p2]Beach landing (2p) [by hxyy].tmx",
+      "bytes": 13011,
+      "sha256": "bfba6d17c6e06e63ff49c6cac954596dafa2289834687c44d513e13897fbc916"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/maps/skirmish/[p2]Big Island (2p).tmx",
+      "bytes": 21816,
+      "sha256": "bc6b59c1aef04e3bf9d7ec10d1276c0b31a3f62a35b9996405492717bc446593"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/maps/skirmish/[p2]Dire_Straight (2p) [by uber].tmx",
+      "bytes": 21543,
+      "sha256": "99a284f4b7448bd572eec2b80ce74386d0e7857b8f35fe38e05e3ee0e2eda0be"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/maps/skirmish/[p2]Fire Bridge (2p) [by uber].tmx",
+      "bytes": 20588,
+      "sha256": "8ca731d4ecf4a3d15cb897b43cbcaf397fc172ba73cd254883e79e517a08cc31"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/maps/skirmish/[p2]Hills_(2p)_[By Tstis & KPSS].tmx",
+      "bytes": 19456,
+      "sha256": "8fd8ae363bf463141befc09dd1d1b50d0e954a060b233f4dc8ed9653b9af857c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/maps/skirmish/[p2]Ice Island (2p).tmx",
+      "bytes": 16237,
+      "sha256": "17ea0b11daa6717a0de35c1ea325a09133fb775e4e9b7cc24fc40a1eb38d9ae1"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/maps/skirmish/[p2]Lake (2p).tmx",
+      "bytes": 18365,
+      "sha256": "251273e30debff8bb3927a99a6d668ee0b5d03d936ea991de8866f638358fa6e"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/maps/skirmish/[p2]Small_Island (2p).tmx",
+      "bytes": 15487,
+      "sha256": "e47e5ab897311532d0340e4c21a5157859a7cb3f6fafa7863bd98a718bb2099e"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/maps/skirmish/[p2]Two_cold_sides (2p).tmx",
+      "bytes": 18184,
+      "sha256": "680b216bc4e3493349bac2dd4b4e7c6cf262290205e6d7e0972a017bf235274e"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/decoration.tsx",
+      "bytes": 178,
+      "sha256": "a398af6793bc8b105387d7e48af7eaa7164d132ca7a9e39a4cb4c06bb413e043"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/misc.tsx",
+      "bytes": 1295,
+      "sha256": "d9c1faf7365265326e812efbb56d396d5ea730086c5f8e3329175ad3ea2becac"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Dirt Dirt - Ridge.tsx",
+      "bytes": 178,
+      "sha256": "2f151d2081b249be49893cedccdd6e566f7009981c36f78c3b8e4534ee3b004f"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Dirt ShalowWater - Ridge.tsx",
+      "bytes": 193,
+      "sha256": "2a8bc056a4def162aa6195e5dc4cacae674c3ea6f45041df3a2f0d9af2f20be2"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Ice Ice - Flat.tsx",
+      "bytes": 172,
+      "sha256": "079b75073a6c4399e41a875ebce92ce3ece28bbf07dbfef6784364c2adb62d8f"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Ice ShallowWater - Broken.tsx",
+      "bytes": 194,
+      "sha256": "7b1b53e2bbeb12dbc960759163feb16a38214ce42a73d6f5abbc3e9b1cf90457"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Ice ShallowWater - Ridge.tsx",
+      "bytes": 1324,
+      "sha256": "c39c383e342fb98c9e95e670f4d76a5d6c5f6f197d68872b63f9537bc5002e64"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/LongGrass Dirt - Flat.tsx",
+      "bytes": 186,
+      "sha256": "7cdc05c5ffd4c2217678ca439e445083ce88f0a7afa253532d3ebecf4d24c13e"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/LongGrass Dirt - Ridge.tsx",
+      "bytes": 188,
+      "sha256": "c9e72be1287369624350547996cbde4715f28fd0dae5d39f82191d2e36da1bb7"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/LongGrass LongGrass - Hill.tsx",
+      "bytes": 196,
+      "sha256": "744a8cf714d4ca857c10df933dc041e2484c49adb255774e2c801e4cf039a08c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/LongGrass LongGrass - Ridge.tsx",
+      "bytes": 2292,
+      "sha256": "662f1d1be482ca5b72623799c1061472d5694da09e3bcdb67c637a1b65073271"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/LongGrass ShallowWater - Flat.tsx",
+      "bytes": 1394,
+      "sha256": "8a251d147fa0038d093795c8ced514b9522dfe7f1c1bf5db4b330896e289a82f"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/LongGrass ShallowWater - Ridge.tsx",
+      "bytes": 2325,
+      "sha256": "802a9dc6641c46ecf26fdc832a4496b7c3baa7b84d5fe70ba9038f2c06d2c007"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/LongGrass ShortGrass - Flat.tsx",
+      "bytes": 198,
+      "sha256": "32f8261803fd95566aac95dda16e5e312e5b405d4b3ae5bf3557044c048a44c4"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain Dirt - Flat.tsx",
+      "bytes": 184,
+      "sha256": "aea823cd1181c592c2ef00fe534cca7328b0ca9909211694d19f550aadb24b73"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain Dirt - Ridge.tsx",
+      "bytes": 186,
+      "sha256": "833baef14d14c8d4c0bfed9985beda7bbc1c0c5ae4ec82fa87c7f9651cb7a42a"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain LongGrass - Flat.tsx",
+      "bytes": 194,
+      "sha256": "cfe452a796cdd8bd5a3030947f968eb320068c8227e16c0df6533090de9d704d"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain Mountain - Hill.tsx",
+      "bytes": 192,
+      "sha256": "1c654bab7af0d43c9a5c2621a86e24a480e93e4da763b2a596f6b6618eb9b39c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain Mountain - Ridge.tsx",
+      "bytes": 194,
+      "sha256": "e891e6a6a479a9dc4e4e2a3fb70c1d953884053d46c8a2e075b1e35251c2d994"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain Nothing - Flat.tsx",
+      "bytes": 190,
+      "sha256": "c22f1819eaedb02b3a307c063ef711e671223e59339114a72f16168b1e39c7ea"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain Nothing - Ridge.tsx",
+      "bytes": 1423,
+      "sha256": "ab24ba5e650e7d41c8bee4ea0236990b5fd86e58f7688d2f8794b864131996a4"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain Sand - Flat.tsx",
+      "bytes": 184,
+      "sha256": "02476b721428337d7cb3699ba11685827ee5dc3665b170e03af61ff178d22577"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain Sand - Ridge.tsx",
+      "bytes": 1484,
+      "sha256": "aede39a9ab057bcb8f6fda177de77e5fbd5b882f45b4cf3147af69a7493bdf18"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain ShallowWater - Flat.tsx",
+      "bytes": 1393,
+      "sha256": "51794383419713ff0e3e227c4b19b50d8ad44cdac87cc1fbcd824964cda98b38"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain ShallowWater - Ridge.tsx",
+      "bytes": 202,
+      "sha256": "8e6bff2ace659097bacd6ef097614d0d6ce51541eb315353e7b456bf3cfb44f7"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain Snow - Flat.tsx",
+      "bytes": 184,
+      "sha256": "0d8ff85aedf2853552da53ef99d3d3117a850a729ef16910e2304aca9abcff8b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain Stone - Flat.tsx",
+      "bytes": 186,
+      "sha256": "db5342b2c17316723128b7cf89cec7db8030635828dd4a8e8d8dd01f90603c20"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Mountain Stone - Ridge.tsx",
+      "bytes": 1486,
+      "sha256": "328430120542a1f9cee46f719983ef37d8767435006166c4cb2613bbc8007d31"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Nothing Dust - Flat.tsx",
+      "bytes": 182,
+      "sha256": "2e918542dc121aadcf509e015fcda8a8912e2bd70395330fa62c3ac4d5f3130b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Nothing Road - Flat.tsx",
+      "bytes": 182,
+      "sha256": "4ff4c8e0f7a0b90ecd08b8e9a34067c20fcec686d9d595a3cb0808de028d6d1e"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Nothing Sand - Flat.tsx",
+      "bytes": 182,
+      "sha256": "63774d22499828a6881bccd920e15514a99d9d19e69b3b2054ac71bc580b5b32"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Sand Dirt - Flat.tsx",
+      "bytes": 176,
+      "sha256": "d3c61679504a95c0664e575523dd24151dcde677581ff07c55767b7ed525fe23"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Sand Dirt - Ridge.tsx",
+      "bytes": 178,
+      "sha256": "d84715c5cbcbaf6028fea9e4dbd1060e504abbc028dda2c8ba33fb5d43687905"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Sand LandGrass - Flat.tsx",
+      "bytes": 186,
+      "sha256": "049775b2166b7bd9b608a9876bfff22097fbde639ee9375fe1c1a4dcd942af36"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Sand Nothing - Flat - 2.tsx",
+      "bytes": 241,
+      "sha256": "65b59ffa1f7698f982337fcc948d3e340faf5f8af56949f848cebe1d69b7ca19"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Sand Nothing - Flat.tsx",
+      "bytes": 237,
+      "sha256": "149099fba4d082bdf5d27aaa43a013b2482f1001b2d73e18ff080beaa3a3c1f1"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Sand Sand - Hill.tsx",
+      "bytes": 176,
+      "sha256": "56abf9899424ddff885c328879a96bcb63f84e8f4aa7ca2e0d6b9924458fb465"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Sand Sand - Ridge.tsx",
+      "bytes": 1382,
+      "sha256": "7c6e07ea9b2b789d1d5a0331d5841770c9e86bb0f29c85226805f4841513c477"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Sand ShallowWater - Flat.tsx",
+      "bytes": 192,
+      "sha256": "48d4feb03e6b9ac2e3f35c0838ce7d7e052389fcba88c5226f4f81294971a0d6"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Sand ShallowWater - Ridge.tsx",
+      "bytes": 194,
+      "sha256": "ac7e061cf20cf48665942e0d2563ba1af75845ce9ace912527ac86fbe8b46e28"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/ShallowWater Water - Flat.tsx",
+      "bytes": 194,
+      "sha256": "bc859de2501d255d6f3520057b6bb461db344032eecf2ffe1e226438861faf50"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Snow Dirt - Flat.tsx",
+      "bytes": 176,
+      "sha256": "09e635100f2fb9f64ea487bc25fe57dbf9f37a6ef93064413c4d125746158f40"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Snow Dirt - Ridge.tsx",
+      "bytes": 178,
+      "sha256": "8a284a25bf38dca59b38bd8e6f0619ed716eca43cc1778e96a1c88c5f5acc946"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Snow Ice - Ridge.tsx",
+      "bytes": 176,
+      "sha256": "7baea1e417856d01ac91e515c18d3ae0bc7efdeb71e970ada7204cac30215233"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Snow Snow - Hill.tsx",
+      "bytes": 176,
+      "sha256": "d4eb9e23806604498a99b9034e97e3ec91453326882c59f49d1212dcec3ad512"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Snow Snow - ridge.tsx",
+      "bytes": 178,
+      "sha256": "bf35c65a7b4b5b36a2f9c7264fae385e03b2219ee1621e84bfb4562239cbf51b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Stone Lava - Ridge.tsx",
+      "bytes": 1366,
+      "sha256": "0fcb173401e3ecb90e549f6034ce86310ef3b705055ca7f6214027cffa6fb819"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Stone Sand - Flat.tsx",
+      "bytes": 202,
+      "sha256": "3c7d72a42f32a35093e167ae1980299d480fb57a834c6ce4ca3ba70b8ece8782"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Stone ShallowWater - ridge.tsx",
+      "bytes": 196,
+      "sha256": "450cacac6c7600bb6b64f29c7119e41e2716e43ba17910d65d7b814296afa0f5"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Stone Snow - ridge.tsx",
+      "bytes": 174,
+      "sha256": "2d990c281db7d24a4659342ff7e1f4b90c98ba994e2d7186c5fd9e5750c90076"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Stone Stone - Ridge.tsx",
+      "bytes": 1687,
+      "sha256": "4a671766fcd7414f154d61a2a6fd9707c032333101c4791c27f7d0928a2902db"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/ridges/Water DeepWater - Flat.tsx",
+      "bytes": 188,
+      "sha256": "12f1d9ae4cde6915f6be639dadc18482ad34381ab6957dc702f10f396b40f756"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Deep Water.tsx",
+      "bytes": 165,
+      "sha256": "452a75d9067e42569bb13ab4312452ea4f1866e45dd8578596d6c2c2df420524"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Dirt.tsx",
+      "bytes": 154,
+      "sha256": "c0f5352c25dfb043b500becad2d22825d48b9280669d9baeddd6770329e33c10"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Dirt_Details.tsx",
+      "bytes": 170,
+      "sha256": "695b393d379db47a495c4ea1f6539bf85081c3edc4b05909d2a6187ca8344456"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Dust.tsx",
+      "bytes": 154,
+      "sha256": "c2f07f0d8c6b9bcf2b4ddd8c65fbd10bb1e95c4c854fa615d5642e85cebcb5df"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Ice.tsx",
+      "bytes": 152,
+      "sha256": "1eb5238a6fa76f25b4f8091bc9ef5ff9f753939d5eec9e85e19de9cf2e76a36e"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Lava.tsx",
+      "bytes": 1437,
+      "sha256": "bbe1d0f01be55d748eccafade366e34b59c21279cb868608a20b06e1f0c36c51"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Long Grass.tsx",
+      "bytes": 283,
+      "sha256": "d7f49fab0d4c7b8be6c5e9f563e320c31dd044292f8198e4aec8a192575c7314"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Mountain.tsx",
+      "bytes": 162,
+      "sha256": "c551e34d41503ac90033790925560ce626d1c68d365c606b64228fc136e5b5e6"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Sand.tsx",
+      "bytes": 154,
+      "sha256": "474802db751d63844d78754501dd549ae0b17df73ed86e7bbab4486f7e363110"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Shallow Water.tsx",
+      "bytes": 171,
+      "sha256": "d0e0d59cde621c14b156d28ac4fa53e1ea5f0c19f167d733f59808f325bf122b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Short Grass.tsx",
+      "bytes": 167,
+      "sha256": "ec6b91f29e094361596d91e25ee1a6f0443c11ab3598db82170ff205c081b305"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Snow.tsx",
+      "bytes": 154,
+      "sha256": "95e9799505033408c8609bc4b99ffa4e13efae158319f4ec696caef1a431464d"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Stone.tsx",
+      "bytes": 156,
+      "sha256": "e586f60971bcf707d3293d1dc17acc31bbdcaa2d7ba70ae5e74cde01602413fc"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/terrain/Water.tsx",
+      "bytes": 297,
+      "sha256": "6888e7b9e2bdbac163f3bf8ca824fd0ab8e022eaf6c736dfc6af40455640a55c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/tilesets/units.tsx",
+      "bytes": 26132,
+      "sha256": "0736e0a22072847c8f69d8215de9e5dbe4fdc3e9c3d01226a9f7e6f2e9e777b1"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/aa_beam_gunship/aa_beam_gunship.ini",
+      "bytes": 2649,
+      "sha256": "1c0d46149ef50105e1c836a7fdade338bba079773d751803646a374ec67ed4b4"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/aa_beam_gunship/aa_beam_gunship_afterburn.ini",
+      "bytes": 2033,
+      "sha256": "d785afe3fb36b5538d95773ef1688b701d0f09209697f078df2a0d77b153874f"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/amphibious_jet/amphibious_jet.ini",
+      "bytes": 4719,
+      "sha256": "0824704b62d7732023a94555e85433c2f85495e845a45f2f63b9a4094a372b6c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/amphibious_jet/amphibious_jet_transition.ini",
+      "bytes": 489,
+      "sha256": "d16265913c452bb3dfd453c5a1d24f5c9a4eb2e82e12326e8e7c2f6114ac792c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/amphibious_jet/amphibious_jet_underwater.ini",
+      "bytes": 1526,
+      "sha256": "781c320fc7572873e1d144190b7491a604b9eaf888c94b6c4b85e503c5ba67c1"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/bomber/bomber.ini",
+      "bytes": 2227,
+      "sha256": "2ed92d5e97cd12f5395618cc800e541a97396942ef45276475b6e398f15117e5"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/bug_base/bug_generator/bug_generator.ini",
+      "bytes": 2195,
+      "sha256": "d1212c425fcd7a17f51622b8a2ba430f0ba328f8ce2c5b98fd31488f1edfc352"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/bug_base/bug_generator/bug_generatorT2.ini",
+      "bytes": 1951,
+      "sha256": "8145f5767c26db1da428e7ad0e07f660ebc17e10b78cfd1da08a249ba9bf18ee"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/bug_melee/bug_melee_t31.ini",
+      "bytes": 2268,
+      "sha256": "5a190802ce04b79c156d847fb3d1e9a859ed6e614d412026379ce40c1a2312ba"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_bee/bug_bee.ini",
+      "bytes": 1681,
+      "sha256": "128e5addceeac33cbe9c0c6af0c3834ca09b23f0235b66d97f4477f8de58097f"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_extractor/bug_extractor.ini",
+      "bytes": 1489,
+      "sha256": "b4026d98fc100a813a7428773fe05159cf294bd4fe6bedcbf7c0976cbcd309a4"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_extractor/bug_extractorT2.ini",
+      "bytes": 349,
+      "sha256": "74eb208ae5929c97ff519ec7270f55f5392004cc97610a20e5145769092d280a"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_fly/bug_fly.ini",
+      "bytes": 1544,
+      "sha256": "ff8ea29b529849ecc9c77af6279b4a00494038652350d22e22d3c426358a30df"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_generator/bug_generator.ini",
+      "bytes": 1804,
+      "sha256": "0fed4698ffe433d08c980a22186f5f5962ecb28b2532f7b80c645a1f7b882686"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_generator/bug_generatorT2.ini",
+      "bytes": 352,
+      "sha256": "26f14f8aecafcdd7f96e72922287e1b7dff537acc72caf004979a8fea44a6e19"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_melee/bug_melee.ini",
+      "bytes": 1619,
+      "sha256": "bd4d59a4b8f0e98bba13b9e569b861dac302a5ede045fa2b4ad6f52812c73050"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_melee/bug_melee_large.ini",
+      "bytes": 698,
+      "sha256": "8af1e0541e6efb7ebdf955f05e3047eeabbb19aeb53f45bde63913609554fd1d"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_melee/bug_melee_small.ini",
+      "bytes": 690,
+      "sha256": "211e068a860909a16ebfabc138ef43cbf1bda7b8affe78ae34254b48c8e4b750"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_nest/bug_nest.ini",
+      "bytes": 1465,
+      "sha256": "47d04b52d8b6307eca10e3fcda9607912c11b120fcc13df7a5523a54537bd329"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_ranged/bug_ranged.ini",
+      "bytes": 1555,
+      "sha256": "b9cf1536f1c4b6be52388f71282bb016ab0106a8e0ba55a05d0f38437e8ac264"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_spore/bug_spore.ini",
+      "bytes": 1496,
+      "sha256": "4d632daeff1d78b9a0972a778ceaacdd18d92ff4c9f8e3a5ac04ff80c9040b80"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bug_turret/bug_turret.ini",
+      "bytes": 1627,
+      "sha256": "6d90db74031665cff009a4a9298ef9efe18b3fba28b940c69dd3c90d888ea9d0"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bugs/bug_pickup.ini",
+      "bytes": 1385,
+      "sha256": "336797ca9ed29aa6fbdb31a389f791c4d029866091bedc12f3fc11394b82e6dd"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bugs/bug_wasp.ini",
+      "bytes": 1492,
+      "sha256": "6e6094e89a35b64c71fb9e2c0df66d45dffe1f1e3d2b1162e2691c7a7c6a4f04"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/classic_bugs/bugs_t2/bug_ranged_t2.ini",
+      "bytes": 2369,
+      "sha256": "5306e5ecb230120c9b3d1eb6e34636b83cbe4a82e5b9ae8f953cc48df69387ba"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/combat_engineer/combat_engineer.ini",
+      "bytes": 3427,
+      "sha256": "db1f23edd7fb4bab30449278f53d446f8598ed20035665ae9ede9ea557b855a5"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/experimental_carrier/Experiemental_carrier.ini",
+      "bytes": 6845,
+      "sha256": "1b6d130123137e43119975501f0571e5a77bd9c9ba913684ed74eceb4219f946"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/experimental_dropship/experimental_dropship.ini",
+      "bytes": 2588,
+      "sha256": "835a7df68270c7487a8722ca958fc04be1428159b54ad70b0b1c5a32577ae571"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/experimental_gunship/experimental_gunship.ini",
+      "bytes": 12696,
+      "sha256": "195d74e8ec04d9106d290f55d2e877f3c54592fea4b6e441870613c8a3031904"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/experimental_gunship/experimental_gunship_landed.ini",
+      "bytes": 1928,
+      "sha256": "b2d64f787b621e1df84d16e138461acdea9b63c977b15026892d0314434af2d3"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/experimental_spider/experimental_spider.ini",
+      "bytes": 9120,
+      "sha256": "ee21d4325c7c4b2f417cf1bfdc439ce039d57b760de1271eb3429f6ab64a337e"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/experimental_tank/experimental_tank.ini",
+      "bytes": 4959,
+      "sha256": "4a2d181ace2e0047985f91f66deb340fb96dc5d678c7765b555be238c8ddbd99"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/extractor/extractor.ini",
+      "bytes": 686,
+      "sha256": "37537a6b570c230821c9e2019455b1ff3f6b527a85339e1a50561ab99f63a93b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/extractor/extractorT2.ini",
+      "bytes": 552,
+      "sha256": "96c9b816478e17689a743c29065a3010a9d1c6d7c359cf32548918dfa058d74b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/extractor/extractorT3.ini",
+      "bytes": 903,
+      "sha256": "158b05cfd01455122967c2ca85d7307252368cfd39e3febbd785648c474b9c93"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/extractor/extractorT3_overclocked.ini",
+      "bytes": 674,
+      "sha256": "4f45cf55af6d59c22a7b6b0b4011a788b482293a46031eb21831e18fbe9c0ebd"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/extractor/extractorT3_reinforced.ini",
+      "bytes": 748,
+      "sha256": "da1608b5090f52ec35cb25bae8c869aa6921707b8caaf4712d3c6e9691fe1313"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/extractor/extractor_common.ini",
+      "bytes": 1309,
+      "sha256": "0252b195ada610ef74159bd56ffc6562c34bd5fa2202064e66b87b476643d98e"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/fabricator/fabricatorT1.ini",
+      "bytes": 1765,
+      "sha256": "95f3645ba5798a28e19e90197c2b8a32bc56dd61aabc2e7de386ca8c1cb55bba"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/fabricator/fabricatorT2.ini",
+      "bytes": 784,
+      "sha256": "f97e2c1b50e6ed85a59272f2eb00262cf24c46b2bd6687e5ea99d5a32522a0cc"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/fabricator/fabricatorT3.ini",
+      "bytes": 540,
+      "sha256": "a521a12f40940af20603ad410d3b9c2d3f422bc63d1372150ae491c71ec9a983"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/fire_bee/fire_bee.ini",
+      "bytes": 3334,
+      "sha256": "01ac367d9c4c1c346c416124a9aca0b6e8ad8060f451a868446fd001da39d073"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/heavy_aa_ship/heavy_aa_ship.ini",
+      "bytes": 1986,
+      "sha256": "0b240ba59748bdbe53baabe046b6f6028b98b9b24c225fe713c437d8e95332ff"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/heavy_battleship/heavy_battleship.ini",
+      "bytes": 2797,
+      "sha256": "13fc7cf250389b6d0381d8d581ab4c13cbd3d7e12204158c06b62187680df308"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/heavy_interceptor/heavyInterceptor.ini",
+      "bytes": 2200,
+      "sha256": "3b0ff5b9c50b90dd8cbaef2b9297e29d51d8f81c72214066052989ca5cd45ff0"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/heavy_missile_ship/heavy_missile_ship.ini",
+      "bytes": 2947,
+      "sha256": "fac1fe8379e2a8bf33b441211743fbab32e4e517e57384319e58ae42ef5c83d0"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/heavy_sub/heavy_sub.ini",
+      "bytes": 2955,
+      "sha256": "cf2fe66a997a97cdc88bdd5843f77c72f7a4e696350f496fac49e1f67d0c4c4c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/helicopter/helicopter.ini",
+      "bytes": 1645,
+      "sha256": "465103bc940171e929c57d3a8f17f8be49f8ff079852f821eac09c611c9ad116"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/interceptor/interceptor.ini",
+      "bytes": 1730,
+      "sha256": "cf8e6c9d59e9d814cc5f9ef6496ebb01369c6475e5a465d9c4ca10aebcf7f172"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/laboratory/laboratory.ini",
+      "bytes": 1423,
+      "sha256": "4c7e3f431325aa8a9c17b4372295777e9a35e9d475e54eca49edc28c44926be4"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/laser_tank/laser_tank.ini",
+      "bytes": 2247,
+      "sha256": "ca115bfa92ee06808ef3edb53436ba35cf52b5a1047f5a84a6cbfa6e13435f57"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/light_gunship/light_gunship.ini",
+      "bytes": 3146,
+      "sha256": "179763728db58e3dbe05a991cec44ce964c96beb5dfa19b5c65bcad2c754c66e"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/light_sub/light_sub.ini",
+      "bytes": 1818,
+      "sha256": "0507c9aa9b14a3bd711f12383b1f26658ec38c76c348b1b772539318398f06c5"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mammoth_tank/mammoth_tank.ini",
+      "bytes": 2971,
+      "sha256": "624f6e07c7212369b3f5257864df4a625b8cb9286cd38ec3348fdc0bd08e7976"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mech_engineer/mech_engineer.ini",
+      "bytes": 3503,
+      "sha256": "0ecc1b645a20a55f656fc24b603b3ff4046ccd77c23df8854d3f86dec035bdd5"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mech_factory/mechFactory.ini",
+      "bytes": 2027,
+      "sha256": "1d57421d00927bd7a2679aa4846b6f5f9ce453c3c3497cc87dfd975952bf18d6"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mech_factory/mechFactoryT2.ini",
+      "bytes": 660,
+      "sha256": "c7c0abf81620ba3bdffe68cfe0aff857c1b57ee2eca26d258a68e524d38a4fbd"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_artillery.ini",
+      "bytes": 2022,
+      "sha256": "9896dafb74dec008650128627299155d8f44b625777ef2dfecf2967e6dc3a939"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_bunker.ini",
+      "bytes": 3317,
+      "sha256": "7940da5c346186c4fc597b4245ec30c733c32ffdbf5f4ece424d556fa0c06d75"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_bunker_deployed.ini",
+      "bytes": 1782,
+      "sha256": "d9b70c61e05b8761ab784b2b7f30c479c3f8d597c9a0b9427856ab43ddee407b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_flame.ini",
+      "bytes": 3760,
+      "sha256": "cc714b030d7b412bc6443abcf25c5cd1f16369895813cf4d796e76b4734b0076"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_flying_landed.ini",
+      "bytes": 2014,
+      "sha256": "7d54cf8054aa3ceb06312e59b961782e7638e604713fde1a5efa73685f55032b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_flying_takeoff.ini",
+      "bytes": 1266,
+      "sha256": "3137a7d0e5c6515e9833e89a2a0a3f0291c54f4a725e507f5c49a7ec7d107543"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_heavyMissile.ini",
+      "bytes": 3459,
+      "sha256": "355a435247d328610ea34470da834c10368cf3aa0035166b00c2022c15077454"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_large_common.ini",
+      "bytes": 858,
+      "sha256": "c9891f3be663623bb8b507e859f2b7c0e8110d18ec87e1629bfcc223628573ed"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_laser.ini",
+      "bytes": 1906,
+      "sha256": "09f33178c62f184468a2d8fc3ba083092f54233b0a91b3a5a95a1eca64111264"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_lightning.ini",
+      "bytes": 4032,
+      "sha256": "3264aa85fcc2ff9e919edc2aa1263cf2e7e36c5ebc26c1c39d5b091d470fd94a"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_med_common.ini",
+      "bytes": 845,
+      "sha256": "cb6e2bb4927c3381834e506a7555ddefdd22c11075b96323738bdd457692251c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_large/mech_minigun.ini",
+      "bytes": 2038,
+      "sha256": "e2ff502febc4fe2bac82bcaf9af70c5969bf9e45d97517c8d6a2c27e72821f9f"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_small/mech_gun.ini",
+      "bytes": 2120,
+      "sha256": "dc541a29d32b64f97855ba98a889f01bcdd1635e8b7e3f1315e9d2c797698fe3"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_small/mech_missile.ini",
+      "bytes": 1317,
+      "sha256": "26df92165d1b4468e496341a1f501e5920904aa819077db2930a11b5962eeb02"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/mechs_small/mechs_small_common.ini",
+      "bytes": 1264,
+      "sha256": "dc192cca66d4bca3f856d82263b1b011dbb83980f86c5c3333e65e22d795dafd"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/miscellaneous/example_faction_picker.ini",
+      "bytes": 648,
+      "sha256": "7a5b3c1e35197ef6e9b36d8111f184533a6e625e41206532ef4b1cfde6a5fc8b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/miscellaneous/flare_10s.ini",
+      "bytes": 1142,
+      "sha256": "b950058b60a228c1dcf177a8b1637364c3467d584fcd6fb4ee05c8d6bed2cb44"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/missile_airship/missile_airship.ini",
+      "bytes": 1995,
+      "sha256": "72c94645719cf60427905160f6cd7b7b01c7b23787c1bd20aaa09e2abc1a8f33"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/missile_tank/missile_tank.ini",
+      "bytes": 1965,
+      "sha256": "ea808d5aff6ff4734fbee295c67474f2cddaa0b9f881e1e0c9cd191f06713b0b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/missing_unit/missing.ini",
+      "bytes": 1016,
+      "sha256": "68c02467ccb196cbef803087ce26ce74355c13e00f9852c8ff1aa28cb76c027d"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/antiair.ini",
+      "bytes": 1636,
+      "sha256": "cd9c7f674c6e75fcbb1c61cb2eee11f2c40f534da353d06cdf010bf96faa6b39"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/antiairFlak.ini",
+      "bytes": 1286,
+      "sha256": "a56d927e7b8a2dd76ad45ce7a3cc6709f1c67b184315ee3741ddd51340f38454"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/antiairT2.ini",
+      "bytes": 1221,
+      "sha256": "176982a1cc7a351c3ccf1c19e822ff49721d0ca366993f224324aaf50eb9f180"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/antinuke.ini",
+      "bytes": 3967,
+      "sha256": "f8b2617fef6cb0c4af77a2ee15b2c7d136a486407bfc887292c4ff5416be183d"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/artillery.ini",
+      "bytes": 4509,
+      "sha256": "855f499c870db876e1ea5501fda3d735b2a9c137d6d3a41b17a6cb41eb40590d"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/baseSlot.ini",
+      "bytes": 838,
+      "sha256": "f2f30de9af1b53a2888bc43597d31761cc13957cc339a14462aefc47f823eead"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/blink.ini",
+      "bytes": 1362,
+      "sha256": "6a3a8e70d49043fc416fe6f1fb5339963fcdee9ef6bef4d0df519268c3441495"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/common_slot.ini",
+      "bytes": 2536,
+      "sha256": "5203ef191402e522d1d0bcac2d785aa74c0488639a5448db80588ff888f730f3"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/common_weapon_slot.ini",
+      "bytes": 129,
+      "sha256": "6521cb7b24a35b342621e04b4e5a707bb87b9855cce123276b8155f94df9e7b2"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/emptySlot.ini",
+      "bytes": 3352,
+      "sha256": "f1c1f7c107548391ac3eb5291b0eece921e70e4f98f08bb5118422344809580a"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/fabricator.ini",
+      "bytes": 822,
+      "sha256": "b73b3eaf2d88f5e25f94fc7fbcd3fb03f84671ac3664bd7c63db61162c4a4b4f"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/fabricatorT2.ini",
+      "bytes": 251,
+      "sha256": "f837c625e34a71714100b06275a472e116a3bb4daf07ffc075038174a6de76c0"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/gunturret.ini",
+      "bytes": 1138,
+      "sha256": "138891512523fffd812450f632b9ca0966040283142c3fcecbf5f8875ba0420b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/gunturretT2.ini",
+      "bytes": 850,
+      "sha256": "d5918510eaabf814c51bc0817264b6869db5bad42d320d65116c1c192caff75b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/laser_defense.ini",
+      "bytes": 587,
+      "sha256": "ce219e05a2dd2119cffbf739e797008ef5f94e2479ce408499d52f491af4910d"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/lightning.ini",
+      "bytes": 1889,
+      "sha256": "86f37ff905293d82bc0b9db0fd2952dc58880cc433750d533d37aae040dd5924"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/modular_spider.ini",
+      "bytes": 11777,
+      "sha256": "549698e928517c19e34a998918dd9d73dcc5de51cbf64651285f06c508c3e745"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/modular_spider_nonEmpty.ini",
+      "bytes": 554,
+      "sha256": "d6a11e491894e37a38669330c7aae2a6448ec3e007d42e6dea4d0bef10ebe0c9"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/shieldGen.ini",
+      "bytes": 585,
+      "sha256": "214d7e05584e3528b9cf4070e755e751476a5d228b4602f3f4b29523ebe8d18c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/smallgun.ini",
+      "bytes": 1122,
+      "sha256": "946129eaa75260cc7a8ba0d4302ba6df2ab6a2dc29384e2b29dcb461dd911e12"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/smallgunT2.ini",
+      "bytes": 833,
+      "sha256": "16d61f6f496e6cb3b289541c18061cd1a338bf692b4dbcf89941d58582ab7802"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/speed.ini",
+      "bytes": 449,
+      "sha256": "5f736276d64bb41860527ac56b93287c50d78db47c6555e951d76cd80bcb02e5"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/modular_spider/speed_incomplete.ini",
+      "bytes": 306,
+      "sha256": "a5eede22b01e2ec0a14690a6d942e7198928e0375cfe090991f8317573c4afad"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/nautilus/nautilus.ini",
+      "bytes": 9279,
+      "sha256": "7fe2629e60379f10c73b71922566694b3fcfb440ce983ceed61820a96653ab91"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/nautilus/nautilusLand.ini",
+      "bytes": 2482,
+      "sha256": "bf1ade2d9d4af763b8f51001e4ed9d69d9367db8826804308ebd5890ad0c1f0a"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/nautilus/nautilusSurface.ini",
+      "bytes": 2460,
+      "sha256": "aa360eef982789ad6f0dfaff217e0caded7df02e49f66e794980f7aaf6d06897"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/nautilus/robotCrab/robotCrab.ini",
+      "bytes": 2825,
+      "sha256": "1680a6546b409cadec2a651ff3fc228962d07cdb258548f99c2037b008fdddf1"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/nautilus/robotCrab/robotCrabWater.ini",
+      "bytes": 2048,
+      "sha256": "bf8e61982ab475bff2474b1b80d9f336c37e6420cca94ec3f6b3070455471b0f"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/nukes/antinuke_launcher.ini",
+      "bytes": 4397,
+      "sha256": "7e51fc4777b19160a6194e4d88a8f999f1f3323a807d9b59024969db9974a56d"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/nukes/nuke_launcher.ini",
+      "bytes": 5376,
+      "sha256": "aa801b14612b33f8d764124d73252b3650bc1b0c2c5b683d302dbee45d5ed6da"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/outpost/outpost.ini",
+      "bytes": 1051,
+      "sha256": "671883098269863a9ea3ef9f8692a784a5546b49af5e4f9c27f52f11356c511c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/outpost/outpostT2.ini",
+      "bytes": 276,
+      "sha256": "6c8796644694f4a2fc758ba37da5de28330ac9e7faadee1b81582306d8053e4a"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/plasma_tank/plasma_tank.ini",
+      "bytes": 3371,
+      "sha256": "96299e43c0a98608ba6ab50b905fe56ccc7a917cbac22c448975cbd634743d70"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/resource_deposits/creditsCrate.ini",
+      "bytes": 922,
+      "sha256": "69b5adbe7095dbb51c5684f023aec6b72e4661f64313de671ca23275d27d95cd"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/resource_deposits/crystal_mid.ini",
+      "bytes": 923,
+      "sha256": "1dcdc3602becd71cd5c1e81a2040dc1861341549980f6c393f1c424767446f04"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/scout/scout.ini",
+      "bytes": 1948,
+      "sha256": "b9af06cde3b3d0b00b23ada976c50ec5b8a5024b5760f55d7edf3f253d37741b"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/spy_drone/spy_drone.ini",
+      "bytes": 1155,
+      "sha256": "ca282edf75c9ed485335a669f5959213c64611043b180cc63a85397cd565ec69"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/tanks/artillery.ini",
+      "bytes": 1605,
+      "sha256": "0a0e7c217176dd403f058587d798a36321dc11ac54dc2a801a44f5ad9e083f5a"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/tanks/heavy_artillery.ini",
+      "bytes": 1919,
+      "sha256": "a03d396d96a56c6d942a916abff49f09b2e7dcf7220f05ab5f2f5fcfb31be22c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/tanks/tank.ini",
+      "bytes": 1309,
+      "sha256": "11e259de2ddf7329458585e645811faef4a1c56b29a265b7c044001fd93b5359"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/test_tank/tank.ini",
+      "bytes": 1378,
+      "sha256": "cc8842f4a0ee99221ac95ada57a3ecaff8f197151972906c6d797fe7f726240e"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_antiair.ini",
+      "bytes": 2483,
+      "sha256": "27af15c8cbd6298185af1a83bd2e4472f7eb74893d79413ad8e1e80e45a7ac46"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_antiair_flakgun.ini",
+      "bytes": 2135,
+      "sha256": "8e8cec95be0923cac6093307976def0973e513cdca63313753d02bf36b021a28"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_antiair_t2.ini",
+      "bytes": 2468,
+      "sha256": "78571aea0fd1088d6b4347905e30cd959be44a38ea406b876c0cf11f97ffb9c0"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_antiair_t3.ini",
+      "bytes": 2130,
+      "sha256": "cb24a06ae8c27541f406149372b4da24668eadbe75d2cf23df16529f66c27688"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_common_land.ini",
+      "bytes": 1014,
+      "sha256": "215e4c2e37ba0b2a184a2d0900e84127d5b487085bb66b8d2908969e6f48f9a5"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_t1.ini",
+      "bytes": 2382,
+      "sha256": "3afbdc6dff1a2ed10fc3e570bd4333460efb94161e752112bf1d2e48a1e400af"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_t1_artillery.ini",
+      "bytes": 1716,
+      "sha256": "cbd6a287775240abfab2e8be46b3040b32647bf2361e7daa1f3045916a5d1139"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_t1_lightning.ini",
+      "bytes": 2889,
+      "sha256": "ce5d241fcd3aa5c23eee4627a157e02b60a0f49d6277e3aedf709a29a0b74680"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_t2_artillery.ini",
+      "bytes": 1502,
+      "sha256": "7c567ce9e2362c64ddee7d80e32be2f67db889b8a26aba27738f97f98afd0270"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_t2_flame.ini",
+      "bytes": 2144,
+      "sha256": "4144207792b3cb094a8e92bf5b601beaa3dbbc135ea5d7b6c9ba720c8f9d359c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_t2_gun.ini",
+      "bytes": 1422,
+      "sha256": "a995440f469c6924bcfe35fc0c26524a5e182889a29550d01bffc1589083ce34"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_t2_lightning.ini",
+      "bytes": 2445,
+      "sha256": "47e44a2c6a506f1a46e849395ba372687067833a8c89faf5779119db5d63f37c"
+    },
+    {
+      "path": "evidence/sources/frozen/assets/units/turrets/turret_t3_gun.ini",
+      "bytes": 1410,
+      "sha256": "81b5dc7cb9c4cd667825c8de705ce7fda7bac3a4820428cf30fb10d27c992778"
+    },
+    {
+      "path": "evidence/sources/handoff/Astra_Work_资料库炼化任务书_2026-09-29.md",
+      "bytes": 2756,
+      "sha256": "59a12b0cbd54a6c5bb4f8675751487e6445e89ccf8acb477a944b2388ae7c36d"
+    },
+    {
+      "path": "evidence/sources/handoff/CURRENT_STATE.md",
+      "bytes": 60671,
+      "sha256": "bf46bce275862db0eb452bab5c68de6a91f7ef1b8eae6417cdde8864b92b26c5"
+    },
+    {
+      "path": "evidence/sources/handoff/Codex_KnowledgeBacked_WorldModel_Capability_v0_2026-09-29.md",
+      "bytes": 4600,
+      "sha256": "27be2b700904dfe18330137c5d08d966946db97885fe5ad0e182dde4ad9888a1"
+    },
+    {
+      "path": "evidence/sources/handoff/evidence/allowlist_verification.txt",
+      "bytes": 28019,
+      "sha256": "ac5ab51cc24c0e1c2e829652f96440579fd0e98f6b9b0f79df93c973b0ee7185"
+    },
+    {
+      "path": "evidence/sources/handoff/evidence/engine_semantics_trace.md",
+      "bytes": 10104,
+      "sha256": "dc0258cfbcbb6b1dcf45a0852e5a01b021814da0d06e44443dc7df0c10b8af5e"
+    },
+    {
+      "path": "evidence/sources/handoff/evidence/movement_resolution_probe.txt",
+      "bytes": 21846,
+      "sha256": "7967db6e48b10e1c902ddcb2f58264ed6da1aba7cb50088610659e8aa08e1876"
+    },
+    {
+      "path": "evidence/sources/handoff/evidence/reachability_api.md",
+      "bytes": 3328,
+      "sha256": "8bdd828727388c5e2aaece3c321fe1514551952befeef262121538153200cda0"
+    },
+    {
+      "path": "evidence/sources/handoff/evidence/type_accessor_factory_probe.txt",
+      "bytes": 20038,
+      "sha256": "1c7e10216bca7d29cd63a2d34e0f8ce9165aab67d6a341a5277393c69ff0192f"
+    },
+    {
+      "path": "evidence/sources/knowledge/00_版本基线/BASELINE.md",
+      "bytes": 1308,
+      "sha256": "f3f960fd346dda50d426c989414cd2ea8c65459bcd25714985db533593d89ccf"
+    },
+    {
+      "path": "evidence/sources/knowledge/10_社区原始资料/README.md",
+      "bytes": 672,
+      "sha256": "5d7f7e17b7252eada93b628cecf42f91d483f53ac5e97fe247fc51dfbe60b1bb"
+    },
+    {
+      "path": "evidence/sources/knowledge/20_整理与结构化资料/README.md",
+      "bytes": 717,
+      "sha256": "9ab0ce47cab727c8fcf02cd8239825f69b692fceb8e69be41ee146345d8bfbe4"
+    },
+    {
+      "path": "evidence/sources/knowledge/40_地图与单位原始数据/README.md",
+      "bytes": 1665,
+      "sha256": "46c6b8b8fa89384f9a3b163798e3723d8ed0e51ffa6ee6eb4d80b572802e63d0"
+    },
+    {
+      "path": "evidence/sources/knowledge/50_Replay资料/README.md",
+      "bytes": 1871,
+      "sha256": "a9787ad0bce043a8ff6374a0e72d3f50cb32441d91cb0819103324e9764a6dce"
+    },
+    {
+      "path": "evidence/sources/knowledge/90_勘误与已核验事实/ERRATA.md",
+      "bytes": 1134,
+      "sha256": "cd94110db03aad77673296991c6df8aee50a3c2a63fd3754112577fc6ddb3e5e"
+    },
+    {
+      "path": "evidence/sources/knowledge/90_勘误与已核验事实/VERIFIED_FACTS.md",
+      "bytes": 1472,
+      "sha256": "36483c223595e865bbfa8bf86e8e7978bf8505edc514fbb19d0c18db78e5c722"
+    },
+    {
+      "path": "evidence/sources/knowledge/README_资料库索引.md",
+      "bytes": 5249,
+      "sha256": "440fa2cb71408cf094e3b90a33cc3155eafff56622cdee57efd8695e229f495a"
+    },
+    {
+      "path": "evidence/sources/knowledge/SOURCE_VERSIONS.md",
+      "bytes": 1523,
+      "sha256": "837bbc2a0d6689056586adaf3564a2250cf6fc93e1908e440c160383b2b2901e"
+    },
+    {
+      "path": "evidence/sources/references/Modding_Reference_1.15.pdf",
+      "bytes": 375007,
+      "sha256": "62ade059066472fd564b110b1c040a90562b3c1fd0ec92e4418de7843c1cd4c3"
+    },
+    {
+      "path": "evidence/sources/references/NDT_CT_1.3.2.8.xlsx",
+      "bytes": 840775,
+      "sha256": "681970559d1a53b6c4bb5b1dae1648028a3d1cfd157a3f9892bdf276461c2155"
+    },
+    {
+      "path": "evidence/sources/references/ndt_map_rows.json",
+      "bytes": 6306,
+      "sha256": "e4d84aee1b8352eff73e476cec789341230fa8977a38211d097534800221bab3"
+    },
+    {
+      "path": "evidence/sources/references/ndt_selected_rows.json",
+      "bytes": 10274,
+      "sha256": "a2f6e4bc78e113c59349ac49666c26b40c76148a8368aeffd916f085412dce1d"
+    },
+    {
+      "path": "evidence/sources/references/reference_selected_pages.json",
+      "bytes": 129736,
+      "sha256": "70ea78ac2b92e814f3657fd445109c9236f36c51f4f78fac5eb4e71cca38bc0a"
+    },
+    {
+      "path": "evidence/sources/references/references_manifest.json",
+      "bytes": 599,
+      "sha256": "1eec714f54d3e2d7cc6db7c896f93c411a9dc94067ba38609cd2d08a65b38b23"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/a.java",
+      "bytes": 12092,
+      "sha256": "81efded935acedb93d7df7c7b240c99bfe9704f0861f693fbdd1188d264aa186"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/b$1.java",
+      "bytes": 531,
+      "sha256": "577e8140d1b8514f2f87906093b61dcda7de3f59bad1de43b1ccd921f7ead20d"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/b$2.java",
+      "bytes": 531,
+      "sha256": "19b8f68def35410458b53dda6ef4fecd5d768806b024e523aca8e12dee7340dd"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/b.java",
+      "bytes": 60512,
+      "sha256": "1aaf986799a4542a1ce84b8fbcd36369e9ade8a4b181aa375527bb790ddb2a7a"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/c.java",
+      "bytes": 32468,
+      "sha256": "13c397fae489fcf4ae3210adec8a4ca98c152215cae429c741cb09bbb82b3a0f"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/d.java",
+      "bytes": 1775,
+      "sha256": "4fb9256eb9f1341f2fc90e5c401abe0c2d63f330c810a4d9023472ca8b5f5b54"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/e.java",
+      "bytes": 18554,
+      "sha256": "67a8068a7f958d3643c8a045013824f7ee2242f0168a42fdf43af6ed1e2420a0"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/f.java",
+      "bytes": 280,
+      "sha256": "0b0d824225fd08f562c2ad01bc20652558921c40031432db60305bd2768435e7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/g.java",
+      "bytes": 11758,
+      "sha256": "734f2318a7a8308d1262a45c58b2b649f64921473a897a44c38373bfba3acfaa"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/h.java",
+      "bytes": 6364,
+      "sha256": "3856831223948c15bb156ac5c32767bcc66a3acc143061fba66ef852c0e19258"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/i.java",
+      "bytes": 2023,
+      "sha256": "f4e87cc59df3aacd5b12880517a53bb424e69c8b8e59e02d0d9b481f4626d6bc"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/j.java",
+      "bytes": 11384,
+      "sha256": "27bdfaad65e5081de510d300e16903d761fcb2adb836913ea2651b0eb28fcdea"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/b/k.java",
+      "bytes": 328,
+      "sha256": "05f1bdff43a6a2994f77ec62f7e90ad8eff83cd93119b69fa36c31eeb288505d"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/n.java",
+      "bytes": 58700,
+      "sha256": "72e4996708d2b90eb9c47f2bea2e346d98d7986c6158bc52865403185f61b3e1"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/a.java",
+      "bytes": 164,
+      "sha256": "948567e982f96f0ae5e9e22198b598f7cba0774a770ede2b8299ee43c711ad4e"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/aa.java",
+      "bytes": 279,
+      "sha256": "9e101b5f5b256baaf68f3fd2ef1a43fb255817ced538f8dd99d20fff4a09976d"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ab.java",
+      "bytes": 182,
+      "sha256": "f124d8e1e9a16d0a58c4217946cb9fc32b6e82257e2c972f58bf5f1ee7cc9ffc"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ac.java",
+      "bytes": 1643,
+      "sha256": "281e10f572640851f9769bcbc740380825b1be64824a342f0e5a981d012ebfb2"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ad.java",
+      "bytes": 443,
+      "sha256": "3d199be96c3d3b13b6e8e4050016f7d14d0ee04e54ca7b3cda80f696ea009f6f"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ae.java",
+      "bytes": 1545,
+      "sha256": "634f4a20abf9bf15b8c7c0a2fca56df743e599ac69491d28f2202a10c335cdb2"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/af.java",
+      "bytes": 436,
+      "sha256": "533d90ba7b339d083c175b213e942ef4d56e022d935be7eb016aa7347c8cd23c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ag.java",
+      "bytes": 142,
+      "sha256": "e3c730cacc1b397bd63f2fc14af8b9770c88e6de413fd1ba46c7dcaafe92ff55"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ah.java",
+      "bytes": 2263,
+      "sha256": "3308a1b91c22bb7751f3d8b53ba3db98bb445aa98cdde75c73d89eb1a8b00a9d"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ai.java",
+      "bytes": 7430,
+      "sha256": "9f00aa4146cd840334f558030adad22140386216ae247742fbaee06fe292d202"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/aj.java",
+      "bytes": 951,
+      "sha256": "297087b28b0430e4f7ea32754f6de167631adf7cf607a5a543103bb67db06021"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ak.java",
+      "bytes": 295,
+      "sha256": "f69cb2e388c1149fe040f9a01c2478ad60ba9f243a10897dbef71831b4ba5a5e"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/al.java",
+      "bytes": 12051,
+      "sha256": "a20c4900d8e5035b99391b3ca7dc24d9ef0fe6ccc4d2e64f142634513d89acbc"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/am.java",
+      "bytes": 62777,
+      "sha256": "ed640b9755a97580619a4223903ac6d58b6ab4944a3f5ccf159b0265c621670c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/an.java",
+      "bytes": 215,
+      "sha256": "f26cf272148897404a29a7aa61d325202e23e846082ccda28097f8ef9e677829"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ao.java",
+      "bytes": 737,
+      "sha256": "eb84cbfe362268e28b9e89333a428c16da373c3c9324519b0ddd4dcc16932e03"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ap.java",
+      "bytes": 1173,
+      "sha256": "b025ff63c247b4511acad53fc9901cf9558bf3ee3c49c7acae1424c6123802a7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/aq.java",
+      "bytes": 5913,
+      "sha256": "137d86010f486717f71cd277db1f6519b5d7ff0e532f6803b5fddc947aef8378"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$1.java",
+      "bytes": 1121,
+      "sha256": "f85ffca9de00bb8dcc84e95a6688be5c8420ec78b652d7ba22d25b41ee61f0a4"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$10.java",
+      "bytes": 721,
+      "sha256": "f447ebb8a71a7c1a286929a1e744ad80d0e0efdc959308c8424516956ded6a52"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$11.java",
+      "bytes": 653,
+      "sha256": "2fc7dee7115ffb2fcf6e0e30afb1ca43059a843e80a00a178649a5babee1699e"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$12.java",
+      "bytes": 1025,
+      "sha256": "6c4ecbc72c4ee009b18c156df783ce9d61c477bf3f617fa734a310e4b5745403"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$13.java",
+      "bytes": 653,
+      "sha256": "fc43c043901148152e1f23c6789fc41ee7845bbf7ecbc64a509487a56dc675c8"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$14.java",
+      "bytes": 655,
+      "sha256": "b84163988940fe58130c9dafabb2ce15c0ac1a66d5c94e082a5e8ecf77b9ec14"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$15.java",
+      "bytes": 653,
+      "sha256": "92868347f6d236ffe2507e4b466659c3213eae50b58dc072f3b84d9113a97fe3"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$16.java",
+      "bytes": 719,
+      "sha256": "41d2f98633db7948405cb9fa2520454bb15c4378318f89300b7436179945ed8f"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$17.java",
+      "bytes": 719,
+      "sha256": "79bd2cce7766f31d18b067657a0ab164eb03cd94c0cfb6a63afc1fda9c81b7cb"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$18.java",
+      "bytes": 858,
+      "sha256": "d52210d547f3878078d50dd91a27acbcbe95068bdd0b83ee29251f3e8787a133"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$19.java",
+      "bytes": 718,
+      "sha256": "acd895e2b47114d2e282b0ca315382aa18f48e8ebd5e08a9add53e1ab75b3c42"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$2.java",
+      "bytes": 652,
+      "sha256": "224bbc10b7660e7fca2a4ce649aab3517515fcb3212e288cbf400ccc91465327"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$20.java",
+      "bytes": 617,
+      "sha256": "409e5e549aa053a0822baf427ae4e8ab9f91c1a08dad3ae47dcdb4f17aa03ebf"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$21.java",
+      "bytes": 726,
+      "sha256": "3d59ae0294171302626652cffc2c211ddd8794aaa47a9acae6bebeaf23c2936e"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$22.java",
+      "bytes": 729,
+      "sha256": "f06cac81a674db9e651baf2103930472a52236e44bfb71cce4076be119063408"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$23.java",
+      "bytes": 1026,
+      "sha256": "b4a8fac51a6b07e84ec8d51f17b0c9a5ff442db8c36f186821078005cfaec1cb"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$24.java",
+      "bytes": 729,
+      "sha256": "e76d925ceef1887ed4dfb6616ef92c9bf2097c37318f1220154339d2f43cc045"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$25.java",
+      "bytes": 721,
+      "sha256": "3b7e26cbf70338cab1b1c7281a69dc67b48a86e8e287a15f27c8ff9d7000d265"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$26.java",
+      "bytes": 722,
+      "sha256": "4b55aea596fc779f894ec3084a89a57371c114da3f8b25d00540148287318ce7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$27.java",
+      "bytes": 897,
+      "sha256": "3a699b0aaabda2e5d7660a85f9b48bfd3b9219b23acd71b0adf0c79cff2233e9"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$28.java",
+      "bytes": 723,
+      "sha256": "08c77681caf15fe7902b18cbec6b777988522de8f214485eb82ffd862cc3a6f7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$29.java",
+      "bytes": 725,
+      "sha256": "23103b12e3387802b90a68017eebcda11792c83829d45c6c0fd60023013bc6df"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$3.java",
+      "bytes": 653,
+      "sha256": "d3fd1e9b24ceb876dfde3a9e846c70becb214b43462344c975ca60f305c1602d"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$30.java",
+      "bytes": 920,
+      "sha256": "090309db6bce524e067922569fe63b9da675985b49a133db41671a28bde0e968"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$31.java",
+      "bytes": 654,
+      "sha256": "464a25c9571a3cf58998859b2d90344ee8a1885c685485c3d8c6a17ef50de9c6"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$32.java",
+      "bytes": 967,
+      "sha256": "bab668523878a0a12e0ae6ba96108c0347e4f4c0a32951ea186a4cbd93522d22"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$33.java",
+      "bytes": 720,
+      "sha256": "af1a8578ee8f92a684e0cd03214a471c0c16fb8f5a6e0955cde2f7ff2fc118fe"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$34.java",
+      "bytes": 1100,
+      "sha256": "f1fe6e22b3f2ac4dec77cb786fdaea390dba4aaef2c56457f3588e6cb66778ee"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$35.java",
+      "bytes": 726,
+      "sha256": "66ec02b08c5f8b31577bef74dbf746967b3a4d7f7bbf5dd1e65b5a6ee5b7ca11"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$36.java",
+      "bytes": 722,
+      "sha256": "49ee3fe947ccf1ff6a4d03c6bd847d19485d1798b1de9776e2134eeaa99ff955"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$37.java",
+      "bytes": 785,
+      "sha256": "af0985fa95920e0ce7208dca7b6ce16ec2566804d52aa7e4f4f5b993d3fa10f7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$38.java",
+      "bytes": 788,
+      "sha256": "1b6813d639ccab85f8fb524a48a54a2b996ae0be81edcb0b77755fb5e0577e06"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$39.java",
+      "bytes": 671,
+      "sha256": "ac32fd95fffb397b8ffd855191d2118cf40f2e3ea091a02c48f0bf5e10599ed5"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$4.java",
+      "bytes": 653,
+      "sha256": "3f325cb704363475ec5560cf835d760e38f24f2e5c4d70e068e4debcfd885785"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$40.java",
+      "bytes": 643,
+      "sha256": "1df97f4855027c2bf8032c50a77ac408fe58389273cddccec784184c08d84bcb"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$41.java",
+      "bytes": 767,
+      "sha256": "0eb3ccae0c73c4a37ba78799fc3df3f4e70e1c26037dc6cb94ef71a0969193cb"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$42.java",
+      "bytes": 781,
+      "sha256": "eb334eec276d8a46b10035491f1d77a942001c4ae99afca4a292c8e3a8a368ed"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$43.java",
+      "bytes": 830,
+      "sha256": "31a8c028d01b4e6e36076268d709f099e026ca2c2023d3d120fda69460c2fe78"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$44.java",
+      "bytes": 744,
+      "sha256": "a02e208e2220cf69d6383ed800a94f8278cb57b3bd3457223e1fa1c0c8c7b8c1"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$45.java",
+      "bytes": 895,
+      "sha256": "8f7e8f4e44d5f2c43823b5e7f0343592652efd433290cdfe9c659c0d2422418d"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$46.java",
+      "bytes": 766,
+      "sha256": "cc8af08b924a67cdb7c20489035fcefa8c0fc7fb5c369cad7ae799ef8f571fd0"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$47.java",
+      "bytes": 1042,
+      "sha256": "558535c117b033c16a3698ead9d8ccb5adfc89e83786a47476e61521d1bdc91c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$48.java",
+      "bytes": 890,
+      "sha256": "df90f5dc3853407438328ce71d88fa1ef3d0e2ffe4b7b948bfb40429e0c4dae3"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$49.java",
+      "bytes": 559,
+      "sha256": "b1fdf2655a5ae4666bb31840974ff43ff5c3c2992bc6a7947fa6ec96380313c8"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$5.java",
+      "bytes": 652,
+      "sha256": "5d578b472877ae42530e73c0dc6962ebc6040ac420cea8349de1d2f6a02e8eb5"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$50.java",
+      "bytes": 731,
+      "sha256": "058f1d0797bc6a946ba0a2fbc15d20b26012bc183b3d3605d519344ef0aaf451"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$51.java",
+      "bytes": 730,
+      "sha256": "b842a624a45ddf03359e52d37ddbff92e48c361bceafea1004fb42107f5f5a6a"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$52.java",
+      "bytes": 1140,
+      "sha256": "551c7fd5706e904d64bdd68ee5ec55a7bfe0ee87a0c588cdd236b5bdd39e0cbf"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$53.java",
+      "bytes": 653,
+      "sha256": "afb4ffb50d5465146049e74d9bb516b474b74a9df33a69bb1c2549cc0bf557f1"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$6.java",
+      "bytes": 717,
+      "sha256": "b5bf383d5fd1d14660bdb36820737f8ba1124a3653b1a5bc2da55812e3029cbd"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$7.java",
+      "bytes": 652,
+      "sha256": "24d18af77aa857ab61ebc30ae49ba26f72237f28c41772f9909a8bee65b7f0de"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$8.java",
+      "bytes": 652,
+      "sha256": "bff4e8e8771ecd3e1e0fcc8b22f59859f6ef14b9574de4525d771dbe068862b3"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar$9.java",
+      "bytes": 653,
+      "sha256": "54ace59672430d2b3695241021314344ff6d307ab7123cb94d759ff6faed7a07"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/ar.java",
+      "bytes": 23558,
+      "sha256": "cb86e8f2a2b4b48821853650fa029287e7cf6c9433b235c485803f3983f7ec24"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/as.java",
+      "bytes": 1229,
+      "sha256": "2bee3843d1711759b8dd5dee8bfbcf52449b6243b1f854e1686eab0a5ba65942"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/at.java",
+      "bytes": 182,
+      "sha256": "77f4cc3018842d43bbc6b405e644667a4d79ba27778fa092eb9b1b8288fb4e3c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/au.java",
+      "bytes": 6941,
+      "sha256": "7ed3a8c0118d9e28075310c26e2460ebe423e47dfea62f121108d487c0288447"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/av.java",
+      "bytes": 254,
+      "sha256": "a3b888aeaea71c27812f1fc9e60a93e1bf646d3c1013db171f3fbd7dcc397a21"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/b.java",
+      "bytes": 140,
+      "sha256": "9713b0e4b3aa347c808b3699ea895faa7303cf77c11143c457749c4f265b60de"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/c.java",
+      "bytes": 243,
+      "sha256": "c14e1d0ea2bbbbf0198a083a873e192ae577f3cb66336d89ebc5045c19b1e654"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/ag.java",
+      "bytes": 169580,
+      "sha256": "591d49437e89cb5da3ba0ce0356a942dbdfd2817bd97557b61801b5dee8ef921"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/as.java",
+      "bytes": 8831,
+      "sha256": "327e60f22872cabb8fa7aaa3f8e0101285e0cd9c2b3cdd13902f81949f451028"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/bn.java",
+      "bytes": 17911,
+      "sha256": "cb0f257c4fed4e4df51cf46dc4d9413fb71ae6f19c00df93a7c8baa880e1081c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/j.java",
+      "bytes": 150944,
+      "sha256": "08ced0ab929f0531014ff3cc1ce906c8e247387a60849423d61546867ae4c37b"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/custom/l.java",
+      "bytes": 48881,
+      "sha256": "b216610c0b52a287ab92ba0a7d49f798acea060aab994ed37cf153c6348b17c2"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/a$1.java",
+      "bytes": 1367,
+      "sha256": "8ac67e89e9b37fa2054226dfd11315de4d3faf3126ab0ca2323914c420d78bf7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/a.java",
+      "bytes": 5968,
+      "sha256": "dd8b93e77649f60eef00658addd4b98e4706c4157056a104bb4b1761ece27a8b"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/b$1.java",
+      "bytes": 1626,
+      "sha256": "8c03a175b8b0e4a1f85f5339e40c829a8a7750aa63eceb4fe52bb99078668d5f"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/b$2.java",
+      "bytes": 1696,
+      "sha256": "8eea4d4594afef8c84b3e0fa7e2d1ba36b78ff50c04166ccce63fd10580f8622"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/b$3.java",
+      "bytes": 1616,
+      "sha256": "a21472f2279f2c2c03c92c52c16e4eb0a50be01371b1e13c951b73528e7122d6"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/b$4.java",
+      "bytes": 1636,
+      "sha256": "ad76a1c29de1324294a525659a8d1897e0b4a465778f759168dd19cc46978b90"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/b.java",
+      "bytes": 12016,
+      "sha256": "7398a153c9502113e6eab8476f645e5a6d07d5320b3f6b892001376cdc7c9c7a"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/c.java",
+      "bytes": 1165,
+      "sha256": "c2ab2c449add264aa8c9062c88794ba63066e9b13b8676b8fc32a538fb70fe2c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/d.java",
+      "bytes": 2639,
+      "sha256": "ec67cb615e3a1189da51c0770e8f14d2d8e333abb546bac5fcc21a1f0d7deac6"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/e.java",
+      "bytes": 2831,
+      "sha256": "dbdb644adc10d2b6e219335bb07a371fb42239e1f2c8b17f7176cbe5ddf6ee7b"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/f.java",
+      "bytes": 2724,
+      "sha256": "852e5adae6564e8d7e5fd55d80590426bf1d123c6208c92d81c29179eaebd7da"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/g.java",
+      "bytes": 3017,
+      "sha256": "cddd7f52030a687014cc0e1ee3e3a4fefb88fb12d327a4ab31376df51b411ae0"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a/h.java",
+      "bytes": 2149,
+      "sha256": "c0c350ae8da4a4c0e7219602851b61ff9ff7dd4af64f0356d2e3edd4e115aaba"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/a.java",
+      "bytes": 4594,
+      "sha256": "568588379e208eca267edacb5a2efcc4fa6727da755ce45d0bf0c71befa1804b"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/b.java",
+      "bytes": 1347,
+      "sha256": "c7cb1e4f9c3d9500a339d953654cd5de8741a420e7aa3b0fe1c46930784dcae7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/c$1.java",
+      "bytes": 1354,
+      "sha256": "95e3691c6db6988c38d3b9a2d8d8050e536cf462a4854fde4a91fde4c14c4e5f"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/c$2.java",
+      "bytes": 1395,
+      "sha256": "461d02484fd3955bbc208988e2edf8fe292a637535f7ba057089b2931f74fac0"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/c.java",
+      "bytes": 8047,
+      "sha256": "781b5fec1e643481b472fb19a971f41917b172453826edcd34c1c9b98076b9af"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/d.java",
+      "bytes": 9030,
+      "sha256": "d6d570ae84e590bdd959e9a0608700432e5744321d9f6f2bf5d0bbc590c3ebe8"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/e.java",
+      "bytes": 7158,
+      "sha256": "5f89aaf9b587ad3fa404bca27fa87ad77df99a6777d88ce23da7dad294a5837a"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/f$1.java",
+      "bytes": 1343,
+      "sha256": "b454a68c84d501f6e2e43346fe3e699c1df3888ae11d52c09b88dedb4b8f6319"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/f.java",
+      "bytes": 3778,
+      "sha256": "03afe0553202b60522a5c73c956e610fb9b174d7a80b0431b2ad99c4bd7f1b90"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/g$1.java",
+      "bytes": 1371,
+      "sha256": "4b2d646e5129fdcc79bd5d96c3ea3b6b2be12db35600238a82844667f0079e52"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/g$2.java",
+      "bytes": 1373,
+      "sha256": "c0122c0edaed1610ada69a5c329d81328374014adb5201c217ce34c21b3b725c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/g.java",
+      "bytes": 8360,
+      "sha256": "dabe19d39894ab897035daecbdaaface19cacd701f1bacd5b3a7a9510ef81c27"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/h$1.java",
+      "bytes": 1487,
+      "sha256": "96274b9e3f1c690de15f6c0d8516faf266d75711e4775fa4ffe3e5cc7dc01e23"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/h$2.java",
+      "bytes": 1491,
+      "sha256": "e3da87b25dd86806620f2dc805d9836f01334f09c8ab11e5e9cb8502d2d40547"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/h.java",
+      "bytes": 6123,
+      "sha256": "4664add6dfad00c0079423a1e9132604f4ef29c91c8412a73a338fe404ab785c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/i.java",
+      "bytes": 4956,
+      "sha256": "e6fc8c1965fcf1cc0bc615a87ddb8c58dbe408959a1040c1b3ac4cf39d49128a"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/j.java",
+      "bytes": 2701,
+      "sha256": "e2818b1f7b7aeb2f9e7241ed8cda416064eaa12fa3565fbfaa26be2255144ab1"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/k.java",
+      "bytes": 14383,
+      "sha256": "c02ad67021d580db7e9d197f1aa8752ab448a06a4f1687c1387f75570317fbd6"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/l.java",
+      "bytes": 703,
+      "sha256": "b0e5a7f3ef100ab0ca4651d0849dbcaf7ebc2e9bfcdf8e894c26ebf34affd6d6"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/m.java",
+      "bytes": 5288,
+      "sha256": "da197b1ed700ed7025e095f3cfafef4434ffe71ec6c6a126ef580a4b4208cf23"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/n.java",
+      "bytes": 1382,
+      "sha256": "941c2727006fb5a41e713c2c0663949fe8082e5490798133cb8598084cfca213"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/o.java",
+      "bytes": 272,
+      "sha256": "9fdac9ae66de016a095d2cc9bb9d0c6e886d8f1e1357cc866a8148503edd235e"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/p$1.java",
+      "bytes": 1482,
+      "sha256": "03608e32d1632b073d6484c09b84021dd0ac4a04a3790a5eab9619cb189d7300"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/p.java",
+      "bytes": 9809,
+      "sha256": "5c7d5fcf7b7eb230eb6e989547a73a6301291b39d48cfa35b4fe317243982b58"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/q$1.java",
+      "bytes": 1402,
+      "sha256": "3dedaef3b36634bdb62e315698faaa2e360dc2bd394d34aec738a8d2f851df7f"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/q$2.java",
+      "bytes": 1387,
+      "sha256": "a1d25bc2831b8160948be7152adeda030ca96c731ca317ae694476dbe70a9d65"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/q.java",
+      "bytes": 8667,
+      "sha256": "38a7aed2ca13703842ce60d36adfbeaa4aa1d17e875a49fff382f0c0de0402ac"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/r.java",
+      "bytes": 5422,
+      "sha256": "511d9527fbe613a6cfe810cb6b03c03c37e54371d4f561e89e8a66b71b8e5d34"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/s.java",
+      "bytes": 2090,
+      "sha256": "5f66418616e77f960946e5e66e1ea4fd92e88e35ff778f086771fcd48276e13c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/t.java",
+      "bytes": 4197,
+      "sha256": "17f019e09dae4d7823f3f6143e1b6afd15f719d2c73b474c58cc1c75dc8e41ef"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/u.java",
+      "bytes": 1490,
+      "sha256": "2f87be2ac2e0388a7147aaae1e6ab369147f7da7d091cee43c615444b91cd955"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/v$1.java",
+      "bytes": 1377,
+      "sha256": "38d0c546182ce8db69eed5c744c2682a03b5bc9b5d379c04fb52ec4df71517c7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/v.java",
+      "bytes": 3396,
+      "sha256": "bff2b43412a35840346d41fe11ad70e33c0e207cd23736da9a7070eac431d2d5"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d/w.java",
+      "bytes": 1461,
+      "sha256": "c111c923c989a7c0b270f6eda590e27f799990581c04dc34170563aec54ab96c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/d.java",
+      "bytes": 201,
+      "sha256": "708b83e21cae811f7ea0f1c90b9bc29b14cc6c19364cb78f0ec99de7733e150e"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/a.java",
+      "bytes": 4489,
+      "sha256": "0d11c5414c93fcda69b15bc67fc2b9ca6b5f29273f4d700b2d3fd042bd7c78f1"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/b.java",
+      "bytes": 10472,
+      "sha256": "8338b69d36d2651e85dca785d8a8bd63a9d3b5b37da01fbb0ddab93c84ff5b53"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/c.java",
+      "bytes": 9017,
+      "sha256": "42bf0302811694e12219968a67a2d5463ec0a5787d3917350e6f18a1fc58fb76"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/d.java",
+      "bytes": 8024,
+      "sha256": "2685d9bddbab727b77b1bbeaf5638818e2b0bf1c5b9ab58785c8829303f86deb"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/e.java",
+      "bytes": 5374,
+      "sha256": "9e9ec0f97a2ec5e2694366c770567e0a840d72d6a37a3a1f30a613e568a6f624"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/f.java",
+      "bytes": 6873,
+      "sha256": "767a1ddbd88dbd204c11b6c95afd5898b87d694d629671a5813595fd1d2c2408"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/g.java",
+      "bytes": 4798,
+      "sha256": "5789653b0d80137f43f6a8dbbb0c284c385cf0d50e0f65c2786c07fcb33b601e"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/h.java",
+      "bytes": 2402,
+      "sha256": "775dd7f15c31a2a3fb1e5cb61ca6b57edd0ee25ee1e58965f8c35343c88789c8"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/i$1.java",
+      "bytes": 992,
+      "sha256": "2be6f9ade8311de6c68340d5245e6663c59be9f0ba4782ce8234c0f7a187c3f6"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/i$2.java",
+      "bytes": 751,
+      "sha256": "06392410eccadd90ba91ca0ae573db424b5834a6b687292dbea4cc1a59dc8a64"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/i.java",
+      "bytes": 10386,
+      "sha256": "4c20c1e1138563ae7d3ad3afc030e7a10998b2363f0907a9bf4bd419a017baf1"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/j.java",
+      "bytes": 2791,
+      "sha256": "0c3674eb1dd1dec3c4cb20161a4c29fca776a8aa659f6e18c803aed70a54f72d"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/k.java",
+      "bytes": 4817,
+      "sha256": "9d364238a42e4c8fde2814a9da2144a245c3704ebc72359f94dafb5ea9076e8e"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/l.java",
+      "bytes": 4997,
+      "sha256": "3d44f28b676dcf2e14b5ce759a18798da4a6f37e429875f5776ce8137b047086"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/m.java",
+      "bytes": 4178,
+      "sha256": "93570affb2963ae0a829f4f85ef83656fffcfa1a9e39cbfd45e8f67b2d854916"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/n.java",
+      "bytes": 5247,
+      "sha256": "c8f2218fe4f523e08d244dc822734c64be606c6af2b1c252c2cef298eb28431a"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e/o.java",
+      "bytes": 3274,
+      "sha256": "f832bdf44e703bff5c57b15fa0ac8f700d16e15a39e102878ec488809d6ad525"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/e.java",
+      "bytes": 3229,
+      "sha256": "eb7ab8fa5a213ffe303b98475f367f9bc9395a4098baf19f08b491e309788c55"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/f.java",
+      "bytes": 9778,
+      "sha256": "958f7d3af6744c6b2ed2cfcf9420736414592491ebaa2f9bb7e9f7b883e825ad"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/g.java",
+      "bytes": 9409,
+      "sha256": "13d390e13920090e58da2e4cf7afa65e3a59679b4bb9cbc597826fb33b61a9e8"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h/a.java",
+      "bytes": 5674,
+      "sha256": "0670b58b876ada7dfda78898d25c67b8111bd03e6006a05fbc7b0a1f4165767b"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h/b.java",
+      "bytes": 7164,
+      "sha256": "d34988c27b939af25dc1a8765dced612b1ac1ad568825aa8d5613f2f4af028d2"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h/c.java",
+      "bytes": 3836,
+      "sha256": "32f9386893f2aa08e21ca3f778b1b3920d8853d2a561cf93321b48e1e5316238"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h/d.java",
+      "bytes": 5003,
+      "sha256": "77813eabe36993496a0a7e32a3ab79d022399f048344103613174b4b9d27b6d1"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h/e$1.java",
+      "bytes": 592,
+      "sha256": "81d08c5465b8e46e509d205b4c7c422f7f527599ee3bc3004a318e6f44880f70"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h/e$2.java",
+      "bytes": 589,
+      "sha256": "8704b7a234aa3a221a1163c03ffaaf098cb3bc05ef090f4eb1384bfef0b5cb1e"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h/e.java",
+      "bytes": 8435,
+      "sha256": "c83f6f2a4c4add58b459d6b1961658e0cc47171358a92117eb80c764b9ef2bc3"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h/f.java",
+      "bytes": 2997,
+      "sha256": "68401d45098977138c5ecc30405dd795d79bc612372f3f2a8dfab90e8a3d9f4a"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$1.java",
+      "bytes": 1387,
+      "sha256": "3bf848c5ad6bd55a41d9356763832e980dd5004923f665e2cd7648288c0f4c51"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$10.java",
+      "bytes": 595,
+      "sha256": "8b1f046a227fae383f2f1da69a5944a3af9881df8f870a1b4d90becd04d2ed87"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$11.java",
+      "bytes": 572,
+      "sha256": "7194b06696decf60192ece2c812cf6914986efd823561fb2ae3e06721cab7164"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$12.java",
+      "bytes": 1451,
+      "sha256": "f1cf3f376dfc74a0330bebfb09be19968a64f81b364f1c3d4e906c64d4567231"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$13.java",
+      "bytes": 786,
+      "sha256": "47bb259f1f4f492592cbce3dda9cab623985778d4ad72a98f8decc9c2edcd2a0"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$14.java",
+      "bytes": 615,
+      "sha256": "b2288d71a864de43c6379d0d3be1230995a229fc5811a45fc32f912deff6bafb"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$15.java",
+      "bytes": 1431,
+      "sha256": "cb1282dae419dee0a18f9793c130cc0e1c5070779118f5aca3b16394f06dd33c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$16.java",
+      "bytes": 1599,
+      "sha256": "62c7ff4a2bbe9570eaee30d20ec39aec09fe49577feb051352b223757db162ae"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$17.java",
+      "bytes": 1285,
+      "sha256": "4c94b7d494d51d89b704417f9f3e33d6f12f8c614242cec3415171ed2e4f1ae7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$18.java",
+      "bytes": 1368,
+      "sha256": "995933ce5b7ac343d64c1587aed6c782fa7023be1d202be8386a4752dd4728d1"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$19.java",
+      "bytes": 1360,
+      "sha256": "1440180107437b3e10d035b0ccbaaabc8e860d894d921261037591f3e2fd183e"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$2$1.java",
+      "bytes": 1480,
+      "sha256": "962a2fa152367749aa259a9b606b93ba98b1872d3cd3cb05f83caa5531a16eb7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$2.java",
+      "bytes": 1359,
+      "sha256": "cecf12020debc0e8b6405b2c8bf620d83f2e48380c7c14c291969e0dc765f11d"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$20.java",
+      "bytes": 1366,
+      "sha256": "4375f32abeb02c80d6705882cd88586155cf609c4e1633538d37b35c78fc5662"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$21.java",
+      "bytes": 1357,
+      "sha256": "47a873bb6161fa61605c0ba86848391dc3f15efbea24fcb2606f69ead333877b"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$22.java",
+      "bytes": 1170,
+      "sha256": "56865db74dc1a495b14ccf7709e6777a9f729b35cf2f1939947b663d9211f097"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$23.java",
+      "bytes": 871,
+      "sha256": "dc59781906928d42471d07e1b8c55be0b57d07ec46a5a6f06bb98f50bc18cbff"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$3$1.java",
+      "bytes": 1328,
+      "sha256": "0beb6bae46beb37d1963c1bfb77624b0269e9c714685bd87f5e6651b46fbb81c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$3$2.java",
+      "bytes": 792,
+      "sha256": "c0368911606105af76f5bd08957ce0817db480cf8048d31f62505e48fcd19f5d"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$3$3.java",
+      "bytes": 757,
+      "sha256": "2b5d871a65ffebc5eab99244200c4dac9fbd257908a31f0cf8fb3be89a37e315"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$3.java",
+      "bytes": 2337,
+      "sha256": "25a5dc6f87d395f06948a478ddc922532c8dfd80ecf9a48e87c26dfd4deb0eb2"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$4.java",
+      "bytes": 805,
+      "sha256": "c97d34673d8011591b3ab25eb91670368e1e993165b97d18ef2c05078ad23834"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$5.java",
+      "bytes": 880,
+      "sha256": "caae6c5357324596ead048f2dd468708db3b0e0d5563431d86eaebd58a380740"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$6.java",
+      "bytes": 802,
+      "sha256": "b6c5d345aa2713cfa4fd9ea7a38c5a7ec2f9e714e9ad868f824076425fc94b64"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$7.java",
+      "bytes": 815,
+      "sha256": "06ab3ec9d6255efe8d167f98fe532b256ed7a7b24e11c4dc6e516c628fc27b9d"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$8.java",
+      "bytes": 848,
+      "sha256": "3bed9bb51bd49f2f7bd162b15ee618cd93694f4468c7c268c569ce4873e2bdbd"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$9$1.java",
+      "bytes": 1416,
+      "sha256": "bbedacab3ce0319701d37951386ac264fedda42377683a245c3e5fdb9e6359ed"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h$9.java",
+      "bytes": 1565,
+      "sha256": "20e200f12547cb0e4cad86c0370eb25688b7f600cd2454e13815ac888889d0f1"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/h.java",
+      "bytes": 30329,
+      "sha256": "55e0dfd70bec41fe750d05826ae99a7e1c2e5d821ad6ab225aa1fc88341fc6cd"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/i.java",
+      "bytes": 468,
+      "sha256": "70ea0a91e7c0f648a83824ce9bc4dda650601fe6d54761477f6b909a72e300db"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/j.java",
+      "bytes": 2326,
+      "sha256": "d26a56eab01e9c67ad7e4d13dbf818057dc082f659e826e00e3ea7460cbb79b3"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/k.java",
+      "bytes": 2128,
+      "sha256": "ed7867542d2af66cff1cf313d7559bc0f2296170ec2a58b9eee9ddd8dbab2932"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/l.java",
+      "bytes": 2332,
+      "sha256": "985714c6825b2f5884ea2bf5327c6d52c0815ca78530591afdeb7900367bffdd"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/m.java",
+      "bytes": 2013,
+      "sha256": "78e0bddba6160186dd832fb29a22918543ff1bf4acd6b515708c099d3b0a610d"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/n$1.java",
+      "bytes": 288,
+      "sha256": "73436fde4be6b76bac91303d1fde85baee9d75392406039303a1a76815afe370"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/n$2.java",
+      "bytes": 444,
+      "sha256": "115f84bfab977cbe87608b2db35b8fb30b75a467b04bee9d4ce2c6d5fa344d86"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/n$3.java",
+      "bytes": 362,
+      "sha256": "2738957301936dd3a70141553128d124bfc3fc83df5af214c44a1b07b14facbf"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/n$4.java",
+      "bytes": 694,
+      "sha256": "14af0a88ffedc73b3397f167d22cc6818089b74462c9524cbeeed4a0be922c45"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/n$5.java",
+      "bytes": 1036,
+      "sha256": "43454926a46232871b2ad7bb10a52e879182ea7395d4b65c0bbabcda6d8bfd57"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/n$6.java",
+      "bytes": 295,
+      "sha256": "496d2fc739d8201fbcd055eb1b69a09eeaf54084690646312566ce0ea25cf1d0"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/n.java",
+      "bytes": 2305,
+      "sha256": "f9f249ae465029df23ef79acac20914fc85a557fe25b8a689d8fc04e99ee7dad"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/o$1.java",
+      "bytes": 579,
+      "sha256": "ed98bfc5514f6dd093d31257c6c6293daa1c9a526c027c3dd98b6ef420bad144"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/o$2.java",
+      "bytes": 560,
+      "sha256": "5497c037458937cf07f8e8140e0061534dbb5d2a23a054fb992a011e63279bbf"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/o$3.java",
+      "bytes": 560,
+      "sha256": "a77d0244b748ae070902428b5e3e995bc7d22fe06db441eda8d9bc7cfc08174f"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/o$4.java",
+      "bytes": 445,
+      "sha256": "811e038584becdbaf5c8b7120e3725846c3a1302ca28839b680b9e897852e033"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/o$5.java",
+      "bytes": 433,
+      "sha256": "e5830400baeea87d96d64cc9280545e8fba6ceeb2d66d08111694bb9c9ffe915"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/o.java",
+      "bytes": 2202,
+      "sha256": "f91ae7d383498d31943f506fa44ea68720aa10240c8f7be947acac8f8178f1e4"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/p$1.java",
+      "bytes": 102,
+      "sha256": "d1d817e7bb460639a2e9bc9f5b947392f588eb2ee5017a988849c6bf595fb4dd"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/p.java",
+      "bytes": 11459,
+      "sha256": "7982e1cdee286010bc4be4b4abe605818a38f28483439a650c63c2d201a26e96"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/q.java",
+      "bytes": 2001,
+      "sha256": "759f6cd015e78c2652669947318a33146057ba4ee7f0574872d9274a3e4288aa"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/r$1.java",
+      "bytes": 326,
+      "sha256": "27f1b85c0e546865deb28a05324bdb9e944c397d95d366862f6d8bb8413227ef"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/r$2.java",
+      "bytes": 321,
+      "sha256": "a0235ca39e32e0ecfa223c7161da0163926f8818f3da3649eb8b69d062088db2"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/r$3.java",
+      "bytes": 348,
+      "sha256": "9a5f187aa8a686c871cd5acd00949de7b5eccd610ba859093f210202c60a88a6"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/r$4.java",
+      "bytes": 348,
+      "sha256": "b92d2b7c4a3f98977fcf51935d0bd3d0a6249f00e22f5864e19b5b107aac7f7f"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/r.java",
+      "bytes": 1343,
+      "sha256": "27221cbff628246f748c0f47174af1a9986939b3ca7e5a85fec43dbaba54e7da"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/s.java",
+      "bytes": 214,
+      "sha256": "cca0d0bca0b829ae83a5a98e2f739267e0f99606202f4072d6d25edc963dd78a"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/t.java",
+      "bytes": 898,
+      "sha256": "40d91cc9cc15934debee6395cbc5ccf0dbb775ca3a1f100b793cb41e3751fe9b"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/u.java",
+      "bytes": 1412,
+      "sha256": "f550578ebbc6fb71e020674964d15a784166b8f68fec1eab0cb2c961e419960b"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/v.java",
+      "bytes": 231,
+      "sha256": "82447564a56d3727c375ecc9d216b315eaff0c746db4082cc04b721764059c2f"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/w.java",
+      "bytes": 456,
+      "sha256": "4ffc240ce010b12c3225d84804ed1866830e92de740349efefd675ce561914d7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/x.java",
+      "bytes": 3237,
+      "sha256": "05fb90663131c2c03c1f2dd036fba03f5dca62a236a02d4811ee2fb805409dc7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/y$1.java",
+      "bytes": 388,
+      "sha256": "07cfa9f2c4272f20d85a03e93d3beeac6704e464c665fa261f5ed84ba851a01c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/y.java",
+      "bytes": 172133,
+      "sha256": "b4926457a83286f696ac344bad332659f16aaed93d7929a747f972f6e6dafabe"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/game/units/z.java",
+      "bytes": 407,
+      "sha256": "753d8e4dfcc45c70beea521641842b5096a9747f802c8dd661d089adba6e85ca"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/gameFramework/k/i.java",
+      "bytes": 16592,
+      "sha256": "9e0a7da5f67fc719ec89c128353088a62c3cf1ab2ad5fb7847835caa07875258"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/gameFramework/k/l.java",
+      "bytes": 17557,
+      "sha256": "2116f7e987f659f36f458f63861f5ec2ee79671e18d772fcb2cbd53d458b1a51"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/gameFramework/k/o.java",
+      "bytes": 35606,
+      "sha256": "db194a1d77406b10593e6e84b60216b1e67f3a650db93f7b76444f11fe213af6"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/02-decompiled/com/corrodinggames/rts/gameFramework/utility/y.java",
+      "bytes": 13947,
+      "sha256": "433e1e8a3c42faca1ccca89b317309f69f30ef621759d71f0a2bfe4494a078b4"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/01-units/COMBAT-COMMAND.md",
+      "bytes": 15705,
+      "sha256": "47851ec03e706bffb7f5164553bee02476f3e0dbdf74f3c0129c9c0039a3585a"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/01-units/UNIT-INI-PARAMS.md",
+      "bytes": 1922,
+      "sha256": "c251b507e238d7fb28a6a00af92ecbfe6f973a45df85727372a12bee09b4d15f"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/01-units/UNIT-LIFECYCLE.md",
+      "bytes": 8162,
+      "sha256": "b1eb543138febd2256766f39c95371f7819a2a714c47f19d3e848ffad5933e52"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/01-units/UNIT-LOADING.md",
+      "bytes": 16768,
+      "sha256": "b430b6c2de69e96c654d051ee9a5410c2c7837ac1365462fd9abf9ccc306791b"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/01-units/WEAPON-DAMAGE.md",
+      "bytes": 3734,
+      "sha256": "88f3c9eefb9e3b1e6bb3f0a0c83f3c7bccdfec563b1c45bda84e600951214ef4"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/05-map/MAP-SYSTEM.md",
+      "bytes": 17888,
+      "sha256": "2d6867cfbda0dfa8dcc4a9c36cf2afa5b1b6b1e71fda0979c977fecdec761a35"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/09-custom/CUSTOM-UNIT.md",
+      "bytes": 3740,
+      "sha256": "8ff5db0021f36477247d90bbe5bb68d8ce8901eac4b2df77c55af2c0f7d23681"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/09-custom/INI-PARSING.md",
+      "bytes": 8370,
+      "sha256": "1251100d4fd85be0997545231766b955c4947baa708dc5d0774d1d639984c2c4"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/09-custom/LOGIC-ENGINE.md",
+      "bytes": 13675,
+      "sha256": "a7fb4f8ee016075df493529fb9816b27f03b1e94e1ad46d0895716f0da937f9a"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/09-custom/MOD-PARAMETERS.md",
+      "bytes": 19482,
+      "sha256": "9ed1a8a57213a129a95f9aa377bc489569a9193bda8ba759963ce8bffa716f42"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/10-pathfinding/ASTAR-PATHFINDING.md",
+      "bytes": 7343,
+      "sha256": "dfea65a8368afb124355789b6a55e07e8bf3f66febe74177d7cf345aab91a8b4"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/10-pathfinding/MOVEMENT.md",
+      "bytes": 10942,
+      "sha256": "3067abf1cff097a13b71dbca8452901734ad6ff295ef28b822f30e164ba3e1c7"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/10-pathfinding/PATHFIND.md",
+      "bytes": 3805,
+      "sha256": "44d50128fdfd3af61f7c361498d5ee64f04058e7b1687a27e60fc847aa7683e2"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/docs/10-pathfinding/SPATIAL.md",
+      "bytes": 4751,
+      "sha256": "cbd9f451ace88276197949e3f521e3021344cb07cc5ad5633e70a792ae35fa5c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/mappings/class-discoveries.csv",
+      "bytes": 222081,
+      "sha256": "970f59f0d46736907296dbe51679890f5044a41def225854345c1f66c6a10d21"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/mappings/mappings.csv",
+      "bytes": 14458,
+      "sha256": "48126002bfebcbbda0cd66bffcb3b91973156602d93c2b015ac22207261e8b8c"
+    },
+    {
+      "path": "evidence/sources/rw_analysis/mappings/supplement.csv",
+      "bytes": 1427157,
+      "sha256": "6c1335ef62c24ef498d8994afd0d0d4b2e4e3d932e746b69ce169b70249b7d3c"
+    },
+    {
+      "path": "terrain_grids/beach_landing.json",
+      "bytes": 194874,
+      "sha256": "932a62d3f365665af194ad25adf9d2a44eae16e10ff2c1082a30b1de3a45b8d0"
+    },
+    {
+      "path": "terrain_grids/big_island.json",
+      "bytes": 124098,
+      "sha256": "9c4867bf0a56a5f2e733b96885092131758ed77dcd92972bcd542f3025d74880"
+    },
+    {
+      "path": "terrain_grids/dire_straight.json",
+      "bytes": 135548,
+      "sha256": "f998ac12cd447331b774d64264b8305947f4cf3b030375e986dedbece0488e76"
+    },
+    {
+      "path": "terrain_grids/fire_bridge.json",
+      "bytes": 207978,
+      "sha256": "e376a33c9c9472b9c199cf01cb3efc5025beaf6ed172f1e9b38e8eab21056c20"
+    },
+    {
+      "path": "terrain_grids/hills.json",
+      "bytes": 53535,
+      "sha256": "52739aace3ec30ae35c89e68b71c18033d306e784e7cd860564c428791832e02"
+    },
+    {
+      "path": "terrain_grids/ice_island.json",
+      "bytes": 47792,
+      "sha256": "11150d70e6e716ddfb2574e423f164b69bc4d405eb8356aa62da06a41c3a027c"
+    },
+    {
+      "path": "terrain_grids/lake.json",
+      "bytes": 27762,
+      "sha256": "c1f55bde3d81a22e4d57c785ba824fdaba0badec100087cb85434d0c95a22ae5"
+    },
+    {
+      "path": "terrain_grids/small_island.json",
+      "bytes": 31974,
+      "sha256": "3308632be538b828304c7abc1d4f08e1b6994f11319fac88897fa3cff54c7349"
+    },
+    {
+      "path": "terrain_grids/two_cold_sides.json",
+      "bytes": 94608,
+      "sha256": "a2e61b4a425b89310712569edbaf2ba66318f2b397bc86fa838bd1ab0f839403"
+    },
+    {
+      "path": "tools/build_packet_data.py",
+      "bytes": 23921,
+      "sha256": "4ac1d812e9277fc917aaf3477607fb6908a5899bf8f55e9e8a3f8cd1d503b19f"
+    },
+    {
+      "path": "tools/verify_packet.py",
+      "bytes": 9743,
+      "sha256": "5f3922afea7ba6434db801a602b63cedb0c7f0e21c90d4f3173a3a66ca2c515b"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "file": "development-1789915769479-b2cf8dd8.jsonl",
+    "seconds": 0.014,
+    "outcome": "FAIL",
+    "reason": "java.io.IOException: HTTP 409: {\"status\":\"error\",\"message\":\"no completed own idle landFactory with available tank action; finish Opening first and clear its queue\"}",
+    "phase": "setup",
+    "commands": 0,
+    "observations": 1,
+    "completedMines": 0,
+    "completedTanks": 0,
+    "expansionStatus": "SEARCHING"
+  },
+  {
+    "file": "development-1789915894952-9f623f78.jsonl",
+    "seconds": 69.926,
+    "outcome": "PASS",
+    "reason": "Tank target completed; expansion NO_VISIBLE_LEGAL_SITE; all task units alive",
+    "phase": "tank_observe",
+    "commands": 8,
+    "observations": 139,
+    "completedMines": 0,
+    "completedTanks": 8,
+    "expansionStatus": "NO_VISIBLE_LEGAL_SITE"
+  },
+  {
+    "file": "development-1789915982349-fc2d3b43.jsonl",
+    "seconds": 69.922,
+    "outcome": "PASS",
+    "reason": "Tank target completed; expansion NO_VISIBLE_LEGAL_SITE; all task units alive",
+    "phase": "tank_observe",
+    "commands": 9,
+    "observations": 139,
+    "completedMines": 1,
+    "completedTanks": 8,
+    "expansionStatus": "NO_VISIBLE_LEGAL_SITE"
+  }
+]

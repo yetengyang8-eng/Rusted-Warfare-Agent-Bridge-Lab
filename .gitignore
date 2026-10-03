@@ -1,0 +1,8 @@
+﻿headless-runs/
+.engine/
+*.log
+*.tmp
+__pycache__/
+.pytest_cache/
+agent/build/
+agent/dist/

@@ -1,0 +1,48 @@
+2026-09-20 23:20:54.143: GameEngine:GameEngine()
+2026-09-20 23:20:54.181: MapLayer create: ground
+2026-09-20 23:20:54.325 [RW-Agent] Local Agent API ready at http://127.0.0.1:47656
+PASS GET /state -> 200 {"status":"running","schemaVersion":1,"sessionId":"1d57735d-8982-49d5-857e-0f855cd68a10","map":{"width":2200.000,"height":2200.000,"tilesWide":110,"tilesHigh":110,"tileWidth":20,"tileHeight":20},"frame":0,"gameTimeMs":0,"networked":false,"replay":false,"player":{"teamId":0,"name":"","credits":10000.000},"ownUnits":[{"id":4,"type":"builder","x":940.000,"y":1780.000,"hp":170.000,"maxHp":170.000,"buildProgress":1.0,"productionQueue":-1,"dead":false,"mobile":true}]}
+PASS GET /economy/plan?unitId=4 -> 200 {"status":"planned","sessionId":"1d57735d-8982-49d5-857e-0f855cd68a10","builderId":4,"factoryType":"landFactory","productType":"c_tank","targetX":1050.000,"targetY":1790.000,"factoryCost":700,"tankCost":350,"credits":10000.000}
+PASS plan reports actual resolved product type
+PASS planning does not register previews or spend credits
+PASS native factory cost 700
+NATIVE_TANK_COST=350
+2026-09-20 23:20:54.490 [RW-Agent] Queued economy: /command/build-factory unit=4 request=build-1,"targetX":1050.000,"targetY":1790.000,"type":"landFactory"
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=build-1 -> 200 {"status":"queued","requestId":"build-1","sessionId":"1d57735d-8982-49d5-857e-0f855cd68a10","unitId":4,"frame":0,"targetX":1050.000,"targetY":1790.000,"type":"landFactory"}
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=build-1 -> 200 {"status":"queued","requestId":"build-1","sessionId":"1d57735d-8982-49d5-857e-0f855cd68a10","unitId":4,"frame":0,"targetX":1050.000,"targetY":1790.000,"type":"landFactory"}
+PASS one native build command after duplicate receipt
+PASS build waypoint uses native landFactory type
+PASS build command retains aligned placement
+PASS POST /command/build-factory?unitId=99&x=1050.0&y=1790.0&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=build-1 -> 409 {"status":"error","message":"requestId reused with different economy command"}
+PASS POST /command/build-factory?unitId=99&x=1050.0&y=1790.0&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=foreign -> 409 {"status":"error","message":"completed controllable own unit not found"}
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=old&requestId=stale -> 409 {"status":"error","message":"session changed; read state again"}
+PASS POST /command/build-factory?unitId=4&x=NaN&y=10&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=bad-coordinate -> 400 {"status":"error","message":"coordinates must be finite"}
+PASS POST /command/build-factory?unitId=4&x=10&y=10&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=far -> 409 {"status":"error","message":"no visible legal building footprint at target or target beyond allowed builder range"}
+PASS GET /economy/plan -> 409 {"status":"error","message":"no completed own builder with affordable native landFactory action; prepare a standard builder and sufficient credits"}
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=poor -> 409 {"status":"error","message":"action unavailable, locked, or insufficient credits"}
+PASS GET /economy/plan -> 409 {"status":"error","message":"no nearby visible legal landFactory site; move builder to open land"}
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=fog -> 409 {"status":"error","message":"no visible legal building footprint at target or target beyond allowed builder range"}
+PASS GET /economy/plan -> 409 {"status":"error","message":"no nearby visible legal landFactory site; move builder to open land"}
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=terrain -> 409 {"status":"error","message":"no visible legal building footprint at target or target beyond allowed builder range"}
+PASS POST /command/produce-tank?unitId=50&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=tank-1 -> 409 {"status":"error","message":"completed controllable own unit not found"}
+PASS GET /state -> 200 {"status":"running","schemaVersion":1,"sessionId":"1d57735d-8982-49d5-857e-0f855cd68a10","map":{"width":2200.000,"height":2200.000,"tilesWide":110,"tilesHigh":110,"tileWidth":20,"tileHeight":20},"frame":0,"gameTimeMs":0,"networked":false,"replay":false,"player":{"teamId":0,"name":"","credits":10000.000},"ownUnits":[{"id":4,"type":"builder","x":940.000,"y":1780.000,"hp":170.000,"maxHp":170.000,"buildProgress":1.0,"productionQueue":-1,"dead":false,"mobile":true},{"id":50,"type":"landFactory","x":1050.000,"y":1790.000,"hp":1200.000,"maxHp":1200.000,"buildProgress":0.99999,"productionQueue":0,"dead":false,"mobile":false}]}
+PASS almost complete is not rounded to complete
+2026-09-20 23:20:55.185 [RW-Agent] Queued economy: /command/produce-tank unit=50 request=tank-1,"type":"c_tank"
+PASS POST /command/produce-tank?unitId=50&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=tank-1 -> 200 {"status":"queued","requestId":"tank-1","sessionId":"1d57735d-8982-49d5-857e-0f855cd68a10","unitId":50,"frame":0,"type":"c_tank"}
+PASS POST /command/produce-tank?unitId=50&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=tank-1 -> 200 {"status":"queued","requestId":"tank-1","sessionId":"1d57735d-8982-49d5-857e-0f855cd68a10","unitId":50,"frame":0,"type":"c_tank"}
+PASS only one production command
+PASS native landFactory exposes tank action
+PASS production command carries actual native action identifier
+PASS native command debits the 350 tank cost
+PASS GET /state -> 200 {"status":"running","schemaVersion":1,"sessionId":"1d57735d-8982-49d5-857e-0f855cd68a10","map":{"width":2200.000,"height":2200.000,"tilesWide":110,"tilesHigh":110,"tileWidth":20,"tileHeight":20},"frame":0,"gameTimeMs":0,"networked":false,"replay":false,"player":{"teamId":0,"name":"","credits":9650.000},"ownUnits":[{"id":4,"type":"builder","x":940.000,"y":1780.000,"hp":170.000,"maxHp":170.000,"buildProgress":1.0,"productionQueue":-1,"dead":false,"mobile":true},{"id":50,"type":"landFactory","x":1050.000,"y":1790.000,"hp":1200.000,"maxHp":1200.000,"buildProgress":1.0,"productionQueue":1,"dead":false,"mobile":false}]}
+PASS POST /command/produce-tank?unitId=50&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=busy -> 409 {"status":"error","message":"factory production queue must be empty"}
+PASS POST /command/produce-tank?unitId=50&sessionId=1d57735d-8982-49d5-857e-0f855cd68a10&requestId=network -> 409 {"status":"error","message":"network games are not supported"}
+PASS bridge inserted no factory or tank into world
+PASS real custom preview keeps type and stays outside world
+PASS GET /state -> 200 {"status":"running","schemaVersion":1,"sessionId":"1d57735d-8982-49d5-857e-0f855cd68a10","map":{"width":2200.000,"height":2200.000,"tilesWide":110,"tilesHigh":110,"tileWidth":20,"tileHeight":20},"frame":0,"gameTimeMs":0,"networked":false,"replay":false,"player":{"teamId":0,"name":"","credits":10000.000},"ownUnits":[{"id":4,"type":"builder","x":940.000,"y":1780.000,"hp":170.000,"maxHp":170.000,"buildProgress":1.0,"productionQueue":-1,"dead":false,"mobile":true}]}
+java.lang.AssertionError: GET /opening/plan?unitId=4 -> 409 {"status":"error","message":"no completed own builder with a visible unoccupied legal resource site within 600; use a standard builder near a free visible mine"}
+	at BridgeHarness.require(BridgeHarness.java:123)
+	at BridgeHarness.check(BridgeHarness.java:131)
+	at OpeningHarness.check(OpeningHarness.java:12)
+	at OpeningHarness.test(OpeningHarness.java:45)
+	at OpeningHarness.main(OpeningHarness.java:14)

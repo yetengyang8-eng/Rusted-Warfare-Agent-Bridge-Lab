@@ -1,0 +1,13 @@
+2026-09-20 21:09:44.641: GameEngine:GameEngine()
+2026-09-20 21:09:44.687 [RW-Agent] Local Agent API ready at http://127.0.0.1:47656
+PASS GET /health -> 200 {"status":"ok","version":"0.01-alpha1","port":47656,"allowCommands":true}
+PASS GET /command/move -> 405 {"status":"error","message":"POST required"}
+PASS POST /command/move -> 400 {"status":"error","message":"invalid query"}
+PASS POST /command/move?unitId=4&x=NaN&y=1&sessionId=a&requestId=b -> 400 {"status":"error","message":"coordinates must be finite"}
+PASS POST /command/move?unitId=4&x=1&x=2&y=1&sessionId=a&requestId=b -> 400 {"status":"error","message":"duplicate query field"}
+PASS POST /command/move?unitId=4&x=100&y=100&sessionId=menu&requestId=a -> 409 {"status":"error","message":"no level is currently loaded"}
+PASS GET /state -> 200 {"status":"running","schemaVersion":1,"sessionId":"9d118fb2-6819-4e6d-b672-04ea693a0514","map":{"width":200.000,"height":200.000},"frame":0,"gameTimeMs":0,"networked":false,"replay":false,"player":{"teamId":0,"name":"Tester\"\\\n中文","credits":4000.000},"ownUnits":[{"id":9007199254740993,"type":"builder","x":100.000,"y":100.000,"hp":170.000,"maxHp":170.000,"dead":false,"mobile":true}]}
+java.lang.AssertionError: Small_Island 110x110 tiles must report 2200x2200 world units, not 200x200
+	at BridgeHarness.require(BridgeHarness.java:107)
+	at BridgeHarness.test(BridgeHarness.java:56)
+	at BridgeHarness.main(BridgeHarness.java:18)

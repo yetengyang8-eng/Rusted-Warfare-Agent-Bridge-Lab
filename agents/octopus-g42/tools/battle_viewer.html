@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>__TITLE__</title>
+<style>
+:root{color-scheme:dark;--bg:#101821;--fg:#eef2f5;--muted:#aab8c7;--grid:#273744;--own:#70d7ed;--enemy:#ffad78}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 system-ui,sans-serif}
+main{max-width:1140px;margin:auto;padding:24px}h1{font-size:24px;margin:0 0 8px;font-weight:600}p{color:var(--muted);margin:6px 0 18px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:24px}.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+button,select{font:inherit;background:#223442;color:var(--fg);border:1px solid #405667;border-radius:6px;padding:6px 12px}button{cursor:pointer}
+input[type=range]{width:100%;accent-color:var(--own)}canvas{display:block;width:100%;background:#12232c;border:1px solid var(--grid)}
+dl{display:grid;grid-template-columns:auto auto;gap:6px 10px;margin-top:0}dt{color:var(--muted)}dd{text-align:right;margin:0;font-variant-numeric:tabular-nums}
+.legend{display:flex;gap:18px;margin:12px 0;flex-wrap:wrap}.own{color:var(--own)}.enemy{color:var(--enemy)}
+#detail{min-height:48px;color:var(--muted)}#events{width:100%;margin-top:14px}small{display:block;word-break:break-all;color:var(--muted);margin-top:20px}
+@media(max-width:760px){main{padding:16px}.layout{grid-template-columns:1fr}h1{font-size:21px}}
+</style>
+<main>
+<h1>__TITLE__</h1>
+<p>原始日志的战术视图。只显示采样时的己方与可见敌军；不显示隐藏敌军或未记录地形。这不是游戏录像。</p>
+<div class="controls"><button id="play" type="button">播放</button><label>速度 <select id="speed"><option value="1">1×</option><option value="4">4×</option><option value="12" selected>12×</option><option value="30">30×</option></select></label><span id="clock"></span></div>
+<label for="seek">游戏时间</label><input id="seek" type="range" min="0" step="1" value="0">
+<div class="layout"><section><canvas id="map" aria-label="己方和可见敌军的位置、血量与进攻目标">请使用支持 Canvas 的浏览器。</canvas>
+<div class="legend"><span class="own">● 己方</span><span class="enemy">◆ 当前可见敌军</span><span>■ 建筑 · 细线为己方进攻/移动目标</span></div><div id="detail">将鼠标移到单位附近查看类型与血量。</div></section>
+<aside><dl><dt>原生结算</dt><dd id="result"></dd><dt>己方资金</dt><dd id="credits"></dd><dt>存活己方</dt><dd id="own"></dd><dt>当前可见敌军</dt><dd id="enemy"></dd><dt>己方损失累计</dt><dd id="loss"></dd><dt>工厂升级累计</dt><dd id="tech"></dd></dl>
+<label for="events">跳到关键事件</label><select id="events"><option value="">选择事件</option></select><small id="source"></small></aside></div>
+</main>
+<script id="trace" type="application/json">__DATA__</script>
+<script>
+'use strict';
+const D=JSON.parse(document.getElementById('trace').textContent),F=D.frames;
+const by=id=>document.getElementById(id),cv=by('map'),ctx=cv.getContext('2d'),seek=by('seek');
+const labels={own_loss:'己方损失',upgrade_completed:'工厂升级',combat_retreat:'残血撤回',army_regroup:'重新集结',match_terminal:'原生结算'};
+const outcome={ONGOING:'进行中',VICTORY:'胜利',DEFEAT:'失败'};
+let index=0,playing=false,elapsed=F[0][0],last=0,marks=[];
+seek.max=F.length-1;by('source').textContent='原始报告：'+D.source+'\nSHA256：'+D.sha256;
+const clock=t=>Math.floor(t/60000)+':'+String(Math.floor(t/1000)%60).padStart(2,'0');
+for(const e of D.events){let o=document.createElement('option');o.value=e[0];o.textContent=clock(e[0])+' · '+labels[e[1]];by('events').appendChild(o);}
+function draw(){
+ const f=F[index],w=cv.getBoundingClientRect().width,h=w*D.map.height/D.map.width,dpr=window.devicePixelRatio||1;
+ cv.style.height=h+'px';cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
+ const sx=w/D.map.width,sy=h/D.map.height;ctx.strokeStyle='#273744';ctx.lineWidth=1;
+ for(let x=0;x<=D.map.width;x+=400){ctx.beginPath();ctx.moveTo(x*sx,0);ctx.lineTo(x*sx,h);ctx.stroke();}
+ for(let y=0;y<=D.map.height;y+=400){ctx.beginPath();ctx.moveTo(0,y*sy);ctx.lineTo(w,y*sy);ctx.stroke();}
+ ctx.strokeStyle='rgba(112,215,237,.16)';for(const u of f[3])if(u[8]!=null&&u[9]!=null){ctx.beginPath();ctx.moveTo(u[2]*sx,u[3]*sy);ctx.lineTo(u[8]*sx,u[9]*sy);ctx.stroke();}
+ marks=[];
+ function unit(u,enemy){const x=u[2]*sx,y=u[3]*sy,building=u[enemy?5:6],r=building?7:4.5;ctx.fillStyle=enemy?'#ffad78':'#70d7ed';ctx.beginPath();
+  if(building)ctx.rect(x-r,y-r,2*r,2*r);else if(enemy){ctx.moveTo(x,y-r-1);ctx.lineTo(x+r+1,y);ctx.lineTo(x,y+r+1);ctx.lineTo(x-r-1,y);ctx.closePath();}else ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();
+  if(!enemy){ctx.fillStyle='#334754';ctx.fillRect(x-7,y-r-5,14,2);ctx.fillStyle='#b5efb0';ctx.fillRect(x-7,y-r-5,14*Math.min(1,u[4]/u[5]),2);}
+  marks.push({x,y,u,enemy});}
+ f[3].forEach(u=>unit(u,false));f[4].forEach(u=>unit(u,true));
+ by('clock').textContent=clock(f[0])+' / '+clock(F[F.length-1][0]);by('result').textContent=outcome[f[2]]||f[2];by('credits').textContent=Math.round(f[1]).toLocaleString();
+ by('own').textContent=f[3].length;by('enemy').textContent=f[4].length;
+ by('loss').textContent=D.events.filter(e=>e[0]<=f[0]&&e[1]==='own_loss').length;by('tech').textContent=D.events.filter(e=>e[0]<=f[0]&&e[1]==='upgrade_completed').length;seek.value=index;
+}
+seek.addEventListener('input',()=>{index=+seek.value;elapsed=F[index][0];draw();});
+by('play').addEventListener('click',()=>{if(index===F.length-1){index=0;elapsed=F[0][0];}playing=!playing;by('play').textContent=playing?'暂停':'播放';last=0;draw();});
+by('events').addEventListener('change',()=>{if(!by('events').value)return;elapsed=+by('events').value;index=F.findIndex(f=>f[0]>=elapsed);if(index<0)index=F.length-1;draw();});
+cv.addEventListener('pointermove',e=>{const b=cv.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;let hit=null,dist=18;for(const m of marks){const d=Math.hypot(x-m.x,y-m.y);if(d<dist){hit=m;dist=d;}}by('detail').textContent=hit?(hit.enemy?'可见敌军':'己方')+' #'+hit.u[0]+' · '+hit.u[1]+' · HP '+Math.round(hit.u[4])+(hit.enemy?'':' / '+Math.round(hit.u[5])):'将鼠标移到单位附近查看类型与血量。';});
+new ResizeObserver(draw).observe(cv);
+function tick(now){if(playing){if(last)elapsed+=(now-last)*(+by('speed').value);while(index<F.length-1&&F[index+1][0]<=elapsed)index++;if(index===F.length-1){playing=false;by('play').textContent='播放';}draw();}last=now;requestAnimationFrame(tick);}
+draw();requestAnimationFrame(tick);
+</script>
+</html>

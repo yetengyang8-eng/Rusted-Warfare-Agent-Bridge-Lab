@@ -1,0 +1,20 @@
+Compiled from "SourceFile"
+public final class com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamVictoryBoolean extends com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$LogicBooleanCommon {
+  public com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$TeamVictoryBoolean();
+    Code:
+       0: aload_0
+       1: invokespecial #8                  // Method com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean$LogicBooleanCommon."<init>":()V
+       4: return
+
+  public java.lang.String getName();
+    Code:
+       0: ldc           #1                  // String teamVictory
+       2: areturn
+
+  public boolean read(com.corrodinggames.rts.game.units.y);
+    Code:
+       0: aload_1
+       1: getfield      #7                  // Field com/corrodinggames/rts/game/units/y.bX:Lcom/corrodinggames/rts/game/n;
+       4: getfield      #6                  // Field com/corrodinggames/rts/game/n.H:Z
+       7: ireturn
+}

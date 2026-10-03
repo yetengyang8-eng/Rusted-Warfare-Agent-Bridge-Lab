@@ -1,0 +1,905 @@
+{
+  "scope": "Static evidence and packet consistency only; NOT engine regression / NOT E4",
+  "allPassed": true,
+  "checkCount": 100,
+  "sourceFiles": 534,
+  "catalogFields": 206,
+  "maps": 9,
+  "resourceTiles": 98,
+  "checks": [
+    {
+      "name": "source hashes",
+      "passed": true,
+      "detail": {
+        "files": 534,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "seven required deliverables",
+      "passed": true,
+      "detail": [
+        "TERRAIN.md",
+        "MOVEMENT.md",
+        "VISION.md",
+        "TARGETING.md",
+        "UNIT_CATALOG_CANDIDATES.json",
+        "CONFLICTS.md",
+        "CODE_POINTERS.md"
+      ]
+    },
+    {
+      "name": "core coverage",
+      "passed": true,
+      "detail": {
+        "units": 10,
+        "aliases": 14
+      }
+    },
+    {
+      "name": "required fields builder",
+      "passed": true,
+      "detail": [
+        "aliases",
+        "attackRange",
+        "building",
+        "canAttack",
+        "canAttackAir",
+        "canAttackLand",
+        "canAttackNotTouchingWater",
+        "canAttackUnderwater",
+        "cost",
+        "identity",
+        "maxSpeed",
+        "maxTurnSpeed",
+        "mobile",
+        "moveAccelerationSpeed",
+        "moveDecelerationSpeed",
+        "movementType",
+        "sightRange",
+        "sightRangeWhileNotBuilt",
+        "turnAcceleration"
+      ]
+    },
+    {
+      "name": "required fields scout",
+      "passed": true,
+      "detail": [
+        "aliases",
+        "attackRange",
+        "building",
+        "canAttack",
+        "canAttackAir",
+        "canAttackLand",
+        "canAttackNotTouchingWater",
+        "canAttackUnderwater",
+        "cost",
+        "globalScale",
+        "identity",
+        "maxHp",
+        "maxSpeed",
+        "maxTurnSpeed",
+        "mobile",
+        "moveAccelerationSpeed",
+        "moveDecelerationSpeed",
+        "movementType",
+        "sightRange",
+        "sightRangeWhileNotBuilt",
+        "turnAcceleration"
+      ]
+    },
+    {
+      "name": "required fields c_tank",
+      "passed": true,
+      "detail": [
+        "aliases",
+        "attackRange",
+        "building",
+        "canAttack",
+        "canAttackAir",
+        "canAttackLand",
+        "canAttackNotTouchingWater",
+        "canAttackUnderwater",
+        "cost",
+        "globalScale",
+        "identity",
+        "maxHp",
+        "maxSpeed",
+        "maxTurnSpeed",
+        "mobile",
+        "moveAccelerationSpeed",
+        "moveDecelerationSpeed",
+        "movementType",
+        "sightRange",
+        "sightRangeWhileNotBuilt",
+        "turnAcceleration"
+      ]
+    },
+    {
+      "name": "required fields heavyTank",
+      "passed": true,
+      "detail": [
+        "aliases",
+        "attackRange",
+        "building",
+        "canAttack",
+        "canAttackAir",
+        "canAttackLand",
+        "canAttackNotTouchingWater",
+        "canAttackUnderwater",
+        "cost",
+        "identity",
+        "maxSpeed",
+        "maxTurnSpeed",
+        "mobile",
+        "moveAccelerationSpeed",
+        "moveDecelerationSpeed",
+        "movementType",
+        "sightRange",
+        "sightRangeWhileNotBuilt",
+        "turnAcceleration"
+      ]
+    },
+    {
+      "name": "required fields c_artillery",
+      "passed": true,
+      "detail": [
+        "aliases",
+        "attackRange",
+        "building",
+        "canAttack",
+        "canAttackAir",
+        "canAttackLand",
+        "canAttackNotTouchingWater",
+        "canAttackUnderwater",
+        "cost",
+        "globalScale",
+        "identity",
+        "maxHp",
+        "maxSpeed",
+        "maxTurnSpeed",
+        "mobile",
+        "moveAccelerationSpeed",
+        "moveDecelerationSpeed",
+        "movementType",
+        "sightRange",
+        "sightRangeWhileNotBuilt",
+        "turnAcceleration"
+      ]
+    },
+    {
+      "name": "required fields landFactory",
+      "passed": true,
+      "detail": [
+        "aliases",
+        "attackRange",
+        "building",
+        "canAttack",
+        "canAttackAir",
+        "canAttackLand",
+        "canAttackNotTouchingWater",
+        "canAttackUnderwater",
+        "cost",
+        "identity",
+        "maxSpeed",
+        "maxTurnSpeed",
+        "mobile",
+        "moveAccelerationSpeed",
+        "moveDecelerationSpeed",
+        "movementType",
+        "sightRange",
+        "sightRangeWhileNotBuilt",
+        "turnAcceleration",
+        "upgradeToT2Cost"
+      ]
+    },
+    {
+      "name": "required fields airFactory",
+      "passed": true,
+      "detail": [
+        "aliases",
+        "attackRange",
+        "building",
+        "canAttack",
+        "canAttackAir",
+        "canAttackLand",
+        "canAttackNotTouchingWater",
+        "canAttackUnderwater",
+        "cost",
+        "identity",
+        "maxSpeed",
+        "maxTurnSpeed",
+        "mobile",
+        "moveAccelerationSpeed",
+        "moveDecelerationSpeed",
+        "movementType",
+        "sightRange",
+        "sightRangeWhileNotBuilt",
+        "turnAcceleration",
+        "upgradeToT2Cost"
+      ]
+    },
+    {
+      "name": "required fields extractorT1",
+      "passed": true,
+      "detail": [
+        "aliases",
+        "attackRange",
+        "building",
+        "canAttack",
+        "canAttackAir",
+        "canAttackLand",
+        "canAttackNotTouchingWater",
+        "canAttackUnderwater",
+        "cost",
+        "globalScale",
+        "identity",
+        "maxHp",
+        "maxSpeed",
+        "maxTurnSpeed",
+        "mobile",
+        "moveAccelerationSpeed",
+        "moveDecelerationSpeed",
+        "movementType",
+        "sightRange",
+        "sightRangeWhileNotBuilt",
+        "turnAcceleration",
+        "upgradeToT2Cost"
+      ]
+    },
+    {
+      "name": "required fields extractorT2",
+      "passed": true,
+      "detail": [
+        "aliases",
+        "attackRange",
+        "building",
+        "canAttack",
+        "canAttackAir",
+        "canAttackLand",
+        "canAttackNotTouchingWater",
+        "canAttackUnderwater",
+        "cost",
+        "globalScale",
+        "identity",
+        "maxHp",
+        "maxSpeed",
+        "maxTurnSpeed",
+        "mobile",
+        "moveAccelerationSpeed",
+        "moveDecelerationSpeed",
+        "movementType",
+        "sightRange",
+        "sightRangeWhileNotBuilt",
+        "turnAcceleration",
+        "upgradeFromT1Cost"
+      ]
+    },
+    {
+      "name": "required fields c_turret_t1",
+      "passed": true,
+      "detail": [
+        "aliases",
+        "attackRange",
+        "building",
+        "canAttack",
+        "canAttackAir",
+        "canAttackLand",
+        "canAttackNotTouchingWater",
+        "canAttackUnderwater",
+        "cost",
+        "globalScale",
+        "identity",
+        "maxHp",
+        "maxSpeed",
+        "maxTurnSpeed",
+        "mobile",
+        "moveAccelerationSpeed",
+        "moveDecelerationSpeed",
+        "movementType",
+        "sightRange",
+        "sightRangeWhileNotBuilt",
+        "turnAcceleration"
+      ]
+    },
+    {
+      "name": "field-level provenance",
+      "passed": true,
+      "detail": {
+        "fields": 206,
+        "allSourcesExist": true
+      }
+    },
+    {
+      "name": "nine original maps",
+      "passed": true,
+      "detail": {
+        "maps": 9
+      }
+    },
+    {
+      "name": "map dependency hashes and RLE lengths/histograms",
+      "passed": true,
+      "detail": {
+        "tilesAcrossMaps": 174700,
+        "movementGrids": 72
+      }
+    },
+    {
+      "name": "no native override sample",
+      "passed": true,
+      "detail": "All nine source TMX files omit PathingOverride"
+    },
+    {
+      "name": "resource aggregation",
+      "passed": true,
+      "detail": {
+        "total": 98
+      }
+    },
+    {
+      "name": "game.units.ao method static strictfp {};",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "frozen movement enum",
+      "passed": true,
+      "detail": {
+        "a": "NONE",
+        "b": "LAND",
+        "c": "BUILDING",
+        "d": "AIR",
+        "e": "WATER",
+        "f": "HOVER",
+        "g": "OVER_CLIFF",
+        "h": "OVER_CLIFF_WATER"
+      }
+    },
+    {
+      "name": "game.units.e.b method float z();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.b constant float z();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 0.8f"
+      }
+    },
+    {
+      "name": "game.units.e.b method float A();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.b constant float A();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 3.8f"
+      }
+    },
+    {
+      "name": "game.units.e.b method float C();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.b constant float C();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 0.04f"
+      }
+    },
+    {
+      "name": "game.units.e.b method float D();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.b constant float D();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 0.1f"
+      }
+    },
+    {
+      "name": "game.units.e.b method float B();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.b constant float B();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 0.35f"
+      }
+    },
+    {
+      "name": "game.units.e.b method float m();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.b constant float m();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 30.0f"
+      }
+    },
+    {
+      "name": "game.units.e.b method boolean l();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.b constant boolean l();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "iconst_0"
+      }
+    },
+    {
+      "name": "game.units.e.f method float m();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.f constant float m();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 160.0f"
+      }
+    },
+    {
+      "name": "game.units.e.f method float z();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.f constant float z();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 0.8f"
+      }
+    },
+    {
+      "name": "game.units.e.f method float A();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.f constant float A();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 1.9f"
+      }
+    },
+    {
+      "name": "game.units.e.f method float B();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.f constant float B();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 0.2f"
+      }
+    },
+    {
+      "name": "game.units.e.f method float C();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.f constant float C();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 0.05f"
+      }
+    },
+    {
+      "name": "game.units.e.f method float D();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.f constant float D();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "float 0.1f"
+      }
+    },
+    {
+      "name": "game.units.e.f method boolean af();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.f constant boolean af();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "iconst_1"
+      }
+    },
+    {
+      "name": "game.units.e.f method boolean l();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.f constant boolean l();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "iconst_1"
+      }
+    },
+    {
+      "name": "game.units.ar$52 method int c();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.ar$52 constant int c();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "sipush        500"
+      }
+    },
+    {
+      "name": "game.units.ar$16 method int c();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.ar$16 constant int c();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "sipush        800"
+      }
+    },
+    {
+      "name": "game.units.ar$12 method int c();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.ar$12 constant int c();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "sipush        700"
+      }
+    },
+    {
+      "name": "game.units.ar$23 method int c();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.ar$23 constant int c();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "sipush        1000"
+      }
+    },
+    {
+      "name": "game.units.y method int s();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.y constant int s();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "bipush        15"
+      }
+    },
+    {
+      "name": "game.units.y method boolean ae();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.y constant boolean ae();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "iconst_0"
+      }
+    },
+    {
+      "name": "game.units.y method boolean af();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.y constant boolean af();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "iconst_1"
+      }
+    },
+    {
+      "name": "game.units.y method boolean ag();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.y constant boolean ag();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "iconst_1"
+      }
+    },
+    {
+      "name": "game.units.d.i method boolean l();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.d.i constant boolean l();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "iconst_0"
+      }
+    },
+    {
+      "name": "game.units.d.d method float z();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.d.d constant float z();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "fconst_0"
+      }
+    },
+    {
+      "name": "game.units.d.d method ao h();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.d.d constant ao h();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "/ao.a:"
+      }
+    },
+    {
+      "name": "game.units.e.j method ao h();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.e.j constant ao h();",
+      "passed": true,
+      "detail": {
+        "expectedToken": "/ao.b:"
+      }
+    },
+    {
+      "name": "builder liquid speed branch",
+      "passed": true,
+      "detail": "cK conditional .6 / .8"
+    },
+    {
+      "name": "game.units.custom.ag contains // String fogOfWarSightRange",
+      "passed": true,
+      "detail": {
+        "matches": 2
+      }
+    },
+    {
+      "name": "loader default fogOfWarSightRange",
+      "passed": true,
+      "detail": "bipush        15"
+    },
+    {
+      "name": "game.units.custom.ag contains // String fogOfWarSightRangeWhileNotBuilt",
+      "passed": true,
+      "detail": {
+        "matches": 1
+      }
+    },
+    {
+      "name": "loader default fogOfWarSightRangeWhileNotBuilt",
+      "passed": true,
+      "detail": "iconst_m1"
+    },
+    {
+      "name": "game.units.custom.ag contains // String isBuilding",
+      "passed": true,
+      "detail": {
+        "matches": 1
+      }
+    },
+    {
+      "name": "loader default isBuilding",
+      "passed": true,
+      "detail": "iconst_0"
+    },
+    {
+      "name": "gameFramework.k.i method void d();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "override resets terrain byte before restrictions",
+      "passed": true,
+      "detail": "Frozen bytecode offsets 480–481; full method retained"
+    },
+    {
+      "name": "game.b.b method boolean a(float, float, com.corrodinggames.rts.game.n);",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "visibility uses player.N and threshold5",
+      "passed": true,
+      "detail": "Map caches not used by current-visible method"
+    },
+    {
+      "name": "game.b.b method void l();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "smoothFog caches initialized127",
+      "passed": true,
+      "detail": "Map b M/N"
+    },
+    {
+      "name": "game.units.y method boolean k(com.corrodinggames.rts.game.units.am);",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.custom.j method boolean k(com.corrodinggames.rts.game.units.am);",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.custom.j method void c(boolean);",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.y method void c(boolean);",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.am method boolean cH();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.units.am method boolean cK();",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.b.b method void a(float, float, int, com.corrodinggames.rts.game.n, boolean);",
+      "passed": true,
+      "detail": {
+        "hits": 1
+      }
+    },
+    {
+      "name": "game.b.b contains // String none",
+      "passed": true,
+      "detail": {
+        "matches": 1
+      }
+    },
+    {
+      "name": "game.b.b contains // String map",
+      "passed": true,
+      "detail": {
+        "matches": 2
+      }
+    },
+    {
+      "name": "game.b.b contains // String los",
+      "passed": true,
+      "detail": {
+        "matches": 1
+      }
+    },
+    {
+      "name": "corrected price mechs_large/mech_artillery.ini",
+      "passed": true,
+      "detail": "1400"
+    },
+    {
+      "name": "corrected price mechs_large/mech_lightning.ini",
+      "passed": true,
+      "detail": "5200"
+    },
+    {
+      "name": "extractor T2 price separation",
+      "passed": true,
+      "detail": "1400 upgrade versus 2100 type price"
+    }
+  ],
+  "runtimeTestsPerformed": false,
+  "nativeMatchesPerformed": false,
+  "productFilesModified": false
+}

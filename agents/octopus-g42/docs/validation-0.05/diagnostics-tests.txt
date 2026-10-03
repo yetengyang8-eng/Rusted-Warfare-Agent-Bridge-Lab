@@ -1,0 +1,92 @@
+2026-09-20 23:31:37.164: GameEngine:GameEngine()
+2026-09-20 23:31:37.202: MapLayer create: ground
+2026-09-20 23:31:37.328 [RW-Agent] Local Agent API ready at http://127.0.0.1:47656
+PASS GET /state -> 200 {"status":"running","schemaVersion":1,"sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","map":{"width":2200.000,"height":2200.000,"tilesWide":110,"tilesHigh":110,"tileWidth":20,"tileHeight":20},"frame":0,"gameTimeMs":0,"networked":false,"replay":false,"player":{"teamId":0,"name":"","credits":10000.000},"ownUnits":[{"id":4,"type":"builder","x":940.000,"y":1780.000,"hp":170.000,"maxHp":170.000,"buildProgress":1.0,"productionQueue":-1,"dead":false,"mobile":true}]}
+PASS GET /economy/plan?unitId=4 -> 200 {"status":"planned","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","builderId":4,"factoryType":"landFactory","productType":"c_tank","targetX":1050.000,"targetY":1790.000,"factoryCost":700,"tankCost":350,"credits":10000.000}
+PASS plan reports actual resolved product type
+PASS planning does not register previews or spend credits
+PASS native factory cost 700
+NATIVE_TANK_COST=350
+2026-09-20 23:31:37.436 [RW-Agent] Queued economy: /command/build-factory unit=4 request=build-1,"targetX":1050.000,"targetY":1790.000,"type":"landFactory"
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=build-1 -> 200 {"status":"queued","requestId":"build-1","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","unitId":4,"frame":0,"targetX":1050.000,"targetY":1790.000,"type":"landFactory"}
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=build-1 -> 200 {"status":"queued","requestId":"build-1","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","unitId":4,"frame":0,"targetX":1050.000,"targetY":1790.000,"type":"landFactory"}
+PASS one native build command after duplicate receipt
+PASS build waypoint uses native landFactory type
+PASS build command retains aligned placement
+PASS POST /command/build-factory?unitId=99&x=1050.0&y=1790.0&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=build-1 -> 409 {"status":"error","message":"requestId reused with different economy command"}
+PASS POST /command/build-factory?unitId=99&x=1050.0&y=1790.0&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=foreign -> 409 {"status":"error","message":"completed controllable own unit not found"}
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=old&requestId=stale -> 409 {"status":"error","message":"session changed; read state again"}
+PASS POST /command/build-factory?unitId=4&x=NaN&y=10&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=bad-coordinate -> 400 {"status":"error","message":"coordinates must be finite"}
+PASS POST /command/build-factory?unitId=4&x=10&y=10&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=far -> 409 {"status":"error","message":"no visible legal building footprint at target or target beyond allowed builder range"}
+PASS GET /economy/plan -> 409 {"status":"error","message":"no completed own builder with affordable native landFactory action; prepare a standard builder and sufficient credits"}
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=poor -> 409 {"status":"error","message":"action unavailable, locked, or insufficient credits"}
+PASS GET /economy/plan -> 409 {"status":"error","message":"no nearby visible legal landFactory site; move builder to open land"}
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=fog -> 409 {"status":"error","message":"no visible legal building footprint at target or target beyond allowed builder range"}
+PASS GET /economy/plan -> 409 {"status":"error","message":"no nearby visible legal landFactory site; move builder to open land"}
+PASS POST /command/build-factory?unitId=4&x=1050.0&y=1790.0&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=terrain -> 409 {"status":"error","message":"no visible legal building footprint at target or target beyond allowed builder range"}
+PASS POST /command/produce-tank?unitId=50&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=tank-1 -> 409 {"status":"error","message":"completed controllable own unit not found"}
+PASS GET /state -> 200 {"status":"running","schemaVersion":1,"sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","map":{"width":2200.000,"height":2200.000,"tilesWide":110,"tilesHigh":110,"tileWidth":20,"tileHeight":20},"frame":0,"gameTimeMs":0,"networked":false,"replay":false,"player":{"teamId":0,"name":"","credits":10000.000},"ownUnits":[{"id":4,"type":"builder","x":940.000,"y":1780.000,"hp":170.000,"maxHp":170.000,"buildProgress":1.0,"productionQueue":-1,"dead":false,"mobile":true},{"id":50,"type":"landFactory","x":1050.000,"y":1790.000,"hp":1200.000,"maxHp":1200.000,"buildProgress":0.99999,"productionQueue":0,"dead":false,"mobile":false}]}
+PASS almost complete is not rounded to complete
+2026-09-20 23:31:38.131 [RW-Agent] Queued economy: /command/produce-tank unit=50 request=tank-1,"type":"c_tank"
+PASS POST /command/produce-tank?unitId=50&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=tank-1 -> 200 {"status":"queued","requestId":"tank-1","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","unitId":50,"frame":0,"type":"c_tank"}
+PASS POST /command/produce-tank?unitId=50&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=tank-1 -> 200 {"status":"queued","requestId":"tank-1","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","unitId":50,"frame":0,"type":"c_tank"}
+PASS only one production command
+PASS native landFactory exposes tank action
+PASS production command carries actual native action identifier
+PASS native command debits the 350 tank cost
+PASS GET /state -> 200 {"status":"running","schemaVersion":1,"sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","map":{"width":2200.000,"height":2200.000,"tilesWide":110,"tilesHigh":110,"tileWidth":20,"tileHeight":20},"frame":0,"gameTimeMs":0,"networked":false,"replay":false,"player":{"teamId":0,"name":"","credits":9650.000},"ownUnits":[{"id":4,"type":"builder","x":940.000,"y":1780.000,"hp":170.000,"maxHp":170.000,"buildProgress":1.0,"productionQueue":-1,"dead":false,"mobile":true},{"id":50,"type":"landFactory","x":1050.000,"y":1790.000,"hp":1200.000,"maxHp":1200.000,"buildProgress":1.0,"productionQueue":1,"dead":false,"mobile":false}]}
+PASS POST /command/produce-tank?unitId=50&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=busy -> 409 {"status":"error","message":"factory production queue must be empty"}
+PASS POST /command/produce-tank?unitId=50&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=network -> 409 {"status":"error","message":"network games are not supported"}
+PASS bridge inserted no factory or tank into world
+PASS GET /state -> 200 {"status":"running","schemaVersion":1,"sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","map":{"width":2200.000,"height":2200.000,"tilesWide":110,"tilesHigh":110,"tileWidth":20,"tileHeight":20},"frame":0,"gameTimeMs":0,"networked":false,"replay":false,"player":{"teamId":0,"name":"","credits":10000.000},"ownUnits":[{"id":4,"type":"builder","x":940.000,"y":1780.000,"hp":170.000,"maxHp":170.000,"buildProgress":1.0,"productionQueue":-1,"dead":false,"mobile":true}]}
+PASS GET /opening/plan?unitId=4 -> 200 {"status":"planned","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","builderId":4,"extractorType":"extractor","extractorX":990.000,"extractorY":1890.000,"extractorCost":700,"factoryCost":700,"tankCost":350,"productType":"c_tank","targetTanks":3,"totalCost":2450,"resourceCandidates":2,"diagnostics":{"countingUnit":"builder_site_pair","searchRange":600,"eligibleBuilders":1,"visibleResourceCandidates":2,"outsideRange":0,"footprintOutsideMap":0,"footprintNotVisible":0,"nativeRejected":0,"legalCandidates":2,"nativeRejectionReasons":{}},"distance":120.830,"credits":10000.000}
+PASS nearest visible mine selected at native tile center
+PASS opening budget is 700 + 700 + 3*350
+PASS plan preserves resolved extractor type
+PASS opening keeps original loaded tank replacement
+PASS GET /opening/plan -> 200 {"status":"planned","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","builderId":4,"extractorType":"extractor","extractorX":990.000,"extractorY":1890.000,"extractorCost":700,"factoryCost":700,"tankCost":350,"productType":"c_tank","targetTanks":3,"totalCost":2450,"resourceCandidates":2,"diagnostics":{"countingUnit":"builder_site_pair","searchRange":600,"eligibleBuilders":1,"visibleResourceCandidates":2,"outsideRange":0,"footprintOutsideMap":0,"footprintNotVisible":0,"nativeRejected":0,"legalCandidates":2,"nativeRejectionReasons":{}},"distance":120.830,"credits":0.000}
+PASS read-only plan works without credits and never orders
+PASS GET /opening/plan -> 200 {"status":"planned","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","builderId":4,"extractorType":"extractor","extractorX":1110.000,"extractorY":1890.000,"extractorCost":700,"factoryCost":700,"tankCost":350,"productType":"c_tank","targetTanks":3,"totalCost":2450,"resourceCandidates":1,"diagnostics":{"countingUnit":"builder_site_pair","searchRange":600,"eligibleBuilders":1,"visibleResourceCandidates":1,"outsideRange":0,"footprintOutsideMap":0,"footprintNotVisible":0,"nativeRejected":0,"legalCandidates":1,"nativeRejectionReasons":{}},"distance":202.485,"credits":10000.000}
+PASS hidden nearest mine is not selected
+PASS GET /opening/plan -> 409 {"status":"error","message":"no legal opening site; extractorType=extractor; eligibleBuilders=1; visibleResourceCandidates=0; searchRange=600","diagnostics":{"countingUnit":"builder_site_pair","searchRange":600,"eligibleBuilders":1,"visibleResourceCandidates":0,"outsideRange":0,"footprintOutsideMap":0,"footprintNotVisible":0,"nativeRejected":0,"legalCandidates":0,"nativeRejectionReasons":{}}}
+PASS GET /opening/plan -> 200 {"status":"planned","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","builderId":4,"extractorType":"extractor","extractorX":1110.000,"extractorY":1890.000,"extractorCost":700,"factoryCost":700,"tankCost":350,"productType":"c_tank","targetTanks":3,"totalCost":2450,"resourceCandidates":1,"diagnostics":{"countingUnit":"builder_site_pair","searchRange":600,"eligibleBuilders":1,"visibleResourceCandidates":2,"outsideRange":0,"footprintOutsideMap":0,"footprintNotVisible":0,"nativeRejected":1,"legalCandidates":1,"nativeRejectionReasons":{"{0}":1}},"distance":202.485,"credits":10000.000}
+PASS occupied nearest mine is skipped
+2026-09-20 23:31:38.654 [RW-Agent] Queued economy: /command/build-extractor unit=4 request=mine,"targetX":990.000,"targetY":1890.000,"type":"extractor"
+PASS POST /command/build-extractor?unitId=4&x=990&y=1890&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=mine -> 200 {"status":"queued","requestId":"mine","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","unitId":4,"frame":0,"targetX":990.000,"targetY":1890.000,"type":"extractor"}
+PASS POST /command/build-extractor?unitId=4&x=990&y=1890&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=mine -> 200 {"status":"queued","requestId":"mine","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","unitId":4,"frame":0,"targetX":990.000,"targetY":1890.000,"type":"extractor"}
+PASS extractor retry has one native command
+PASS actual extractor waypoint type and coordinates
+PASS planning and queue submission did not spawn or directly charge units
+PASS POST /command/build-extractor?unitId=4&x=970&y=1890&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=ground -> 409 {"status":"error","message":"no visible legal building footprint at target or target beyond allowed builder range"}
+PASS POST /command/build-extractor?unitId=4&x=990&y=1890&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=fog -> 409 {"status":"error","message":"no visible legal building footprint at target or target beyond allowed builder range"}
+PASS POST /command/build-extractor?unitId=4&x=990&y=1890&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=footprint-fog -> 409 {"status":"error","message":"no visible legal building footprint at target or target beyond allowed builder range"}
+PASS POST /command/build-extractor?unitId=4&x=990&y=1890&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=removed-site -> 409 {"status":"error","message":"no visible legal building footprint at target or target beyond allowed builder range"}
+PASS POST /command/build-extractor?unitId=4&x=990&y=1890&sessionId=old&requestId=old-session -> 409 {"status":"error","message":"session changed; read state again"}
+PASS POST /command/build-extractor?unitId=99&x=990&y=1890&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=foreign -> 409 {"status":"error","message":"completed controllable own unit not found"}
+PASS POST /command/build-extractor?unitId=4&x=990&y=1890&sessionId=4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc&requestId=poor -> 409 {"status":"error","message":"action unavailable, locked, or insufficient credits"}
+PASS GET /opening/plan -> 409 {"status":"error","message":"network games are not supported"}
+PASS invalid extractor requests queued nothing
+PASS GET /opening/plan -> 200 {"status":"planned","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","builderId":4,"extractorType":"extractor","extractorX":990.000,"extractorY":1890.000,"extractorCost":700,"factoryCost":700,"tankCost":350,"productType":"c_tank","targetTanks":3,"totalCost":2450,"resourceCandidates":2,"diagnostics":{"countingUnit":"builder_site_pair","searchRange":600,"eligibleBuilders":1,"visibleResourceCandidates":2,"outsideRange":0,"footprintOutsideMap":0,"footprintNotVisible":0,"nativeRejected":0,"legalCandidates":2,"nativeRejectionReasons":{}},"distance":120.830,"credits":10000.000}
+PASS visibleResourceCandidates=2
+PASS legalCandidates=2
+PASS nativeRejected=0
+PASS GET /opening/plan -> 200 {"status":"planned","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","builderId":4,"extractorType":"extractor","extractorX":990.000,"extractorY":1890.000,"extractorCost":700,"factoryCost":700,"tankCost":350,"productType":"c_tank","targetTanks":3,"totalCost":2450,"resourceCandidates":2,"diagnostics":{"countingUnit":"builder_site_pair","searchRange":600,"eligibleBuilders":1,"visibleResourceCandidates":3,"outsideRange":1,"footprintOutsideMap":0,"footprintNotVisible":0,"nativeRejected":0,"legalCandidates":2,"nativeRejectionReasons":{}},"distance":120.830,"credits":10000.000}
+PASS visibleResourceCandidates=3
+PASS outsideRange=1
+PASS legalCandidates=2
+PASS GET /opening/plan -> 200 {"status":"planned","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","builderId":4,"extractorType":"extractor","extractorX":1110.000,"extractorY":1890.000,"extractorCost":700,"factoryCost":700,"tankCost":350,"productType":"c_tank","targetTanks":3,"totalCost":2450,"resourceCandidates":1,"diagnostics":{"countingUnit":"builder_site_pair","searchRange":600,"eligibleBuilders":1,"visibleResourceCandidates":2,"outsideRange":0,"footprintOutsideMap":0,"footprintNotVisible":1,"nativeRejected":0,"legalCandidates":1,"nativeRejectionReasons":{}},"distance":202.485,"credits":10000.000}
+PASS visibleResourceCandidates=2
+PASS footprintNotVisible=1
+PASS legalCandidates=1
+PASS GET /opening/plan -> 200 {"status":"planned","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","builderId":4,"extractorType":"extractor","extractorX":1110.000,"extractorY":1890.000,"extractorCost":700,"factoryCost":700,"tankCost":350,"productType":"c_tank","targetTanks":3,"totalCost":2450,"resourceCandidates":1,"diagnostics":{"countingUnit":"builder_site_pair","searchRange":600,"eligibleBuilders":1,"visibleResourceCandidates":2,"outsideRange":0,"footprintOutsideMap":0,"footprintNotVisible":0,"nativeRejected":1,"legalCandidates":1,"nativeRejectionReasons":{"{0}":1}},"distance":202.485,"credits":10000.000}
+PASS nativeRejected=1
+PASS legalCandidates=1
+PASS native reason retained without inferred occupancy label
+PASS GET /opening/plan -> 409 {"status":"error","message":"no legal opening site; extractorType=extractor; eligibleBuilders=1; visibleResourceCandidates=0; searchRange=600","diagnostics":{"countingUnit":"builder_site_pair","searchRange":600,"eligibleBuilders":1,"visibleResourceCandidates":0,"outsideRange":0,"footprintOutsideMap":0,"footprintNotVisible":0,"nativeRejected":0,"legalCandidates":0,"nativeRejectionReasons":{}}}
+PASS visibleResourceCandidates=0
+PASS legalCandidates=0
+PASS nativeRejected=0
+PASS GET /opening/plan -> 200 {"status":"planned","sessionId":"4a5abe16-fb8c-45dd-ae3e-2e31b4d0f8dc","builderId":4,"extractorType":"extractor","extractorX":990.000,"extractorY":1890.000,"extractorCost":700,"factoryCost":700,"tankCost":350,"productType":"c_tank","targetTanks":3,"totalCost":2450,"resourceCandidates":2,"diagnostics":{"countingUnit":"builder_site_pair","searchRange":600,"eligibleBuilders":1,"visibleResourceCandidates":2,"outsideRange":0,"footprintOutsideMap":0,"footprintNotVisible":0,"nativeRejected":0,"legalCandidates":2,"nativeRejectionReasons":{}},"distance":120.830,"credits":10000.000}
+PASS visibleResourceCandidates=2
+PASS diagnostics never register, charge or command
+DIAGNOSTICS_TEST_OK checks=84
