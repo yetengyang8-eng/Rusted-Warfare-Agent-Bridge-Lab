@@ -1,0 +1,4 @@
+# Frozen-source digests and deterministic overlay export require identical checkout bytes.
+*.java text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
