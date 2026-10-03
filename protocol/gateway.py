@@ -62,7 +62,7 @@ def _digest(path):
     return "sha256:" + hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 def agent_identity(agent, repo_root=ROOT, external_digest=None):
-    if agent in ("legacy", "octopus"):
+    if agent in ("legacy", "octopus", "octopus-g5"):
         baseline = artifact(agent, repo_root)
         overlay = Path(repo_root) / "build/adapters" / (agent + ".jar")
         overlay_digest = _digest(overlay)

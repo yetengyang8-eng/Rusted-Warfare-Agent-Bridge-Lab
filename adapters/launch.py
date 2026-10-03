@@ -6,7 +6,8 @@ import subprocess
 import sys
 from .overlay import ROOT, artifact
 
-MAINS = {"legacy": "io.rwagent.client.MatchClient", "octopus": "io.rwagent.client.BattleClient"}
+MAINS = {"legacy": "io.rwagent.client.MatchClient", "octopus": "io.rwagent.client.BattleClient",
+         "octopus-g5": "io.rwagent.client.BattleClient"}
 
 def command(agent, port, seconds=120, repo_root=ROOT):
     identity = artifact(agent, repo_root)

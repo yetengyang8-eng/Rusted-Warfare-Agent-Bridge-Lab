@@ -10,11 +10,18 @@ import json
 ROOT = Path(__file__).resolve().parents[1]
 BASELINES = {
     "octopus": ("octopus-g42", "octopus-g42-83c09fb.jar", "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885"),
+    "octopus-g5": ("octopus-g5", "octopus-g5-ca2fc92.jar", "b5d87aff499028a32738eefc6b99710c6b6a9d90faafb04d6b5093b6b769acad"),
     "legacy": ("legacy-production-capacity", "legacy-production-capacity.jar", "a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6"),
 }
 SOURCE_HASHES = {
     "octopus": {"BattleClient": "a85002080e35817f3df1541edf63a607bd1d9ea8e7aaaf0a40717a6a5e19cfb9",
                 "NativeCreditWitness": "cb43a6c1e018b95e724a245d52ebe0762a387a76b976ebb51584dd34232c21be"},
+    "octopus-g5": {"BattleClient": "c0342c4a3b7f195e1278f8cc696f8f2d8fbaac53791421d9abc6cbbe03ffccea",
+                   "NativeCreditWitness": "f775e48dd782a78655095e1efdcb7272ef1f39bdfde43831db4ca44f8b486820",
+                   "BootstrapClient": "525ceec767920442ff36eeefd70e642e6a92ee03b415669599410b9274ec5b50",
+                   "EconomyClient": "713252a6932e48d5cc9db485f81b64b730eaacb427e3a91f0d0224c58503e730",
+                   "DevelopmentClient": "d2dc161aa370f4e0ea030351da4dec64b2789078e936c7f4f6b41ca553078c95",
+                   "ControlLoop": "693a72dc86a55b017f2a514774eac5cab74bdd2e5f415d67ec11336488404129"},
     "legacy": {"BattleClient": "47aed52030f26928651d6c81d4ef78246df9d9a60813ef0f0a4f883440ab1d48"},
     "common": {"BootstrapClient": "8c6c2a9a0f809aa80262161129e46140b08b5a2ba8191094bc9cc99273c1b44b",
                "EconomyClient": "3ddfab552248014fbfc55e5dc2a082ec3e078001aa8be9a1435a8b32f7f2efa5",
@@ -48,7 +55,7 @@ def export_sources(agent, output_dir, repo_root=ROOT):
     target.mkdir(parents=True, exist_ok=True)
     files, provenance = [], []
     guards = dict(GUARDS)
-    if agent == "octopus":
+    if agent in ("octopus", "octopus-g5"):
         guards["NativeCreditWitness"] = ('||Boolean.TRUE.equals(state.get("networked"))||Boolean.TRUE.equals(state.get("replay"))',
                                          '||!NativeTransportGuard.allowed(state)||Boolean.TRUE.equals(state.get("replay"))')
     for name, (before, after) in guards.items():

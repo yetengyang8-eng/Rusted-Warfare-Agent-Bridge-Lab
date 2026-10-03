@@ -15,6 +15,7 @@ import os
 from pathlib import Path
 import shutil
 import signal
+FORCE_SIGNAL = getattr(signal, "SIGKILL", 9)
 import socket
 import subprocess
 import sys
@@ -249,10 +250,10 @@ def stop_process(proc, work, role):
     try:
         proc.wait(timeout=3)
     except subprocess.TimeoutExpired:
-        terminate_group(proc, signal.SIGKILL)
+        terminate_group(proc, FORCE_SIGNAL)
         proc.wait(timeout=5)
     if os.name != "nt":
-        terminate_group(proc, signal.SIGKILL)
+        terminate_group(proc, FORCE_SIGNAL)
 
 
 def reap_run(out):
@@ -287,7 +288,7 @@ def reap_run(out):
             while process_start_ticks(pid) == birth and time.monotonic() < deadline:
                 time.sleep(.05)
             if process_start_ticks(pid) == birth:
-                os.killpg(pid, signal.SIGKILL)
+                os.killpg(pid, FORCE_SIGNAL)
             result["reaped"].append(pid)
             entry.update(state="REAPED", endedUtc=utc())
         except (OSError, ValueError, RuntimeError) as error:
@@ -437,7 +438,11 @@ def run_one(args, index, supervisor, on_ready=None):
             stage(args.game_dir, work, args.bridge_jar, args.baseline_jar)
             lock = work / "match.lock"
             lock.write_text(match_id + "\n", encoding="utf-8")
-            artifact = args.baseline_jar if agent in ("octopus", "probe") else ROOT / "binaries/legacy-production-capacity.jar"
+            if agent == "probe":
+                artifact = args.baseline_jar
+            else:
+                from adapters.overlay import artifact as frozen_artifact
+                artifact = Path(frozen_artifact(agent, ROOT)["binary"])
             participant = {"participantId": identity, "agentId": agent, "side": slot,
                            "role": "host" if slot == 0 else "join", "apiPort": api_port,
                            "gatewayPort": gateway_port, "workDirectory": str(work),
@@ -645,8 +650,8 @@ def parser():
     p.add_argument("--bridge-jar", type=Path, default=ROOT / "build/bridge.jar")
     p.add_argument("--baseline-jar", type=Path, default=ROOT / "binaries/octopus-g42-83c09fb.jar")
     p.add_argument("--java", default="java")
-    p.add_argument("--agent-a", choices=("probe", "legacy", "octopus"), default="probe")
-    p.add_argument("--agent-b", choices=("probe", "legacy", "octopus"), default="probe")
+    p.add_argument("--agent-a", choices=("probe", "legacy", "octopus", "octopus-g5"), default="probe")
+    p.add_argument("--agent-b", choices=("probe", "legacy", "octopus", "octopus-g5"), default="probe")
     p.add_argument("--matches", type=int, default=1)
     p.add_argument("--swap-sides", action="store_true", help="swap A/B native host/join slots every other match")
     p.add_argument("--transport-proof", action="store_true", help="run the legal-observation M0 proof and native surrender after readiness (probe/probe only)")

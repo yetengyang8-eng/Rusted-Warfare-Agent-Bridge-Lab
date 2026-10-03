@@ -34,6 +34,9 @@ Run both frozen decision loops in a shared native match and swap their slots:
 
 ```sh
 python orchestrator/run_match.py --agent-a legacy --agent-b octopus --matches 2 --swap-sides --speed 4 --timeout 40 --out headless-runs/legacy-octopus-swap
+
+# Frozen G5 profile
+python orchestrator/run_match.py --agent-a legacy --agent-b octopus-g5 --speed 4 --timeout 40 --out headless-runs/legacy-octopus-g5
 ```
 
 `--timeout` is the wall-clock play budget, separate from `--startup-timeout`.

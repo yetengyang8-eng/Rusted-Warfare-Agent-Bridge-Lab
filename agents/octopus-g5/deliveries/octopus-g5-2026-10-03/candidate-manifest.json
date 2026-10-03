@@ -1,0 +1,47 @@
+{
+  "candidateId": "RW-CANDIDATE-2026-10-03-OCTOPUS-G5-v1",
+  "status": "VALIDATED_NOT_DEPLOYED_WITH_EXPLICIT_REFERENCE_CORRECTION",
+  "baselineCommit": "83c09fb",
+  "implementationCommit": "22c88a2",
+  "branch": "codex/octopus-g3-execution-20261002",
+  "candidateJar": "G:\\deepseek 工作台\\_validation\\octopus-g5-20261003\\final-source\\agent\\dist\\rw-agent-bootstrap.jar",
+  "candidateJarSha256": "b5d87aff499028a32738eefc6b99710c6b6a9d90faafb04d6b5093b6b769acad",
+  "referenceGameDirectory": "G:\\deepseek 工作台\\游戏环境\\P1F-GPTSol61-ProductionCapacity-2026-10-02",
+  "engineJarSha256": "8a550a37e2d8a5430866090d4e7d5892f9010b47f52a5a09350fc66c620deec9",
+  "deployed": false,
+  "pushed": false,
+  "desktopGameTouched": false,
+  "testedSourceCommit": "f058d3a",
+  "naturalValidationJarSha256": "877dfa9ac8e40feab06263644dc13240fb856bddc429455ad4a48de28f9f67a6",
+  "jarPayloadEntries": 183,
+  "naturalAndFullJarPayloadIdentical": true,
+  "windows": {
+    "steps": 76,
+    "passed": 76,
+    "failedSteps": 0,
+    "classification": "GREEN_WITH_EXPLICIT_HISTORICAL_REFERENCE_CORRECTION"
+  },
+  "windowsRawFirstPass": {
+    "steps": 76,
+    "passed": 74,
+    "failed": 2,
+    "exit": 1
+  },
+  "javaHarnessRuns": 42,
+  "pythonSuites": 31,
+  "pythonTests": 496,
+  "skipped": 0,
+  "fullRuns": 1,
+  "focusedReferenceCorrectionTests": 13,
+  "nativeChecks": 482,
+  "needsEvidence": [
+    "SPAIN_DESKTOP_G5_MULTI_GENERAL_NATURAL",
+    "ADDITIONAL_GENERAL_NATURAL_BIRTH_ON_LONG_MAP",
+    "RALLY_DYNAMIC_REACHABILITY_MIXED_MOBILITY",
+    "MANUAL_DESKTOP_START_GAME_ENTRYPOINT"
+  ],
+  "evidenceDirectory": "G:\\deepseek 工作台\\_validation\\octopus-g5-20261003",
+  "handoff": "handoff/HANDOFF_Octopus_G5_2026-10-03.md",
+  "contract": "docs/OCTOPUS_G5_COMBAT_RUNTIME.md",
+  "protectedSettingsDifference": "evidence/octopus-g5-2026-10-03/validation-summary.json"
+}

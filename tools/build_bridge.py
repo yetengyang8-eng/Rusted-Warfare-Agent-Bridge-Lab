@@ -22,6 +22,7 @@ sys.path.insert(0, str(ROOT))
 ENGINE_SHA = "8a550a37e2d8a5430866090d4e7d5892f9010b47f52a5a09350fc66c620deec9"
 BASELINES = {
     "octopus": ("octopus-g42-83c09fb.jar", "efc150e8822d69511c5ff92477a6d5153c9f2673b128baa3be5b110eb82fa885"),
+    "octopus-g5": ("octopus-g5-ca2fc92.jar", "b5d87aff499028a32738eefc6b99710c6b6a9d90faafb04d6b5093b6b769acad"),
     "legacy": ("legacy-production-capacity.jar", "a392f692e010c8429a7a93072e60323c83a9deb1ed471bbcbddbd3bbbaf6adb6"),
 }
 

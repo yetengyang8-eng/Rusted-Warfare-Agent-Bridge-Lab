@@ -83,3 +83,21 @@ New-Item -ItemType File -Path headless-runs/human_01/engine/stop.request
 runner 检测后通过原版连接关闭路径退出。然后结束 gateway 和 Agent 终端；不要按进程名批量杀死 Java。若 human 主机仍在比赛，Agent 退出属于 disconnect。
 
 这套命令复用了已实现 native join/local binding 路径，但 Windows GUI 尚未实测。暂未证明任意桌面地图、mods、Steam 会话、NAT 穿透、跨版本和自动桌面 lobby 操作。先完成上述最小两玩家原版 LAN 场景再扩展。
+
+## 6. Octopus G5 profile
+
+完成上述最小 LAN 流程时，可将冻结 G4.2 `octopus` 换为冻结 G5 `octopus-g5`。两者使用同一原生 join、同一玩家隔离和同一 public v1 gateway；只替换 Agent baseline/adapter identity。
+
+Terminal 2：
+
+```powershell
+python protocol/gateway.py --upstream-port 47653 --port 47753 --match-id human_01 --player-id 1 --agent octopus-g5 --evidence headless-runs/human_01/gateway/events.jsonl
+```
+
+Terminal 3：
+
+```powershell
+python -c "import subprocess; from pathlib import Path; from adapters.launch import command; subprocess.run(command('octopus-g5',47753,seconds=1800),cwd=Path('headless-runs/human_01/agent').resolve(),check=True)"
+```
+
+G5 baseline 必须识别为 `ca2fc92` / SHA256 `b5d87aff499028a32738eefc6b99710c6b6a9d90faafb04d6b5093b6b769acad`。不要把 G4.2 overlay 与 G5 JAR 混用。当前已证明 Windows headless same-game 的 G5 接入；真人 GUI ↔ G5 仍是待执行的本地验收。

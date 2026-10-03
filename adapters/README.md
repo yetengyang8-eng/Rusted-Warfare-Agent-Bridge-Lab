@@ -2,8 +2,9 @@
 
 `legacy` runs the original `io.rwagent.client.MatchClient` lifecycle: bootstrap,
 preflight, economy/development as recommended, then its bounded battle loop.
-`octopus` runs the original `io.rwagent.client.BattleClient`, including its normal
-bootstrap, world observation and execution pipeline. No strategy thresholds,
+`octopus` is the frozen G4.2 `83c09fb` BattleClient profile. `octopus-g5` is the
+frozen G5 `ca2fc92` BattleClient profile. Both retain their original bootstrap,
+world observation and execution pipelines. No strategy thresholds,
 roles, decision ordering, production policy or game-time budget are changed.
 
 The frozen snapshots and binary JARs remain unchanged. `overlay.export_sources`
