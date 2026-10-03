@@ -47,7 +47,7 @@ def main():
     summary = {"schemaVersion": 1, "archive": archive.name,
                "archiveSha256": hashlib.sha256(archive.read_bytes()).hexdigest(),
                "files": len(rows), "matches": matches,
-               "focused": json.loads((args.focused / "summary.json").read_text())}
+               "focused": json.loads((args.focused / "summary.json").read_text(encoding='utf-8'))}
     (args.out / "files.json").write_text(json.dumps(rows, indent=2) + "\n", encoding="utf-8")
     (args.out / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"archive": str(archive), "files": len(rows), "bytes": archive.stat().st_size,

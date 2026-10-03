@@ -147,9 +147,9 @@ class FrozenOverlayTests(unittest.TestCase):
                 self.assertTrue(any(source.name == "NativeTransportGuard.java" for source in sources))
                 # Exact source digests in export_sources prove baseline immutability.
                 battle = next(source for source in sources if source.name == "BattleClient.java")
-                original = (ROOT / "agents" / snapshot / "agent/src/io/rwagent/client/BattleClient.java").read_text()
+                original = (ROOT / "agents" / snapshot / "agent/src/io/rwagent/client/BattleClient.java").read_text(encoding='utf-8')
                 self.assertEqual(original.count("Local active match required"), 1)
-                self.assertIn("NativeTransportGuard.require(s)", battle.read_text())
+                self.assertIn("NativeTransportGuard.require(s)", battle.read_text(encoding='utf-8'))
                 self.assertTrue((Path(output) / "overlay-sources.json").is_file())
 
 if __name__ == "__main__":

@@ -53,23 +53,23 @@ def export_sources(agent, output_dir, repo_root=ROOT):
                                          '||!NativeTransportGuard.allowed(state)||Boolean.TRUE.equals(state.get("replay"))')
     for name, (before, after) in guards.items():
         source = Path(repo_root) / "agents" / snapshot / "agent/src/io/rwagent/client" / (name + ".java")
-        original = source.read_text()
+        original = source.read_text(encoding='utf-8')
         source_digest = hashlib.sha256(source.read_bytes()).hexdigest()
         if source_digest != SOURCE_HASHES.get(agent, {}).get(name, SOURCE_HASHES["common"].get(name)):
             raise ValueError(f"Frozen source digest mismatch: {source}")
         if original.count(before) != 1:
             raise ValueError(f"Expected exactly one frozen capability guard in {source}")
         exported = target / source.name
-        exported.write_text(original.replace(before, after))
+        exported.write_text(original.replace(before, after), encoding='utf-8')
         files.append(exported)
         provenance.append({"source": str(source.relative_to(repo_root)), "sourceSha256": source_digest,
                            "overlaySha256": hashlib.sha256(exported.read_bytes()).hexdigest(),
                            "change": "verified-native-transport-capability-guard-only"})
     common = Path(repo_root) / "adapters/java/common/io/rwagent/client/NativeTransportGuard.java"
     exported = target / common.name
-    exported.write_text(common.read_text())
+    exported.write_text(common.read_text(encoding='utf-8'), encoding='utf-8')
     files.append(exported)
     provenance.append({"source": str(common.relative_to(repo_root)),
                        "overlaySha256": hashlib.sha256(exported.read_bytes()).hexdigest(), "change": "new-capability-guard"})
-    (Path(output_dir) / "overlay-sources.json").write_text(json.dumps(provenance, indent=2) + "\n")
+    (Path(output_dir) / "overlay-sources.json").write_text(json.dumps(provenance, indent=2) + "\n", encoding="utf-8")
     return files

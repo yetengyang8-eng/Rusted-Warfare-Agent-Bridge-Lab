@@ -198,7 +198,7 @@ def main():
     parser.add_argument("--timeout", type=int, default=90)
     parser.add_argument("--surrender", action="store_true")
     args = parser.parse_args()
-    report = json.loads(args.match_report.read_text())
+    report = json.loads(args.match_report.read_text(encoding='utf-8'))
     result = run_probe(report["participants"], args.out, args.timeout, args.surrender)
     print(json.dumps({"status": result["status"], "checks": len(result["checks"]), "error": result.get("error")}))
     return 0 if result["status"] == "PASS" else 1

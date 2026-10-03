@@ -73,3 +73,5 @@ python orchestrator/run_match.py --agent-a octopus --agent-b octopus --speed 4 -
 - `bridge-docs/MULTIPLAYER_DESKTOP_TRACE_2026-10-03.md`：已脱敏的真实桌面公开列表、加入网络局、relay become-server、原生开局与断线证据。
 
 旧 `agents/*/tools/run_headless.py --parallel-pair` 仍表示两个独立单机对局。只有新的同局 runner 使用原版 multiplayer；`parallel-proof PASS` 不能代替这里的原生同局证据。
+
+- [Windows local import/native transport re-validation](bridge-docs/WINDOWS_LOCAL_VALIDATION_2026-10-03.md)

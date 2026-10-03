@@ -29,7 +29,7 @@ class NativeDisconnectTests(unittest.TestCase):
             deadline = time.monotonic() + 50
             while time.monotonic() < deadline:
                 try:
-                    report = json.loads(report_path.read_text())
+                    report = json.loads(report_path.read_text(encoding='utf-8'))
                 except (OSError, ValueError):
                     report = {}
                 if report.get("startedUtc") and report.get("sameGameEvidence", {}).get("status") == "PASS":
@@ -42,13 +42,13 @@ class NativeDisconnectTests(unittest.TestCase):
             join = next(p for p in report["participants"] if p["role"] == "join")
             os.kill(join["enginePid"], signal.SIGTERM)
             stdout, _ = proc.communicate(timeout=10)
-            report = json.loads(report_path.read_text())
+            report = json.loads(report_path.read_text(encoding='utf-8'))
             self.assertEqual(report["result"]["status"], "DISCONNECT", (report["result"], stdout))
             self.assertIsNone(report["result"]["winner"])
             self.assertTrue(report["disconnectEvidence"])
             self.assertEqual(report["disconnectEvidence"][0]["source"], "native_host_peer_departure")
             self.assertTrue(report["crashes"])
-            claims = json.loads((out / "live-claims.json").read_text())
+            claims = json.loads((out / "live-claims.json").read_text(encoding='utf-8'))
             self.assertTrue(all(p["state"] == "EXITED" for p in claims["processes"]))
             print("Native disconnect evidence: " + str(report_path), flush=True)
         finally:

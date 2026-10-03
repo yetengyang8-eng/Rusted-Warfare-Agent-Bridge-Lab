@@ -221,7 +221,7 @@ class HarnessTests(unittest.TestCase):
                 time.sleep(.05)
             else:
                 self.fail("Owned descendant remained alive after cleanup")
-            claims = json.loads((root / "live-claims.json").read_text())
+            claims = json.loads((root / "live-claims.json").read_text(encoding='utf-8'))
             self.assertEqual(claims["processes"][0]["state"], "EXITED")
 
 
