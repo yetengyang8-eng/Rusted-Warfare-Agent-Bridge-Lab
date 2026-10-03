@@ -28,3 +28,7 @@
 
 - `tools/multiplayer-probe/`：本地真人多人只读探针。记录游戏进程的 TCP/UDP 元数据、RuntimeBridge `/state` 摘要和本地日志；不发送游戏命令、不抓包内容。
 - 原始 trace 可能包含服务器 IP、端口和玩家名，只保留在本地；提交 GitHub 前先脱敏并提炼为技术结论。
+
+## Desktop multiplayer evidence
+
+- `bridge-docs/MULTIPLAYER_DESKTOP_TRACE_2026-10-03.md`：已脱敏的真实桌面公开列表、加入网络局、relay become-server、原生开局与断线证据。
